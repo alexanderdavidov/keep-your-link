@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="12px" viewBox="0 0 17 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>PeopleGroup</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <ellipse id="path-1" cx="4.87741935" cy="2.88" rx="2.81769834" ry="2.88"></ellipse>
+        <ellipse id="path-3" cx="4.44387097" cy="2.56695652" rx="2.56723627" ry="2.56695652"></ellipse>
+    </defs>
+    <g id="WorkPlace" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Work-Place-Condition-1-|-Start-Page" transform="translate(-258.000000, -977.000000)">
+            <g id="PeopleGroup" transform="translate(256.000000, 975.000000)">
+                <g id="Person">
+                    <g transform="translate(2.883609, 2.526316)">
+                        <path d="M0,10.9473684 L0,9.29122807 C0.417436792,7.86900585 2.03500436,7.15789474 4.8527027,7.15789474 C7.67040105,7.15789474 9.28796861,7.86900585 9.70540541,9.29122807 L9.70540541,10.9473684 C8.59224063,10.9473684 6.97467306,10.9473684 4.8527027,10.9473684 C2.73073235,10.9473684 1.11316478,10.9473684 0,10.9473684 Z" id="Path-2" fill="#9B9B9B"></path>
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Oval" fill="#9B9B9B" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+                <g id="Person" transform="translate(7.112903, 0.000000)">
+                    <g transform="translate(2.627289, 2.251716)">
+                        <path d="M0,9.75743707 L0,8.28131198 C0.380331299,7.01367913 1.85411508,6.3798627 4.42135135,6.3798627 C6.98858762,6.3798627 8.4623714,7.01367913 8.8427027,8.28131198 L8.8427027,9.75743707 C7.82848591,9.75743707 6.35470212,9.75743707 4.42135135,9.75743707 C2.48800058,9.75743707 1.0142168,9.75743707 0,9.75743707 Z" id="Path-2" fill="#9B9B9B"></path>
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <use id="Oval" fill="#9B9B9B" xlink:href="#path-3"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

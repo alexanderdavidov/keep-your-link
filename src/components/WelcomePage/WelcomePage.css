@@ -1,0 +1,50 @@
+.Container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 80px auto auto;
+}
+
+.NavBar {
+  grid-column: 2 / span 10;
+  grid-row: 1 / span 1;
+}
+
+.WelcomePageContent {
+  grid-column: 1 / span 12;
+  grid-row: 2 / span 1;
+}
+
+.Footer {
+  grid-column: 2 / span 10;
+  grid-row: 3 / span 1;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 12px;
+}
+
+.Footer h3 {
+  color: #474747;
+  text-align: center;
+  font-weight: 100;
+}
+
+@media (min-width: 500px) {
+  .Container {
+    grid-template-rows: 20px 80px 20px auto auto;
+  }
+
+  .WelcomePageContent {
+    grid-column: 2 / span 10;
+    grid-row: 4 / span 1;
+  }
+
+  .NavBar {
+    grid-row: 2 / span 1;
+  }
+
+  .Footer {
+    grid-row: 5 / span 1;
+    padding-top: 30px;
+    font-size: 14px;
+  }
+}

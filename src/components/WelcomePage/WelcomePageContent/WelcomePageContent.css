@@ -1,0 +1,180 @@
+.WelcomePageContent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto auto auto auto;
+}
+
+a {
+  text-decoration: none;
+  color: #29a0ef;
+}
+
+/* visited link */
+a:visited {
+  color: #29a0ef;
+}
+
+/* mouse over link */
+a:hover {
+  color: #d0021b;
+}
+
+/* selected link */
+a:active {
+  color: #29a0ef;
+}
+
+/*first text*/
+
+.TextBlockOne {
+  grid-column: 1 / span 12;
+}
+
+.TextBlockOne h1 {
+  margin: 0;
+  line-height: 30px;
+  font-weight: 600;
+  padding: 30px;
+  font-size: 20px;
+  color: white;
+  background-image: linear-gradient(to right top, #d0021b, #de1171, #c254ba, #8481e6, #29a0ef);
+}
+
+/*second text*/
+
+.TextBlockTwo {
+  grid-column: 1 / span 12;
+}
+
+.TextBlockTwo h1 {
+  padding: 30px;
+  font-family: 'Playfair Display', serif;
+  line-height: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #474747;
+}
+
+/*figures*/
+
+.Line {
+  grid-column: 1 / span 12;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.FigureOne {
+  width: auto;
+  height: 15px;
+  background-color: #D0021B;
+}
+
+/*third text*/
+
+.TextBlockThree {
+  grid-column: 1 / span 12;
+}
+
+.TextBlockThree h1 {
+  margin-left: 30px;
+  padding: 0;
+  font-weight: 900;
+  font-size: 20px;
+  color: #474747;
+}
+
+.TextBlockThree h2 {
+  margin-left: 30px;
+  font-weight: 100;
+  font-size: 14px;
+  color: #474747;
+}
+
+/*fourth text*/
+
+.TextBlockFour {
+  grid-column: 1 / span 12;
+}
+
+.TextBlockFour h1 {
+  margin-left: 30px;
+  padding: 0;
+  font-weight: 900;
+  font-size: 20px;
+  color: #474747;
+}
+
+.TextBlockFour h2 {
+  margin-left: 30px;
+  font-weight: 100;
+  font-size: 14px;
+  color: #474747;
+}
+
+@media (min-width: 500px) {
+
+  /*first text*/
+
+  .TextBlockOne {
+    grid-column: 1 / span 10;
+  }
+
+  .TextBlockOne h1 {
+    line-height: 50px;
+    padding: 40px;
+    font-size: 50px;
+  }
+
+  /*second text*/
+
+  .TextBlockTwo {
+    grid-column: 5 / span 8;
+  }
+
+  .TextBlockTwo h1 {
+    padding-left: 0;
+    padding-right: 0;
+    line-height: 35px;
+    font-size: 30px;
+  }
+
+  /*figures*/
+
+  .Line {
+    grid-column: 1 / span 8;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .FigureOne {
+    width: auto;
+    height: 20px;
+  }
+
+  /*third text*/
+
+  .TextBlockThree h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+  }
+
+  .TextBlockThree h2 {
+    margin-left: 0;
+    font-size: 20px;
+  }
+
+  /*fourth text*/
+
+  .TextBlockFour h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+  }
+
+  .TextBlockFour h2 {
+    margin-left: 0;
+    font-size: 20px;
+  }
+
+}

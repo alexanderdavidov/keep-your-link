@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="15px" viewBox="0 0 23 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="WorkPlace" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Work-Place-Condition-1-|-Start-Page" transform="translate(-917.000000, -167.000000)" fill="#535353" stroke="#535353" stroke-width="0.8736">
+            <g id="Group" transform="translate(918.000000, 168.000000)">
+                <g id="SearchInList">
+                    <circle id="Oval-6" cx="1.5" cy="1.5" r="1.5"></circle>
+                    <rect id="Rectangle-9" x="6.4368" y="0.4368" width="15.1264" height="2.1264" rx="1.0632"></rect>
+                </g>
+                <g id="SearchInList" transform="translate(0.000000, 5.000000)">
+                    <circle id="Oval-6" cx="1.5" cy="1.5" r="1.5"></circle>
+                    <rect id="Rectangle-9" x="6.4368" y="0.4368" width="15.1264" height="2.1264" rx="1.0632"></rect>
+                </g>
+                <g id="SearchInList" transform="translate(0.000000, 10.000000)">
+                    <circle id="Oval-6" cx="1.5" cy="1.5" r="1.5"></circle>
+                    <rect id="Rectangle-9" x="6.4368" y="0.4368" width="15.1264" height="2.1264" rx="1.0632"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

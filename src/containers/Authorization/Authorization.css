@@ -1,0 +1,192 @@
+.Authorization {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 80px auto;
+}
+
+a {
+  text-decoration: none;
+  color: #29a0ef;
+}
+
+/* visited link */
+a:visited {
+  color: #29a0ef;
+}
+
+/* mouse over link */
+a:hover {
+  color: #d0021b;
+}
+
+/* selected link */
+a:active {
+  color: #29a0ef;
+}
+
+/*button*/
+
+button {
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 50px;
+  border-radius: 0;
+  border: 1px solid #d0021b;
+  background-color: #d0021b;
+  color: white;
+  font: inherit;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.Google {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #474747;
+  background-color: white;
+  border: 1px solid #eee;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 50px;
+  border-radius: 0;
+  font: inherit;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.Facebook {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #474747;
+  background-color: white;
+  border: 1px solid #eee;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 50px;
+  border-radius: 0;
+  font: inherit;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+/*Logo*/
+
+.Logo {
+  height: 80px;
+  grid-column: 2 / span 10;
+  grid-row: 1 / span 1;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.LogoImage {
+  width: 20px;
+}
+
+.LogoText {
+  font-weight: 100;
+  font-size: 14px;
+  color: #535353;
+  margin-left: 5px;
+}
+
+/*AuthorizationForm*/
+.AuthorizationForm {
+  grid-column: 2 / span 10;
+  grid-row: 2 / span 1;
+}
+
+.AuthorizationForm h1 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #474747;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.AuthorizationForm p {
+  padding: 0;
+  margin-top: 0;
+  font-weight: 100;
+  font-size: 14px;
+  color: #474747;
+  margin-bottom: 30px;
+}
+
+label {
+  color: #474747;
+  font: inherit;
+  margin-top: 15px;
+  margin-bottom: 3px;
+  display: block;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.Authorization ::placeholder {
+  color: #535353;
+  opacity: 0.4;
+}
+
+input[type="text"], input[type="email"], input[type="password"]  {
+  display: block;
+  width: 100%;
+  height: 20px;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #eee;
+  font-size: 12px;
+  font-family: inherit;
+  font-weight: 100;
+  outline: none;
+  border-radius: 0;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus  {
+  border-bottom: 1px solid #29a0ef;
+}
+
+
+@media (min-width: 500px) {
+  .Authorization {
+    grid-template-rows: 120px auto;
+  }
+  /*Logo*/
+  .Logo {
+    height: 120px;
+  }
+  .LogoImage {
+    width: 30px;
+  }
+  .LogoText {
+    font-weight: 100;
+    font-size: 20px;
+    color: #535353;
+    margin-left: 15px;
+  }
+  /*AuthorizationForm*/
+  .AuthorizationForm {
+    grid-column: 4 / span 6;
+  }
+  label {
+    display: block;
+    font-size: 16px;
+  }
+  input[type="text"], input[type="email"], input[type="password"] {
+    height: 40px;
+  }
+}
+
+@media (min-width: 1025px) {
+  /*AuthorizationForm*/
+  .AuthorizationForm {
+    grid-column: 5 / span 4;
+  }
+}

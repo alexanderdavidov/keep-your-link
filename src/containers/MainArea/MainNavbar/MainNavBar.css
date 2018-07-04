@@ -1,0 +1,65 @@
+.MainNavBar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 40px repeat(7, 1fr);
+  grid-template-rows: auto;
+  width: 100%;
+}
+
+.MainNavBarButtons {
+  display: flex;
+  grid-column: 1 / span 10;
+  grid-row: 1 / span 1;
+  justify-content: flex-end;
+}
+
+.Plus img, .Search img, .Notifications img, .Person img  {
+  display: block;
+  width: 20px;
+  padding: 3px;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.LogoImage {
+  width: 30px;
+}
+
+.LogoText {
+  font-weight: 100;
+  font-size: 18px;
+  color: #535353;
+  margin-left: 12px;
+}
+
+.LogoKeepYourLink {
+  grid-column: 1 / span 10;
+  grid-row: 1 / span 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SearchInput {
+  display: flex;
+  align-items: center;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+  justify-content: flex-start;
+}
+
+.SearchInput input {
+  padding: 5px;
+  height: 20px;
+  width: 250px;
+  background-color: #eee;
+  border-radius: 0 5px 5px 0;
+  border: 0;
+}
+
+.SearchInput img {
+  padding: 5px 5px 5px 12px;
+  height: 20px;
+  margin: 0;
+  background-color: #eee;
+  border-radius: 5px 0 0 5px;
+}

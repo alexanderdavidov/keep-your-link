@@ -6,7 +6,7 @@ import classes from './WebLinkBlock.css';
 
 // images
 import TestImage from '../../../../../assets/images/testImage.jpeg';
-import TestImageTwo from '../../../../../assets/images/imageTestTwo.jpeg';
+// import TestImageTwo from '../../../../../assets/images/imageTestTwo.jpeg';
 
 class WebLinkBlock extends Component {
   render() {

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9703ba05-d46b-4ad0-b4c2-cc95172db155" name="Default" comment="" />
+    <list default="true" id="9703ba05-d46b-4ad0-b4c2-cc95172db155" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/MainArea.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/MainArea.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/WebLinkBlock/WebLinkBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/WebLinkBlock/WebLinkBlock.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -17,20 +21,71 @@
       <file leaf-file-name="WebLinkBlock.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/WebLinkBlock/WebLinkBlock.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="72" lean-forward="true" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
-              <folding>
-                <element signature="e#108#176#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="210">
+              <caret line="14" column="47" lean-forward="true" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WebLinkBlock.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainArea.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/containers/MainArea/MainArea.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LeftBar.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/containers/MainArea/LeftBar/LeftBar.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LeftBar.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/containers/MainArea/LeftBar/LeftBar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainArea.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/containers/MainArea/MainArea.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PrivateListItem.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/ListItem/PrivateListItem/PrivateListItem.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PrivateLists.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/containers/MainArea/LeftBar/PrivateLists/PrivateLists.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="70" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebLinkBlock.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/WebLinkBlock/WebLinkBlock.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="344">
-              <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+              <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -73,6 +128,9 @@
       <replace>ListItem</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -96,9 +154,7 @@
         <option value="$PROJECT_DIR$/src/components/PrivateListItem/PrivateListItem.js" />
         <option value="$PROJECT_DIR$/src/components/PublicListItem/PublicListItem.css" />
         <option value="$PROJECT_DIR$/src/components/PrivateListItem/PrivateListItem.css" />
-        <option value="$PROJECT_DIR$/src/containers/MainArea/LeftBar/PrivateLists/PrivateLists.js" />
         <option value="$PROJECT_DIR$/src/containers/MainArea/MainArea.js" />
-        <option value="$PROJECT_DIR$/src/containers/MainArea/MainArea.css" />
         <option value="$PROJECT_DIR$/src/components/WelcomePage/Navbar/NavBar.css" />
         <option value="$PROJECT_DIR$/src/containers/SignUp/SignUp.css" />
         <option value="$PROJECT_DIR$/src/containers/Authoristation/Authorisation.css" />
@@ -124,9 +180,11 @@
         <option value="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/MainNavBar.css" />
         <option value="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/WebLinkList.css" />
         <option value="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/SuperWebLinkList.js" />
-        <option value="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/WebLinkBlock/WebLinkBlock.js" />
         <option value="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/SuperWebLinkList.css" />
         <option value="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/WebLinkBlock/WebLinkBlock.css" />
+        <option value="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/WebLinkBlock/WebLinkBlock.js" />
+        <option value="$PROJECT_DIR$/src/containers/MainArea/MainArea.css" />
+        <option value="$PROJECT_DIR$/src/containers/MainArea/LeftBar/PrivateLists/PrivateLists.js" />
       </list>
     </option>
   </component>
@@ -150,6 +208,7 @@
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -189,13 +248,6 @@
               <item name="keep-your-link" type="b2602c69:ProjectViewProjectNode" />
               <item name="keep-your-link" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="ListItem" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="keep-your-link" type="b2602c69:ProjectViewProjectNode" />
-              <item name="keep-your-link" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="containers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -211,7 +263,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="containers" type="462c0819:PsiDirectoryNode" />
               <item name="MainArea" type="462c0819:PsiDirectoryNode" />
-              <item name="MainNavbar" type="462c0819:PsiDirectoryNode" />
+              <item name="LeftBar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="keep-your-link" type="b2602c69:ProjectViewProjectNode" />
@@ -219,26 +271,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="containers" type="462c0819:PsiDirectoryNode" />
               <item name="MainArea" type="462c0819:PsiDirectoryNode" />
-              <item name="WebLinkList" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="keep-your-link" type="b2602c69:ProjectViewProjectNode" />
-              <item name="keep-your-link" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-              <item name="MainArea" type="462c0819:PsiDirectoryNode" />
-              <item name="WebLinkList" type="462c0819:PsiDirectoryNode" />
-              <item name="SuperWebLinkList" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="keep-your-link" type="b2602c69:ProjectViewProjectNode" />
-              <item name="keep-your-link" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-              <item name="MainArea" type="462c0819:PsiDirectoryNode" />
-              <item name="WebLinkList" type="462c0819:PsiDirectoryNode" />
-              <item name="SuperWebLinkList" type="462c0819:PsiDirectoryNode" />
-              <item name="WebLinkBlock" type="462c0819:PsiDirectoryNode" />
+              <item name="LeftBar" type="462c0819:PsiDirectoryNode" />
+              <item name="PrivateLists" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -285,34 +319,36 @@
       <updated>1530370303639</updated>
       <workItem from="1530370307837" duration="35682000" />
       <workItem from="1530524955647" duration="32880000" />
+      <workItem from="1530686466474" duration="396000" />
+      <workItem from="1530732684222" duration="411000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68562000" />
+    <option name="totallyTimeSpent" value="69369000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32932693" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32932693" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32932693" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32932693" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,13 +386,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/WelcomePage/WelcomePageContent/WelcomePageContent.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -366,55 +396,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/images/Google.svg" />
-    <entry file="file://$PROJECT_DIR$/src/containers/NewPassword/NewPassword.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="152" column="1" lean-forward="true" selection-start-line="152" selection-start-column="1" selection-end-line="152" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/NewPassword/NewPassword.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/AfterResetPassword/AfterResetPassword.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/AfterResetPassword/AfterResetPassword.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Authorization/LogIn/LogIn.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="179" column="1" lean-forward="true" selection-start-line="179" selection-start-column="1" selection-end-line="179" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Authorization/ResetPassword/ResetPassword.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="104" column="32" lean-forward="true" selection-start-line="104" selection-start-column="32" selection-end-line="104" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/NewPassword/NewPassword.css" />
+    <entry file="file://$PROJECT_DIR$/src/containers/NewPassword/NewPassword.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/AfterResetPassword/AfterResetPassword.css" />
+    <entry file="file://$PROJECT_DIR$/src/components/AfterResetPassword/AfterResetPassword.js" />
+    <entry file="file://$PROJECT_DIR$/src/containers/Authorization/LogIn/LogIn.css" />
+    <entry file="file://$PROJECT_DIR$/src/containers/Authorization/ResetPassword/ResetPassword.css" />
     <entry file="file://$PROJECT_DIR$/src/components/WelcomePage/WelcomePage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="423">
           <caret line="30" column="12" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
-          <folding>
-            <element signature="e#153#190#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -435,13 +426,7 @@
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Authorization/SignUp/SignUp.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="128" column="17" lean-forward="true" selection-end-line="191" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/Authorization/SignUp/SignUp.css" />
     <entry file="file://$PROJECT_DIR$/src/containers/Authorization/ResetPassword/ResetPassword.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -453,9 +438,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="18" column="51" lean-forward="true" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
-          <folding>
-            <element signature="e#102#175#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -487,41 +469,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/MainArea/LeftBar/PrivateLists/PrivateLists.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/MainArea/LeftBar/LeftBar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/DefaultListName/DefaultListName.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/PublicListItem/PublicListItem.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/PrivateListItem/PrivateListItem.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/DefaultListName/DefaultListName.css" />
+    <entry file="file://$PROJECT_DIR$/src/components/PublicListItem/PublicListItem.css" />
+    <entry file="file://$PROJECT_DIR$/src/components/PrivateListItem/PrivateListItem.css" />
     <entry file="file://$PROJECT_DIR$/src/components/ListItem/PublicListItem/PublicListItem.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -533,20 +483,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/MainArea/LeftBar/LeftBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ListItem/PrivateListItem/PrivateListItem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
@@ -606,23 +542,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/MainArea/MainArea.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-          <folding>
-            <element signature="e#107#156#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/MainArea/MainArea.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/MainArea/WebLinkList/WebLinkList.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -648,9 +567,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
           <caret line="19" column="44" lean-forward="true" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-          <folding>
-            <element signature="e#105#156#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -658,6 +574,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/WebLinkBlock/WebLinkBlock.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -670,18 +593,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/WebLinkBlock/WebLinkBlock.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="72" lean-forward="true" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
-          <folding>
-            <element signature="e#108#176#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="210">
+          <caret line="14" column="47" lean-forward="true" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/WebLinkBlock/WebLinkBlock.css">
+    <entry file="file://$PROJECT_DIR$/src/components/ListItem/PrivateListItem/PrivateListItem.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+        <state relative-caret-position="165">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/MainArea/MainArea.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/MainArea/MainArea.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/MainArea/LeftBar/LeftBar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/MainArea/LeftBar/LeftBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/MainArea/LeftBar/PrivateLists/PrivateLists.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="70" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="70" />
         </state>
       </provider>
     </entry>

@@ -12,6 +12,8 @@
 .LeftBar {
   grid-column: 2 / span 2;
   grid-row: 3 / span 1;
+  height: 90vh;
+  overflow: scroll;
 }
 
 .WebLinkList {

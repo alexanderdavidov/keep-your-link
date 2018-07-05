@@ -4,18 +4,25 @@ import React, { Component } from 'react';
 import classes from './DefaultLists.css';
 
 // component
-import DefaultListName from '../../../../components/ListItem/DefaultListItem/DefaultListItem';
+// import DefaultListName from '../../../../components/ListItem/DefaultListItem/DefaultListItem';
+import ListItem from '../../../../components/ListItem/ListItem';
 
 class DefaultLists extends Component {
   render() {
     return (
       <div className={classes.DefaultLists}>
         <h1>DEFAULT LISTS</h1>
-        <DefaultListName type="active">Incoming weblinks</DefaultListName>
-        <DefaultListName type="simple">Weblinks from users</DefaultListName>
-        <DefaultListName type="simple">Favorites</DefaultListName>
-        <DefaultListName type="simple">Archive</DefaultListName>
-        <DefaultListName type="simple">Trash</DefaultListName>
+        <ListItem listItemType='default' type="active" >Incoming weblinks</ListItem>
+        <ListItem listItemType='default' type="simple" >Weblinks from users</ListItem>
+        <ListItem listItemType='default' type="simple" >Favorites</ListItem>
+        <ListItem listItemType='default' type="simple" >Archive</ListItem>
+        <ListItem listItemType='default' type="simple" >Trash</ListItem>
+
+        {/*<DefaultListName type="active">Incoming weblinks</DefaultListName>*/}
+        {/*<DefaultListName type="simple">Weblinks from users</DefaultListName>*/}
+        {/*<DefaultListName type="simple">Favorites</DefaultListName>*/}
+        {/*<DefaultListName type="simple">Archive</DefaultListName>*/}
+        {/*<DefaultListName type="simple">Trash</DefaultListName>*/}
       </div>
     );
   }

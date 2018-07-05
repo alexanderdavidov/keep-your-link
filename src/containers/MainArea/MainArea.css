@@ -1,6 +1,6 @@
 .MainArea {
   display: grid;
-  grid-template-columns: 40px repeat(2, 1fr) 40px repeat(7, 1fr) 40px;
+  grid-template-columns: 20px repeat(2, 1fr) 40px repeat(7, 1fr) 40px;
   grid-template-rows: 20px 80px auto;
 }
 

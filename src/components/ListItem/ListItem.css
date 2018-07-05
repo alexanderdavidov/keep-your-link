@@ -51,11 +51,11 @@
 }
 
 .CircleActive {
-  background-color: white;
+  background-color: #9B9B9B;
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  border: 1px solid #535353;
+  border: 1px solid #9B9B9B;
   display: flex;
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;

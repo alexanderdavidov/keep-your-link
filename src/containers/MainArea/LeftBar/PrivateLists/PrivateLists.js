@@ -4,7 +4,8 @@ import React, { Component } from 'react';
 import classes from './PrivateLists.css';
 
 // components
-import PrivateListItem from '../../../../components/ListItem/PrivateListItem/PrivateListItem';
+// import PrivateListItem from '../../../../components/ListItem/PrivateListItem/PrivateListItem';
+import ListItem from '../../../../components/ListItem/ListItem';
 
 // image
 import Plus from '../../../../assets/images/listsImages/Plus.svg';
@@ -15,9 +16,13 @@ class PrivateLists extends Component {
       <div className={classes.PrivateLists}>
         <h1>PRIVATE LISTS</h1>
         <img style={{height: '14px', cursor: 'pointer'}} src={Plus} alt="Plus"/>
-        <PrivateListItem type="simple">Films</PrivateListItem>
-        <PrivateListItem type="simple">Learning English</PrivateListItem>
-        <PrivateListItem type="simple">Awesome Gifts</PrivateListItem>
+        <ListItem listItemType='private' type="simple" >Films</ListItem>
+        <ListItem listItemType='private' type="simple" >Learning English</ListItem>
+        <ListItem listItemType='private' type="active" >Awesome Gifts</ListItem>
+
+        {/*<PrivateListItem type="simple">Films</PrivateListItem>*/}
+        {/*<PrivateListItem type="simple">Learning English</PrivateListItem>*/}
+        {/*<PrivateListItem type="simple">Awesome Gifts</PrivateListItem>*/}
       </div>
     );
   }

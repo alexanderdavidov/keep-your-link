@@ -13,14 +13,14 @@ class PublicLists extends Component {
   render() {
     return (
       <div className={classes.PublicLists}>
-        <h1>PUBLIC LISTS</h1>
+        <h1 style={{marginLeft: '20px'}}>PUBLIC LISTS</h1>
         <img style={{height: '14px', cursor: 'pointer'}} src={Plus} alt="Plus"/>
         <PublicListItem isNew type="active">New List One</PublicListItem>
         <PublicListItem isNew type="simple">New List Two</PublicListItem>
         <PublicListItem isNew type="simple">New List Three</PublicListItem>
         <PublicListItem type="simple">University</PublicListItem>
         <PublicListItem type="simple">Work Project</PublicListItem>
-        <PublicListItem type="simple">Party</PublicListItem>
+        <PublicListItem type="active">Party</PublicListItem>
       </div>
     );
   }

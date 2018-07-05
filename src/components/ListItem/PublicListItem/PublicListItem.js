@@ -18,25 +18,32 @@ const publicListItem = (props) => {
   const ok = <img className={classes.ListButton} src={Ok} alt="Ok" />;
   const deleteRed = <img className={classes.ListButton} src={DeleteRed} alt="DeleteRed" />;
 
-  let style;
-  // let circle;
+  let listItemStyles = [classes.ListItemDisplayInlineBlock];
+
+   let circle;
   if (props.type === 'active') {
-    style = {fontWeight: '500'}
+    listItemStyles.push(classes.ListItemActive);
   }
   else if (props.isNew) {
-    style = {color: '#5C5C5C', fontWeight: '200'};
+    listItemStyles.push(classes.ListItemNew);
   }
 
 
   let buttons = [editImage, peopleGroup, deleteImage];
   if (props.isNew) {
-    buttons = [ok, deleteRed]
+    buttons = [ok, deleteRed];
+    circle = <div className={classes.CircleNew}></div>;
+  } else if (props.type === 'active'){
+    circle = <div className={classes.CircleActive}></div>;
   }
 
   return (
-    <div style={style} className={classes.ListItem}>
-      <div className={classes.ListItemDisplayInlineBlock}>{props.children}</div>
-      {buttons}
+    <div className={classes.ListItem}>
+      {circle}
+      <div className={classes.ListItemControls}>
+        <div className={listItemStyles.join(' ')}>{props.children}</div>
+        {buttons}
+      </div>
     </div>
   );
 };

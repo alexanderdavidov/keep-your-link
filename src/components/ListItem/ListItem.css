@@ -4,8 +4,20 @@
   color: #535353;
   margin-top: 15px;
   margin-bottom: 15px;
+  display: grid;
+  grid-template-columns: 10px auto;
+  grid-template-rows: auto;
+  align-items: center;
 }
 
+.ListItemActive {
+  font-weight: 400;
+}
+
+.ListItemNew {
+  color: #5c5c5c;
+  font-weight: 200;
+}
 
 .ListItem img {
   display: none;
@@ -25,9 +37,32 @@
   display: inline-block;
   margin-right: 25px;
   cursor: pointer;
-  /*color: #7c7c7c;*/
 }
 
-.Circle {
-  display: none;
+.CircleNew {
+  background-color: #d0021b;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  border: 1px solid #d0021b;
+  display: flex;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.CircleActive {
+  background-color: white;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  border: 1px solid #535353;
+  display: flex;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.ListItemControls {
+  margin-left: 10px;
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
 }

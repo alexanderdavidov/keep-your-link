@@ -1,13 +1,13 @@
 .WebLinkBlock {
   width: 100%;
-  padding-top: 90%;
+  padding-top: 95%;
   background-color: white;
   box-shadow: 1px 1px 8px rgba(83, 83, 83, 0.5);
   border-radius: 5px;
   position: relative;
 }
 
-.WebLinkBlock img {
+.WebLinkBlock .WebLinkPicture {
   object-fit: cover;
   border-radius: 5px 5px 0 0;
   top: 0;
@@ -22,8 +22,8 @@
   font-family: "Playfair Display", sans-serif;
   font-weight: 400;
   color: #535353;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 22px;
   padding: 0;
   margin: 0;
   top: 52%;
@@ -33,3 +33,46 @@
   width: 90%;
 }
 
+.BottomLine {
+  position: absolute;
+  bottom: 5%;
+  right: 3%;
+  width: 94%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Buttons {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+}
+
+.Button {
+  margin: 0 2px;
+  cursor: pointer;
+  display: block;
+  width: 18px;
+}
+
+.FaviconAndDescription {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Favicon {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 0 3px 0 0;
+}
+
+.Description {
+  font-size: 6px;
+  font-weight: 300;
+  color: #535353;
+}

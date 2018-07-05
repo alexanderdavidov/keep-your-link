@@ -11,7 +11,7 @@ class SuperWebLinkList extends Component {
     return (
       <div className={classes.SuperWebLinkList}>
         <div className={classes.Block}>
-          <WebLinkBlock />
+          <WebLinkBlock hover />
         </div>
       </div>
     );

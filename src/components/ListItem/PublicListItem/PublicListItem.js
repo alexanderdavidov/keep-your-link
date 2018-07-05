@@ -19,11 +19,12 @@ const publicListItem = (props) => {
   const deleteRed = <img className={classes.ListButton} src={DeleteRed} alt="DeleteRed" />;
 
   let style;
+  // let circle;
   if (props.type === 'active') {
-    style = {fontWeight: '400'}
+    style = {fontWeight: '500'}
   }
   else if (props.isNew) {
-    style = {color: '#d1d1d1'};
+    style = {color: '#5C5C5C', fontWeight: '200'};
   }
 
 

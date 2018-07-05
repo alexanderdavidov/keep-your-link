@@ -50,7 +50,7 @@
 .SearchInput input {
   padding: 5px;
   height: 20px;
-  width: 250px;
+  width: 50%;
   background-color: #eee;
   border-radius: 0 5px 5px 0;
   border: 0;

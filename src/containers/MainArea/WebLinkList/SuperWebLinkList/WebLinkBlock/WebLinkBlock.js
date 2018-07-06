@@ -4,10 +4,6 @@ import React, { Component } from 'react';
 import classes from './WebLinkBlock.css';
 
 
-// images
-import TestImage from '../../../../../assets/images/testImage.jpeg';
-import Favicon from '../../../../../assets/testImages/faviconMedium.ico';
-
 // buttons
 import ButtonArchive from '../../../../../assets/images/weblinkBlockButtons/ButtonArchive.svg';
 import ButtonEdit from '../../../../../assets/images/weblinkBlockButtons/ButtonEdit.svg';
@@ -19,10 +15,8 @@ import ButtonUp from '../../../../../assets/images/weblinkBlockButtons/ButtonUp.
 
 class WebLinkBlock extends Component {
   render() {
-    let lowBar;
 
-    if (this.props.hover) {
-      lowBar = <div className={classes.Buttons}>
+    let lowBar = <div className={classes.Buttons}>
         <img className={classes.Button} src={ButtonUp} alt="UpButton" />
         <img className={classes.Button} src={ButtonEdit} alt="EditButton" />
         <img className={classes.Button} src={ButtonShare} alt="ShareButton" />
@@ -31,22 +25,20 @@ class WebLinkBlock extends Component {
         <img className={classes.Button} src={ButtonTag} alt="TagButton" />
         <img className={classes.Button} src={ButtonFavorites} alt="FavoritesButton" />
       </div>;
-    }
-    else {
-      // lowBar =
-    }
 
     return (
       <div className={classes.WebLinkBlock}>
-        <img className={classes.WebLinkPicture} src={TestImage} alt="TestImage" />
-        <h1>Reversed Aging, Pig Organs, and the Future of Humankind</h1>
-          <div className={classes.BottomLine}>
-            <div className={classes.FaviconAndDescription}>
-              <img className={classes.Favicon} src={Favicon} alt="Favicon"/>
-              <p className={classes.Description}>medium.com</p>
-            </div>
-            {lowBar}
-          </div>
+        <img className={classes.WebLinkPicture} src={this.props.image} alt="TestImage" />
+        <img className={classes.Favicon} src={this.props.favicon} alt="Favicon" />
+        <div className={classes.TitleWrapper}>
+          <h1>{this.props.title}</h1>
+        </div>
+        <div className={classes.BottomLine}>
+          {lowBar}
+        </div>
+        <div className={classes.FaviconAndDescription}>
+          <div className={classes.Description}>{this.props.domain}</div>
+        </div>
       </div>
     );
   }

@@ -15,6 +15,9 @@ class LeftBar extends Component {
         <DefaultLists />
         <PrivateLists />
         <PublicLists />
+        <DefaultLists />
+        <PrivateLists />
+        <PublicLists />
       </div>
     );
   }

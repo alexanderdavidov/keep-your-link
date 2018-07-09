@@ -1,6 +1,6 @@
 .ListItem {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   color: #535353;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -20,11 +20,16 @@
 }
 
 .ListItem img {
-  display: none;
+  display: inline-block;
+  visibility: hidden;
 }
 
 .ListItem:hover img {
   display: inline-block;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.1s linear;
+  transition-delay: 0.1s;
 }
 
 .ListButton {

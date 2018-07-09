@@ -8,10 +8,9 @@
         <g id="Work-Place-Condition-1-|-Start-Page" transform="translate(-576.000000, -508.000000)">
             <g id="ButtonTag" transform="translate(576.000000, 508.000000)">
                 <rect id="Rectangle-13" fill="transparent" x="0" y="0" width="14" height="14"></rect>
-                <g id="FigureTag" transform="translate(2.000000, 1.000000)" stroke="#535353" stroke-width="0.9">
-                    <polygon id="Path-6" points="3.90532544 12 8.85207101 6.85714286 8.46153846 3.42857143 4.94674556 3.2967033 0.130177515 8.04395604"></polygon>
-                    <ellipse id="Oval-5" fill="#FFFFFF" cx="6.70414201" cy="5.07692308" rx="1" ry="1"></ellipse>
-                    <path d="M6.86841364,4.88288854 C6.73720297,1.67158556 7.40927022,0.32967033 8.88461538,0.857142857 C10.3599606,1.38461538 10.7830375,2.81318681 10.1538462,5.14285714" id="Path-7"></path>
+                <g id="FigureTag" transform="translate(2.000000, 1.000000)" stroke="#ffffff" stroke-width="0.9">
+                    <polygon id="Path-6" points="4 11.5 8.46153846 7 8.46153846 3.42857143 5 3.42857143 0.5 8"></polygon>
+                    <path d="M6.5,5.14285714 C6.61439842,1.75824176 7.40927022,0.32967033 8.88461538,0.857142857 C10.3599606,1.38461538 10.7830375,2.81318681 10.1538462,5.14285714" id="Path-7"></path>
                 </g>
             </g>
         </g>

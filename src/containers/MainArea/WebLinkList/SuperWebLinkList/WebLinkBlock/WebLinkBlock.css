@@ -1,10 +1,11 @@
 .WebLinkBlock {
   width: 100%;
-  padding-top: 90%;
+  padding-top: 100%;
   background-color: white;
   box-shadow: 1px 1px 8px rgba(83, 83, 83, 0.5);
   border-radius: 5px;
   position: relative;
+  cursor: pointer;
 }
 
 .WebLinkBlock .WebLinkPicture {
@@ -16,7 +17,22 @@
   display: block;
   width: 100%;
   height: 50%;
+  opacity: .8;
+  z-index: 100;
 }
+
+.WebLinkBlock:hover .WebLinkPicture, .WebLinkBlock:hover .Favicon {
+  filter: blur(4px) grayscale(50%) brightness(0.5);
+  transition-property: all;
+  transition-duration: 0.1s;
+}
+
+.WebLinkBlock:hover .Domain {
+  color: #D0021B;
+  transition-property: color;
+  transition-duration: 0.1s;
+}
+
 
 .TitleWrapper {
   display: flex;
@@ -33,34 +49,71 @@
   color: #535353;
   font-size: 20px;
   padding: 0;
-  margin: 0 0 0 15px;
+  margin: 0 0 0 5%;
   width: 90%;
 }
 
 .BottomLine {
+  z-index: 300;
   position: absolute;
-  right: 3%;
-  width: 94%;
-  height: 24px;
-  display: flex;
+  top: 38%;
+  left: 0;
+  width: 100%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.WebLinkBlock:hover .BottomLine {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.1s linear;
+}
+
+.Description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  text-align: center;
+  opacity: 0;
+  width: 80%;
+  height: 20%;
+  top : 15%;
+  left: 10%;
+  position: absolute;
+  z-index: 300;
+}
+
+.Description h3 {
+  font-size: 16px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  color: white;
+}
+
+
+.WebLinkBlock:hover .Description {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.1s linear;
 }
 
 .Buttons {
-  display: none;
-  justify-content: flex-end;
-  width: 100%;
-  height: 100%;
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
 }
 
-
-
 .Button {
-  margin: 0 3px;
+  margin: 1px 0;
   cursor: pointer;
   display: block;
-  width: 22px;
+  width: 23px;
+  height: 23px;
 }
 
 
@@ -75,18 +128,17 @@
   background-color: white;
   border-radius: 25%;
   box-sizing: content-box;
+  z-index: 200;
 }
 
-.FaviconAndDescription {
-  background-color: #f4f4f4;
+.DomainWrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   position: absolute;
-  width: 100%;
+  width: 90%;
   height: 10%;
-  /*top: 85%;*/
-  bottom: 0;
+  top: 88%;
   line-height: 16px;
   padding-top: 6px;
   padding-bottom: 6px;
@@ -94,12 +146,80 @@
   text-align: center;
   font-weight: 500;
   border-radius: 0 0 5px 5px;
+  margin-left: 15px;
 }
 
-.Description {
-  font-family: "Playfair Display", sans-serif;
-  font-weight: 500;
-  letter-spacing: 2px;
-  color: #242424;
+.Domain {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #29a0ef;
   font-size: 16px;
+}
+
+/* TRASH  */
+
+.TrashDescription {
+  width: 100%;
+  height: 50%;
+  top : 0;
+  left: 0;
+  position: absolute;
+  z-index: 300;
+  font-family: 'Oswald', sans-serif;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.TrashDescriptionTwo {
+  align-items: flex-start;
+  display:  block;
+}
+
+.ListName {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  margin: 0 0 0 5%;
+  padding: 0;
+  line-height: 100%;
+  letter-spacing: 2px;
+  width: 100%;
+}
+
+.DaysQuantity {
+  font-size: 60px;
+  font-weight: 800;
+  color: white;
+  margin: 0 0 0 5%;
+  padding: 0;
+  line-height: 100%;
+  letter-spacing: 2px;
+  width: 100%;
+}
+
+.BeforeDeleted {
+  font-size: 16px;
+  font-weight: 200;
+  color: white;
+  margin: 2% 0 0 5%;
+  padding: 0;
+  line-height: 100%;
+  letter-spacing: 2px;
+  width: 100%;
+}
+
+.WebLinkBlock .WebLinkPictureTrash {
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 50%;
+  opacity: .8;
+  z-index: 100;
+  filter: blur(4px) grayscale(50%) brightness(0.5);
 }

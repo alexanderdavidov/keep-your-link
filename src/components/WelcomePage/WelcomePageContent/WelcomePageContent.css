@@ -37,7 +37,7 @@ a:active {
   padding: 30px;
   font-size: 20px;
   color: white;
-  background-image: linear-gradient(to right top, #d0021b, #de1171, #c254ba, #8481e6, #29a0ef);
+  background: linear-gradient(to right top, #d0021b, #de1171, #c254ba, #8481e6, #29a0ef);
 }
 
 /*second text*/

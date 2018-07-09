@@ -1,3 +1,28 @@
 .LeftBar {
+  position: fixed;
+  top: 102px;
+  left: 20px;
+  height: 85vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  width: 20%;
+}
 
+.LeftBar:hover {
+  overflow-y: auto;
+}
+
+.LeftBar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.LeftBar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 50px rgba(120,120,120,0.1);
+  border-radius: 40px;
+}
+
+.LeftBar::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  border-radius: 4px;
 }

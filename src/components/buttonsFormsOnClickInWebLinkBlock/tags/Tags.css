@@ -76,6 +76,20 @@
 .OldTags .ListHeader {
   color: #ffffff;
   font-size: 10px;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.OldTags .List {
+  width: 100%;
+  height: 32px;
+  overflow: scroll;
+  border: 1px solid #eeeeee;
+}
+
+.TagInList {
+  font-size: 10px;
   padding: 0;
   margin: 0;
 }

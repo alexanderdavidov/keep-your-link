@@ -17,7 +17,12 @@ const tags = () => {
 
       <div className={classes.OldTags}>
         <div className={classes.ListHeader}>Or choosing from existing</div>
-        <div className={classes.List}></div>
+        <div className={classes.List}>
+          <div className={classes.TagInList}>Some tag</div>
+          <div className={classes.TagInList}>Some tag</div>
+          <div className={classes.TagInList}>Some tag</div>
+          <div className={classes.TagInList}>Some tag</div>
+        </div>
         <div></div>
       </div>
 

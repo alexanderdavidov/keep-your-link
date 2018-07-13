@@ -25,11 +25,12 @@ class SuperWebLinkList extends Component {
       <div className={classes.SuperWebLinkList}>
         <div style={{gridColumn: '1 / span 1', gridRow: '2 / span 1'}}>
           <WebLinkBlockTrash
+            listType="private"
             title='Reversed Aging, Pig Organs, and the Future of Humankind'
             listName='Films'
             daysQuantity='5 days'
             domain='medium.com'
-            image={TestImage1}/>
+            image={TestImage1} />
         </div>
         <div style={{gridColumn: '3 / span 1', gridRow: '2 / span 1'}}>
           <WebLinkBlock
@@ -37,7 +38,7 @@ class SuperWebLinkList extends Component {
             description='A technique to avoid future regret'
             domain='medium.com'
             favicon={Favicon2}
-            image={TestImage2}/>
+            image={TestImage2} />
         </div>
         <div style={{gridColumn: '5 / span 1', gridRow: '2 / span 1'}}>
           <WebLinkBlock
@@ -45,7 +46,7 @@ class SuperWebLinkList extends Component {
             description='Вместе с CD передадут ещё и письмо от Трампа.'
             domain='tjournal.ru'
             favicon={Favicon2}
-            image={TestImage3}/>
+            image={TestImage3} />
         </div>
 
         <div style={{gridColumn: '1 / span 1', gridRow: '4 / span 1'}}>
@@ -54,7 +55,7 @@ class SuperWebLinkList extends Component {
             description='A technique to avoid future regret'
             domain='medium.com'
             favicon={Favicon1}
-            image={TestImage1}/>
+            image={TestImage1} />
         </div>
         <div style={{gridColumn: '3 / span 1', gridRow: '4 / span 1'}}>
           <WebLinkBlock
@@ -62,7 +63,7 @@ class SuperWebLinkList extends Component {
             description='Predictions from the most influential geneticist of our time'
             domain='medium.com'
             favicon={Favicon2}
-            image={TestImage2}/>
+            image={TestImage2} />
         </div>
         <div style={{gridColumn: '5 / span 1', gridRow: '4 / span 1'}}>
           <WebLinkBlock
@@ -70,7 +71,7 @@ class SuperWebLinkList extends Component {
             description='Вместе с CD передадут ещё и письмо от Трампа.'
             domain='tjournal.ru'
             favicon={Favicon3}
-            image={TestImage3}/>
+            image={TestImage3} />
         </div>
 
         <div style={{gridColumn: '1 / span 1', gridRow: '6 / span 1'}}>
@@ -79,7 +80,7 @@ class SuperWebLinkList extends Component {
             description='Predictions from the most influential geneticist of our time'
             domain='medium.com'
             favicon={Favicon1}
-            image={TestImage1}/>
+            image={TestImage1} />
         </div>
         <div style={{gridColumn: '7 / span 1', gridRow: '2 / span 1'}}>
           <WebLinkBlock
@@ -87,7 +88,7 @@ class SuperWebLinkList extends Component {
             description='Predictions from the most influential geneticist of our time'
             domain='medium.com'
             favicon={Favicon2}
-            image={TestImage2}/>
+            image={TestImage2} />
         </div>
         <div style={{gridColumn: '7 / span 1', gridRow: '4 / span 1'}}>
           <WebLinkBlock
@@ -95,7 +96,7 @@ class SuperWebLinkList extends Component {
             description='Вместе с CD передадут ещё и письмо от Трампа.'
             domain='tjournal.ru'
             favicon={Favicon3}
-            image={TestImage3}/>
+            image={TestImage3} />
         </div>
 
       </div>

@@ -5,3 +5,27 @@
   font-size: 30px;
   color: #535353;
 }
+
+.HighButton {
+  font-size: 14px;
+  color: #535353;
+  font-weight: 300;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 60px;
+  padding: 10px;
+  border: 1px solid #eee;
+}
+
+.HighButton:hover {
+  border: 1px solid #535353;
+  transition-property: color, border;
+  transition-duration: 0.5s;
+}
+
+.WrapperHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

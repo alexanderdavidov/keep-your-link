@@ -22,9 +22,10 @@
 }
 
 .WebLinkBlock:hover .WebLinkPicture, .WebLinkBlock:hover .Favicon {
-  filter: blur(4px) grayscale(50%) brightness(0.5);
+  filter: blur(4px) grayscale(70%) brightness(0.7);
   transition-property: all;
-  transition-duration: 0.1s;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
 }
 
 .WebLinkBlock:hover .Domain {
@@ -32,7 +33,6 @@
   transition-property: color;
   transition-duration: 0.1s;
 }
-
 
 .TitleWrapper {
   display: flex;
@@ -53,6 +53,12 @@
   width: 90%;
 }
 
+.WebLinkBlock:hover h1 {
+  color: #000000;
+  transition-property: color;
+  transition-duration: 0.1s;
+}
+
 .BottomLine {
   z-index: 300;
   position: absolute;
@@ -64,12 +70,14 @@
   display: flex;
   visibility: hidden;
   opacity: 0;
+  transform: translateY(120%);
 }
 
 .WebLinkBlock:hover .BottomLine {
+  transform: translateY(0);
   visibility: visible;
   opacity: 1;
-  transition: visibility 0s, opacity 0.1s linear;
+  transition: visibility 0s, opacity 0.3s linear, transform 0.5s ease;
 }
 
 .Description {
@@ -84,10 +92,12 @@
   top : 15%;
   left: 10%;
   position: absolute;
-  z-index: 300;
+  z-index: 400;
+  transform: translateY(-120%);
 }
 
 .Description h3 {
+  letter-spacing: 1px;
   font-size: 16px;
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
@@ -96,9 +106,10 @@
 
 
 .WebLinkBlock:hover .Description {
+  transform: translateY(0);
   visibility: visible;
   opacity: 1;
-  transition: visibility 0s, opacity 0.1s linear;
+  transition: visibility 0s, opacity 0.5s linear, transform 0.5s ease-in-out;
 }
 
 .Buttons {
@@ -166,48 +177,59 @@
   left: 0;
   position: absolute;
   z-index: 300;
-  font-family: 'Oswald', sans-serif;
   align-items: center;
   justify-content: center;
   display: flex;
 }
 
-.TrashDescriptionTwo {
+.TrashDescriptionWrapper {
   align-items: flex-start;
   display:  block;
 }
 
+.WebLinkBlock:hover .TrashDescriptionWrapper {
+  transform: translateY(-50%);
+  transition-duration: 0.7s;
+  transition-timing-function: ease-out;
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+
 .ListName {
+  text-transform: uppercase;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 600;
   color: white;
-  margin: 0 0 0 5%;
+  margin: 0 0 0 0;
   padding: 0;
-  line-height: 100%;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   width: 100%;
+  line-height: 18px;
 }
 
 .DaysQuantity {
-  font-size: 60px;
+  text-transform: uppercase;
+  font-size: 50px;
   font-weight: 800;
   color: white;
-  margin: 0 0 0 5%;
+  margin: 0 0 0 0;
   padding: 0;
-  line-height: 100%;
-  letter-spacing: 2px;
+  line-height: 50px;
+  letter-spacing: 1px;
   width: 100%;
+  font-family: 'Oswald', sans-serif;
 }
 
 .BeforeDeleted {
   font-size: 16px;
   font-weight: 200;
   color: white;
-  margin: 2% 0 0 5%;
+  margin: 2% 0 0 0;
   padding: 0;
-  line-height: 100%;
+  line-height: 16px;
   letter-spacing: 2px;
   width: 100%;
+  font-family: 'Oswald', sans-serif;
 }
 
 .WebLinkBlock .WebLinkPictureTrash {
@@ -221,5 +243,34 @@
   height: 50%;
   opacity: .8;
   z-index: 100;
-  filter: blur(4px) grayscale(50%) brightness(0.5);
+  filter: blur(4px) grayscale(60%) brightness(0.7);
+}
+
+.TrashButtons {
+  display: flex;
+  width: 25%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.TrashButtonWrapper {
+  z-index: 300;
+  position: absolute;
+  top: 38%;
+  left: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(120%);
+}
+
+
+.WebLinkBlock:hover .TrashButtonWrapper {
+  transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.3s linear, transform 0.5s ease;
 }

@@ -1,0 +1,36 @@
+.Favorites {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  cursor: default;
+}
+
+.TextWrapper {
+  width: 100%;
+}
+
+.ButtonWrapper {
+  display: flex;
+  margin: 5px 0 10px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.ButtonYes {
+  font-size: 12px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 3px 10px;
+  border: 1px solid #eeeeee;
+  opacity: 0.9;
+  color: #eeeeee;
+  border-radius: 3px;
+  width: 100px;
+}
+
+.ButtonYes:hover, .ButtonCreateTag:hover {
+  opacity: 1;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}

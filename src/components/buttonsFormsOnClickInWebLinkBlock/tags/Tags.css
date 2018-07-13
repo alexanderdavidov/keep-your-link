@@ -1,0 +1,74 @@
+.Tags {
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  cursor: default;
+}
+
+.ButtonCreateTag {
+  cursor: pointer;
+  display: inline-block;
+  padding: 3px 10px;
+  border: 1px solid #eeeeee;
+  opacity: 0.9;
+  color: #eeeeee;
+  border-radius: 3px;
+  width: 80%;
+  font-size: 10px;
+}
+
+.ButtonCreateTag:hover {
+  opacity: 1;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.ButtonWrapperTag {
+  display: flex;
+  margin: 5px 0 10px 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.InputWrapper label {
+  color: #ffffff;
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.InputWrapper input {
+  background-color: transparent;
+  border: 1px solid #eeeeee;
+  outline: none;
+  color: #ffffff;
+  font-size: 10px;
+  height: 20px;
+  border-radius: 3px;
+  opacity: 0.9;
+  width: 80%;
+}
+
+.InputWrapper input:hover {
+  opacity: 1;
+  border: 1px solid #ffffff;
+}
+
+.InputWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.InputWrapper ::placeholder {
+  font-size: 10px;
+  color: #ffffff;
+  opacity: 0.4;
+}
+
+.NewTags, .OldTags {
+  width: 50%;
+}

@@ -22,6 +22,7 @@
 .ListItem img {
   display: inline-block;
   visibility: hidden;
+  opacity: 0;
 }
 
 .ListItem:hover img {

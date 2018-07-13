@@ -72,3 +72,10 @@
 .NewTags, .OldTags {
   width: 50%;
 }
+
+.OldTags .ListHeader {
+  color: #ffffff;
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+}

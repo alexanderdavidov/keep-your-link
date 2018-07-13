@@ -16,9 +16,9 @@ const tags = () => {
       </div>
 
       <div className={classes.OldTags}>
-        <div className={classes.TextWrapper}>
-          <div>Or choosing from existing</div>
-        </div>
+        <div className={classes.ListHeader}>Or choosing from existing</div>
+        <div className={classes.List}></div>
+        <div></div>
       </div>
 
     </div>

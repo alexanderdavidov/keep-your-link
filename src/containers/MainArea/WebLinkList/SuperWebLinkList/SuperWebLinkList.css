@@ -1,5 +1,8 @@
 .SuperWebLinkList {
-  display: grid;
-  grid-template-columns: 1fr 60px 1fr 60px 1fr 60px 1fr 60px;
-  grid-template-rows: 30px auto 50px auto 50px auto;
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding-right: 30px;
+  flex-wrap: wrap;
 }
+

@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
 import classes from '../WebLinkBlock/WebLinkBlock.css';
 
-import { Animated } from "react-animated-css";
+import {Animated} from "react-animated-css";
 
 // images
 import BackButton from '../../../../../components/componentsButtons/buttonBack'
@@ -52,27 +52,32 @@ class WebLinkBlockTrash extends Component {
 
 
     return (
-      <div className={classes.WebLinkBlock}>
-        <img className={classes.WebLinkPictureTrash} src={this.props.image} alt="TestImage" />
-        <div className={classes.TrashDescription}>
-          <div className={classes.TrashDescriptionWrapper}>
-            <p className={classes.ListName} style={listNameStyle}>{this.props.listName}</p>
-            <p className={classes.DaysQuantity}>{this.props.daysQuantity}</p>
-            <p className={classes.BeforeDeleted}>before deleted</p>
+      <div className={classes.WebLinkBlockWrapper}>
+
+        <div className={classes.WebLinkBlock}>
+          <img className={classes.WebLinkPictureTrash} src={this.props.image} alt="TestImage"/>
+          <div className={classes.TrashDescription}>
+            <div className={classes.TrashDescriptionWrapper}>
+              <p className={classes.ListName} style={listNameStyle}>{this.props.listName}</p>
+              <p className={classes.DaysQuantity}>{this.props.daysQuantity}</p>
+              <p className={classes.BeforeDeleted}>before deleted</p>
+            </div>
           </div>
-        </div>
-        {this.state.buttonDescr}
-        <div className={classes.TrashButtonWrapper}>
-          <div className={classes.TrashButtons}>
-            <BackButton fill={this.state.backButtonFill} mouseEnter={this.backButtonEnter} mouseLeave={this.backButtonLeave}/>
-            <DeleteButton fill={this.state.deleteButtonFill} mouseEnter={this.deleteButtonEnter} mouseLeave={this.deleteButtonLeave}/>
+          {this.state.buttonDescr}
+          <div className={classes.TrashButtonWrapper}>
+            <div className={classes.TrashButtons}>
+              <BackButton fill={this.state.backButtonFill} mouseEnter={this.backButtonEnter}
+                          mouseLeave={this.backButtonLeave}/>
+              <DeleteButton fill={this.state.deleteButtonFill} mouseEnter={this.deleteButtonEnter}
+                            mouseLeave={this.deleteButtonLeave}/>
+            </div>
           </div>
-        </div>
-        <div className={classes.TitleWrapper}>
-          <h1>{this.props.title}</h1>
-        </div>
-        <div className={classes.DomainWrapper}>
-          <div className={classes.Domain}>{this.props.domain}</div>
+          <div className={classes.TitleWrapper}>
+            <h1>{this.props.title}</h1>
+          </div>
+          <div className={classes.DomainWrapper}>
+            <div className={classes.Domain}>{this.props.domain}</div>
+          </div>
         </div>
       </div>
     );

@@ -3,27 +3,22 @@ import React, { Component } from 'react';
 // classes
 import classes from './WebLinkList.css';
 
+// images
+import ListBurger from '../../../assets/images/mainAreaImages/ListBurger.svg';
+
 // containers
 import SuperWebLinkList from './SuperWebLinkList/SuperWebLinkList';
 
 class WebLinkList extends Component {
   state = {
-    isTrash: false,
+    // isTrash: false
   }
 
   render() {
-    let highButton = null;
-    if (this.state.isTrash) {
-      highButton = <div className={classes.HighButton}>Empty Trash</div>;
-    } else {
-      highButton = <div className={classes.HighButton}>Tag Filter</div>;
-    }
     return (
       <div className={classes.WebLinkList}>
-        <div className={classes.WrapperHeader}>
-          <h1>Incoming weblinks</h1>
-          {highButton}
-        </div>
+        <h1>Incoming weblinks</h1>
+        <img style={{cursor: 'pointer', width: '25px'}} src={ListBurger} alt="ListBurger" />
         <SuperWebLinkList />
       </div>
     );

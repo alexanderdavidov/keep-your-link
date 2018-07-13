@@ -1,13 +1,7 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
 // classes
 import classes from './WebLinkBlock.css';
-
-// forms
-import Trash from '../../../../../components/buttonsFormsOnClickInWebLinkBlock/trash/Trash';
-import Archive from '../../../../../components/buttonsFormsOnClickInWebLinkBlock/archive/Archive';
-import Favorites from '../../../../../components/buttonsFormsOnClickInWebLinkBlock/favorites/Favorites';
-import Tags from '../../../../../components/buttonsFormsOnClickInWebLinkBlock/tags/Tags';
 
 // buttons
 import ButtonArchive from '../../../../../components/componentsButtons/buttonArchive';
@@ -18,6 +12,13 @@ import ButtonTag from '../../../../../components/componentsButtons/buttonTag';
 import ButtonTrash from '../../../../../components/componentsButtons/buttonTrash';
 import ButtonUp from '../../../../../components/componentsButtons/buttonUp';
 
+// forms
+import Trash from '../../../../../components/buttonsFormsOnClickInWebLinkBlock/trash/Trash';
+import Archive from '../../../../../components/buttonsFormsOnClickInWebLinkBlock/archive/Archive';
+import Favorites from '../../../../../components/buttonsFormsOnClickInWebLinkBlock/favorites/Favorites';
+import Tags from '../../../../../components/buttonsFormsOnClickInWebLinkBlock/tags/Tags';
+
+
 class WebLinkBlock extends Component {
   state = {
     archiveButtonFill: 'transparent',
@@ -27,8 +28,6 @@ class WebLinkBlock extends Component {
     tagButtonFill: 'none',
     trashButtonFill: 'none',
     upButtonFill: 'none',
-    description: this.props.description,
-    menu: null
   }
 
   //region  buttons hover handlers
@@ -43,7 +42,7 @@ class WebLinkBlock extends Component {
   };
 
   archiveButtonClick = () => {
-    this.setState({archiveButtonFill: '#ffffff', menu: <Archive />});
+    this.setState({archiveButtonFill: '#ffffff', menu: <Archive/>});
   }
 
   // editButton
@@ -65,7 +64,7 @@ class WebLinkBlock extends Component {
   }
 
   favoriteButtonClick = () => {
-    this.setState({favoriteButtonFill: '#ffffff', menu: <Favorites />});
+    this.setState({favoriteButtonFill: '#ffffff', menu: <Favorites/>});
   }
 
   // shareButton
@@ -87,7 +86,7 @@ class WebLinkBlock extends Component {
   }
 
   tagButtonClick = () => {
-    this.setState({tagButtonFill: '#ffffff', menu: <Tags />});
+    this.setState({tagButtonFill: '#ffffff', menu: <Tags/>});
   }
 
   // trashButton
@@ -100,7 +99,7 @@ class WebLinkBlock extends Component {
   }
 
   trashButtonClick = () => {
-    this.setState({trashButtonFill: '#ffffff', menu: <Trash />});
+    this.setState({trashButtonFill: '#ffffff', menu: <Trash/>});
   }
 
   // upButton
@@ -118,59 +117,88 @@ class WebLinkBlock extends Component {
 
   //endregion
 
-  // Forms handlers
+  render() {
+    const buttons = [
+      <ButtonShare
+        fill={this.state.shareButtonFill}
+        mouseEnter={this.shareButtonEnter}
+        mouseLeave={this.shareButtonLeave}/>,
+      <ButtonEdit
+        fill={this.state.editButtonFill}
+        mouseEnter={this.editButtonEnter}
+        mouseLeave={this.editButtonLeave}/>,
+      <ButtonUp
+        fill={this.state.upButtonFill}
+        mouseEnter={this.upButtonEnter}
+        mouseLeave={this.upButtonLeave}/>,
+      <ButtonTag
+        fill={this.state.tagButtonFill}
+        mouseEnter={this.tagButtonEnter}
+        mouseLeave={this.tagButtonLeave}
+        mouseClick={this.tagButtonClick}/>,
+      <ButtonFavorites
+        fill={this.state.favoriteButtonFill}
+        mouseEnter={this.favoriteButtonEnter}
+        mouseLeave={this.favoriteButtonLeave}
+        mouseClick={this.favoriteButtonClick}/>,
+      <ButtonArchive
+        fill={this.state.archiveButtonFill}
+        mouseEnter={this.archiveButtonEnter}
+        mouseLeave={this.archiveButtonLeave}
+        mouseClick={this.archiveButtonClick}/>,
+      <ButtonTrash
+        fill={this.state.trashButtonFill}
+        mouseEnter={this.trashButtonEnter}
+        mouseLeave={this.trashButtonLeave}
+        mouseClick={this.trashButtonClick}/>
+    ];
+
+    const webLinkBlockClasses = [classes.WebLinkBlock];
+    const webLinkBlockWrapperClasses = [classes.WebLinkBlockWrapper];
+    if (this.props.isDragging) {
+      webLinkBlockWrapperClasses.push(classes.faded);
+    }
+    else {
+      webLinkBlockClasses.push(classes.hasHover);
+    }
 
 
-    render() {
+    let menuComponent;
+    if (this.state.menu) {
+      menuComponent = this.state.menu;
+      webLinkBlockClasses.push(classes.hidden);
+    }
 
-      let descriptionStyle = classes.Description;
-
-      let description = (
-        <div className={descriptionStyle}>
-          {this.state.menu ? <h3>{this.state.menu}</h3> : <h3>{this.state.description}</h3>}
-        </div>
-      );
-
-      return (
-        <div className={classes.WebLinkBlock} onMouseLeave={this.blockLeave}>
-          <img className={classes.WebLinkPicture} src={this.props.image} alt="TestImage" />
-          <img className={classes.Favicon} src={this.props.favicon} alt="Favicon" />
-          {description}
+    return (
+      <div className={webLinkBlockWrapperClasses.join(' ')}>
+        {menuComponent}
+        <div className={webLinkBlockClasses.join(' ')} onMouseLeave={this.blockLeave}>
+          <img className={classes.WebLinkPicture} src={this.props.image} alt="TestImage"/>
+          <img className={classes.Favicon} src={this.props.favicon} alt="Favicon"/>
+          <div className={classes.Description}>
+            <h3>{this.state.description}</h3>
+          </div>
           <div className={classes.TitleWrapper}>
             <h1>{this.props.title}</h1>
           </div>
           <div className={classes.BottomLine}>
             <div className={classes.Buttons}>
-              <ButtonShare fill={this.state.shareButtonFill} mouseEnter={this.shareButtonEnter} mouseLeave={this.shareButtonLeave} />
-              <ButtonEdit fill={this.state.editButtonFill} mouseEnter={this.editButtonEnter} mouseLeave={this.editButtonLeave} />
-              <ButtonUp fill={this.state.upButtonFill} mouseEnter={this.upButtonEnter} mouseLeave={this.upButtonLeave} />
-              <ButtonTag
-                fill={this.state.tagButtonFill}
-                mouseEnter={this.tagButtonEnter}
-                mouseLeave={this.tagButtonLeave}
-                mouseClick={this.tagButtonClick} />
-              <ButtonFavorites
-                fill={this.state.favoriteButtonFill}
-                mouseEnter={this.favoriteButtonEnter}
-                mouseLeave={this.favoriteButtonLeave}
-                mouseClick={this.favoriteButtonClick} />
-              <ButtonArchive
-                fill={this.state.archiveButtonFill}
-                mouseEnter={this.archiveButtonEnter}
-                mouseLeave={this.archiveButtonLeave}
-                mouseClick={this.archiveButtonClick} />
-              <ButtonTrash fill={this.state.trashButtonFill}
-                           mouseEnter={this.trashButtonEnter}
-                           mouseLeave={this.trashButtonLeave}
-                           mouseClick={this.trashButtonClick} />
+              {buttons.map((button, index) => (
+                <div
+                  key={index}
+                  onMouseDownCapture={this.props.buttonSelected}
+                  onMouseLeave={this.props.buttonUnselected}
+                >
+                  {button}
+                </div>
+              ))}
             </div>
           </div>
-          <div className={classes.DomainWrapper}>
-            <div className={classes.Domain}>{this.props.domain}</div>
-          </div>
+          <div className={classes.Domain}>{this.props.domain}</div>
         </div>
-      );
-    }
+      </div>
+    );
+  }
 }
 
 export default WebLinkBlock;

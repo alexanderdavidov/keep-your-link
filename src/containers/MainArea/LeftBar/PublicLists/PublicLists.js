@@ -19,12 +19,6 @@ class PublicLists extends Component {
         <ListItem listItemType='public' isNew type="active" >New List One</ListItem>
         <ListItem listItemType='public' isNew type="simple" >New List One</ListItem>
         <ListItem listItemType='public' type="active" >New List One</ListItem>
-        {/*<PublicListItem isNew type="active">New List One</PublicListItem>*/}
-        {/*<PublicListItem isNew type="simple">New List Two</PublicListItem>*/}
-        {/*<PublicListItem isNew type="simple">New List Three</PublicListItem>*/}
-        {/*<PublicListItem type="simple">University</PublicListItem>*/}
-        {/*<PublicListItem type="simple">Work Project</PublicListItem>*/}
-        {/*<PublicListItem type="active">Party</PublicListItem>*/}
       </div>
     );
   }

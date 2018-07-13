@@ -1,11 +1,32 @@
-.WebLinkBlock {
-  width: 100%;
-  padding-top: 100%;
+.WebLinkBlockWrapper {
+  width: 220px;
+  padding-top: 220px;
+  margin: 20px 25px;
+  box-sizing: border-box;
   background-color: white;
   box-shadow: 1px 1px 8px rgba(83, 83, 83, 0.5);
   border-radius: 5px;
   position: relative;
+}
+
+.WebLinkBlock {
   cursor: pointer;
+  transition-property: width, padding-top, margin;
+  transition-duration: 0.2s;
+}
+
+.WebLinkBlock.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s linear 0.3s, opacity 0.3s;
+}
+
+.WebLinkBlockWrapper.faded {
+  width: 200px;
+  padding-top: 200px;
+  margin: 30px 35px;
+  transition-property: transform, width, padding-top, margin;
+  transition-duration: 0.4s;
 }
 
 .WebLinkBlock .WebLinkPicture {
@@ -19,28 +40,32 @@
   height: 50%;
   opacity: .8;
   z-index: 100;
+  user-select: none ;
 }
 
-.WebLinkBlock:hover .WebLinkPicture, .WebLinkBlock:hover .Favicon {
-  filter: blur(4px) grayscale(70%) brightness(0.7);
+.WebLinkBlock.hasHover:hover .WebLinkPicture, .WebLinkBlock.hasHover:hover .Favicon {
+  filter: blur(4px) grayscale(60%) brightness(0.7);
   transition-property: blur, grayscale, brightness;
   transition-duration: 0.3s;
   transition-timing-function: ease-in;
 }
 
-.WebLinkBlock:hover .Domain {
+.WebLinkBlock.hasHover:hover .Domain {
   color: #D0021B;
   transition-property: color;
   transition-duration: 0.1s;
 }
+
 
 .TitleWrapper {
   display: flex;
   top: 50%;
   left: 0;
   height: 40%;
+  width: 100%;
   position: absolute;
   align-items: center;
+  user-select: none;
 }
 
 .WebLinkBlock h1 {
@@ -51,12 +76,7 @@
   padding: 0;
   margin: 0 0 0 5%;
   width: 90%;
-}
-
-.WebLinkBlock:hover h1 {
-  color: #000000;
-  transition-property: color;
-  transition-duration: 0.1s;
+  user-select: text;
 }
 
 .BottomLine {
@@ -71,9 +91,10 @@
   visibility: hidden;
   opacity: 0;
   transform: translateY(120%);
+  user-select: none;
 }
 
-.WebLinkBlock:hover .BottomLine {
+.WebLinkBlock.hasHover:hover .BottomLine {
   transform: translateY(0);
   visibility: visible;
   opacity: 1;
@@ -102,14 +123,16 @@
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
   color: white;
+  user-select: text;
 }
 
 
-.WebLinkBlock:hover .Description {
+.WebLinkBlock.hasHover:hover .Description {
   transform: translateY(0);
   visibility: visible;
   opacity: 1;
   transition: visibility 0s, opacity 0.5s linear, transform 0.5s ease-in-out;
+
 }
 
 .Buttons {
@@ -130,9 +153,9 @@
 
 .Favicon {
   display: block;
-  width: 32px;
-  height: 32px;
-  margin: 0 5px 0 0;
+  width: 15%;
+  height: 15%;
+  margin: 0 2% 0 0;
   top : 3%;
   left: 3%;
   position: absolute;
@@ -140,30 +163,33 @@
   border-radius: 25%;
   box-sizing: content-box;
   z-index: 200;
+  user-select: none;
 }
 
 .DomainWrapper {
+
+}
+
+.Domain {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   position: absolute;
-  width: 90%;
+  width: 100%;
   height: 10%;
-  top: 88%;
-  line-height: 16px;
+  bottom: 0%;
   padding-top: 6px;
   padding-bottom: 6px;
   left: 0;
   text-align: center;
-  font-weight: 500;
+  align-items: center;
   border-radius: 0 0 5px 5px;
-  margin-left: 15px;
-}
+  padding-left: 15px;
 
-.Domain {
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
   letter-spacing: 1px;
+  line-height: 16px;
   color: #29a0ef;
   font-size: 16px;
 }
@@ -238,12 +264,12 @@
   top: 0;
   left: 0;
   position: absolute;
-  opacity: .8;
   display: block;
   width: 100%;
   height: 50%;
+  opacity: .8;
   z-index: 100;
-  filter: blur(4px) grayscale(70%) brightness(0.7);
+  filter: blur(4px) grayscale(60%) brightness(0.7);
 }
 
 .TrashButtons {

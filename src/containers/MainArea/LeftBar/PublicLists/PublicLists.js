@@ -16,9 +16,9 @@ class PublicLists extends Component {
       <div className={classes.PublicLists}>
         <h1 style={{marginLeft: '20px'}}>PUBLIC LISTS</h1>
         <img style={{height: '14px', cursor: 'pointer'}} src={Plus} alt="Plus"/>
-        <ListItem listItemType='public' isNew type="active" >New List One</ListItem>
         <ListItem listItemType='public' isNew type="simple" >New List One</ListItem>
-        <ListItem listItemType='public' type="active" >New List One</ListItem>
+        <ListItem listItemType='public' isNew type="simple" >New List One</ListItem>
+        <ListItem listItemType='public' type="simple" >New List One</ListItem>
       </div>
     );
   }

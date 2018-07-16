@@ -1,11 +1,3 @@
-.Trash {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  cursor: default;
-  /*position: absolute;*/
-  display: flex;
-}
-
 .TextWrapper {
   position: absolute;
   left: 0;

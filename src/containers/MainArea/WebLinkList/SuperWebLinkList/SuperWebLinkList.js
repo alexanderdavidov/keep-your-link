@@ -6,7 +6,7 @@ import classes from './SuperWebLinkList.css';
 
 // containers
 import WebLinkBlock from './WebLinkBlock/WebLinkBlock';
-// import WebLinkBlockTrash from './WebLinkBlockTrash/WebLinkBlockTrash';
+import WebLinkBlockTrash from "./WebLinkBlockTrash/WebLinkBlockTrash";
 
 // images
 import TestImage1 from '../../../../assets/testImages/testImage.jpeg';
@@ -17,7 +17,6 @@ import Favicon2 from '../../../../assets/testImages/apple-touch-icon-180x180.png
 
 import TestImage3 from '../../../../assets/testImages/tj_image.jpg';
 import Favicon3 from '../../../../assets/testImages/favicon.ico';
-import WebLinkBlockTrash from "./WebLinkBlockTrash/WebLinkBlockTrash";
 
 const images = [TestImage1, TestImage2, TestImage3];
 const favicons = [Favicon1, Favicon2, Favicon3];
@@ -72,7 +71,6 @@ const SortableList = SortableContainer(({items, buttonSelected, buttonUnselected
 class SuperWebLinkList extends Component {
   constructor(props) {
     super(props);
-
     let webLinkBlocks = [];
     webLinkBlocks.push({
       type: 'trash',
@@ -80,12 +78,12 @@ class SuperWebLinkList extends Component {
       listName: 'Films',
       daysQuantity: '5 days',
       domain: 'medium.com',
-      description: "lools",
+      description: "lools", // в trash description не нужен
       image: images[0],
       favicon: favicons[0],
     });
 
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 20; i++) {
       let image = images[Math.floor(Math.random() * 3)];
       let favicon = favicons[Math.floor(Math.random() * 3)];
 
@@ -139,7 +137,7 @@ class SuperWebLinkList extends Component {
         buttonUnselected={this.buttonUnselected}
         useWindowAsScrollContainer={true}
         transitionDuration={500}
-        pressDelay={100}
+        pressDelay={150}
         axis='xy'
         items={this.state.webLinkBlocks}
         onSortStart={this.onSortStart}

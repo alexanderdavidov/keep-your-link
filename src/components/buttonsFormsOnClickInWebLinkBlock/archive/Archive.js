@@ -1,9 +1,10 @@
 import React from 'react';
 import classes from './Archive.css';
+import formClasses from '../Form.css';
 
 const archive = () => {
   return (
-    <div className={classes.Archive}>
+    <div className={formClasses.Form}>
       <div className={classes.TextWrapper}>
         <div>Move to archive?</div>
       </div>

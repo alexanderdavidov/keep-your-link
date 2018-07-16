@@ -1,12 +1,15 @@
 .WebLinkBlockWrapper {
-  width: 220px;
-  padding-top: 220px;
+  width: 260px;
+  padding-top: 260px;
   margin: 20px 25px;
   box-sizing: border-box;
   background-color: white;
   box-shadow: 1px 1px 8px rgba(83, 83, 83, 0.5);
   border-radius: 5px;
   position: relative;
+  transition-property: width, padding-top, margin;
+  transition-duration: 0.4s;
+
 }
 
 .WebLinkBlock {
@@ -22,9 +25,10 @@
 }
 
 .WebLinkBlockWrapper.faded {
-  width: 200px;
-  padding-top: 200px;
-  margin: 30px 35px;
+  width: 244px;
+  padding-top: 244px;
+  /*увеличить margin на 5 при разнице в 10px*/
+  margin: 28px 33px;
   transition-property: transform, width, padding-top, margin;
   transition-duration: 0.4s;
 }
@@ -47,7 +51,7 @@
   filter: blur(4px) grayscale(60%) brightness(0.7);
   transition-property: blur, grayscale, brightness;
   transition-duration: 0.3s;
-  transition-timing-function: ease-in;
+  transition-timing-function: ease-out;
 }
 
 .WebLinkBlock.hasHover:hover .Domain {
@@ -55,7 +59,6 @@
   transition-property: color;
   transition-duration: 0.1s;
 }
-
 
 .TitleWrapper {
   display: flex;
@@ -77,6 +80,7 @@
   margin: 0 0 0 5%;
   width: 90%;
   user-select: text;
+  letter-spacing: 1px;
 }
 
 .BottomLine {
@@ -182,10 +186,8 @@
   padding-bottom: 6px;
   left: 0;
   text-align: center;
-  align-items: center;
   border-radius: 0 0 5px 5px;
   padding-left: 15px;
-
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
   letter-spacing: 1px;

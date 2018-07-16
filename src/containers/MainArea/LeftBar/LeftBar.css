@@ -4,8 +4,10 @@
   left: 20px;
   height: 85vh;
   overflow-y: hidden;
-  overflow-x: hidden;
   width: 20%;
+
+  /* можно удалить так как у нас будет ограничения по количеству символов */
+  overflow-x: hidden;
 }
 
 .LeftBar:hover {

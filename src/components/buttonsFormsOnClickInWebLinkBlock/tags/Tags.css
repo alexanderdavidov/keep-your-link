@@ -1,10 +1,3 @@
-.Tags {
-  display: flex;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  cursor: default;
-}
-
 .ButtonCreateTag {
   cursor: pointer;
   display: inline-block;
@@ -24,6 +17,8 @@
 }
 
 .ButtonWrapperTag {
+  position: absolute;
+
   display: flex;
   margin: 5px 0 10px 0;
   flex-direction: column;
@@ -57,6 +52,7 @@
 }
 
 .InputWrapper {
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -69,6 +65,16 @@
   opacity: 0.4;
 }
 
-.NewTags, .OldTags {
+.NewTags {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+}
+
+.OldTags {
+  position: absolute;
+  top: 0;
+  left: 50%;
   width: 50%;
 }

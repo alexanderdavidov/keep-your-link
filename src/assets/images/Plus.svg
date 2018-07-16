@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="25px" height="24px" viewBox="0 0 25 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
     <title>Plus</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="WorkPlace" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Work-Place-Condition-1-|-Start-Page" transform="translate(-1139.000000, -60.000000)" fill="#535353">
-            <g id="Plus" transform="translate(1129.000000, 50.000000)">
-                <g id="Figure" transform="translate(10.945946, 10.894737)">
+        <g id="Work-Place-Condition-1-|-Start-Page" transform="translate(-1079.000000, -50.000000)">
+            <g id="Plus" transform="translate(1079.000000, 50.000000)">
+                <rect id="Rectangle-3" fill="none" x="0" y="0" width="45" height="44.7894737" rx="6"></rect>
+                <g id="Figure" transform="translate(10.945946, 10.894737)" fill="#535353">
                     <rect id="Rectangle-5" x="0" y="9.07894737" width="23.1081081" height="4.84210526" rx="0.96"></rect>
                     <rect id="Rectangle-5" transform="translate(11.554054, 11.500000) rotate(90.000000) translate(-11.554054, -11.500000) " x="0" y="9.07894737" width="23.1081081" height="4.84210526" rx="0.96"></rect>
                 </g>

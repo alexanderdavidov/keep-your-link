@@ -17,12 +17,6 @@ class DefaultLists extends Component {
         <ListItem listItemType='default' type="simple" >Favorites</ListItem>
         <ListItem listItemType='default' type="simple" >Archive</ListItem>
         <ListItem listItemType='default' type="simple" >Trash</ListItem>
-
-        {/*<DefaultListName type="active">Incoming weblinks</DefaultListName>*/}
-        {/*<DefaultListName type="simple">Weblinks from users</DefaultListName>*/}
-        {/*<DefaultListName type="simple">Favorites</DefaultListName>*/}
-        {/*<DefaultListName type="simple">Archive</DefaultListName>*/}
-        {/*<DefaultListName type="simple">Trash</DefaultListName>*/}
       </div>
     );
   }

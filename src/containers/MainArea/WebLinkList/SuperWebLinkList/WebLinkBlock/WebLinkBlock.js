@@ -170,9 +170,9 @@ class WebLinkBlock extends Component {
     }
 
     return (
-      <div className={webLinkBlockWrapperClasses.join(' ')}>
+      <div className={webLinkBlockWrapperClasses.join(' ')} onMouseLeave={this.blockLeave}>
         {menuComponent}
-        <div className={webLinkBlockClasses.join(' ')} onMouseLeave={this.blockLeave}>
+        <div className={webLinkBlockClasses.join(' ')}>
           <img className={classes.WebLinkPicture} src={this.props.image} alt="TestImage"/>
           <img className={classes.Favicon} src={this.props.favicon} alt="Favicon"/>
           <div className={classes.Description}>

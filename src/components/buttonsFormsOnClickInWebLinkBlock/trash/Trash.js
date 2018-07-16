@@ -1,9 +1,10 @@
 import React from 'react';
 import classes from './Trash.css';
+import formClasses from '../Form.css';
 
 const trash = () => {
   return (
-    <div className={classes.Trash}>
+    <div className={formClasses.Form}>
       <div className={classes.TextWrapper}>
         <div>Move to trash?</div>
         <div>Auto deleting after 5 days</div>

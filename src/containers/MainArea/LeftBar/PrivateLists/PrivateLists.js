@@ -18,11 +18,7 @@ class PrivateLists extends Component {
         <img style={{height: '14px', cursor: 'pointer'}} src={Plus} alt="Plus"/>
         <ListItem listItemType='private' type="simple" >Films</ListItem>
         <ListItem listItemType='private' type="simple" >Learning English</ListItem>
-        <ListItem listItemType='private' type="active" >Why Are We So Certain?</ListItem>
-
-        {/*<PrivateListItem type="simple">Films</PrivateListItem>*/}
-        {/*<PrivateListItem type="simple">Learning English</PrivateListItem>*/}
-        {/*<PrivateListItem type="simple">Awesome Gifts</PrivateListItem>*/}
+        <ListItem listItemType='private' type="simple" >Why Are We So Certain?</ListItem>
       </div>
     );
   }

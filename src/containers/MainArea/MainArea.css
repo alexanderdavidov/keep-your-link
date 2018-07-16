@@ -2,7 +2,11 @@
   position: absolute;
   top: 100px;
   left: 23%;
-  width: 77%;
-  height: 20%;
+
+  /*удаляем ?*/
+
+  /*width: 77%;*/
+  /*height: 20%;*/
+
 }
 

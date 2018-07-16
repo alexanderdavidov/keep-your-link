@@ -1,9 +1,10 @@
 import React from 'react';
 import classes from './Tags.css';
+import formClasses from '../Form.css';
 
 const tags = () => {
   return (
-    <div className={classes.Tags}>
+    <div className={formClasses.Form}>
 
       <div className={classes.NewTags}>
         <div className={classes.InputWrapper}>

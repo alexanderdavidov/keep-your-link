@@ -10,7 +10,6 @@ import PublicListItem from './PublicListItem/PublicListItem';
 
 const listItem = (props) => {
   let listItemStyles = [classes.ListItemDisplayInlineBlock];
-
   let circle;
   if (props.isNew) {
     circle = <div className={classes.CircleNew}></div>;

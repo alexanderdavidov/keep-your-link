@@ -1,80 +1,74 @@
-.ButtonCreateTag {
-  cursor: pointer;
-  display: inline-block;
-  padding: 3px 10px;
-  border: 1px solid #eeeeee;
-  opacity: 0.9;
-  color: #eeeeee;
-  border-radius: 3px;
-  width: 80%;
-  font-size: 10px;
-}
-
-.ButtonCreateTag:hover {
-  opacity: 1;
-  color: #ffffff;
-  border: 1px solid #ffffff;
-}
-
-.ButtonWrapperTag {
-  position: absolute;
-
+.InputWrapper {
   display: flex;
-  margin: 5px 0 10px 0;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  margin: 10px 0 20px 0;
 }
 
-.InputWrapper label {
-  color: #ffffff;
-  font-size: 10px;
-  padding: 0;
-  margin: 0;
-}
-
-.InputWrapper input {
-  background-color: transparent;
-  border: 1px solid #eeeeee;
+.InputElement {
+  border-radius: 3px 0 0 3px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  font-size: 14px;
+  line-height: 14px;
   outline: none;
   color: #ffffff;
-  font-size: 10px;
-  height: 20px;
-  border-radius: 3px;
-  opacity: 0.9;
-  width: 80%;
+  font-weight: 500;
+  width: 100%;
+  font-family: inherit;
+  padding: 0 0 0 10px;
 }
 
-.InputWrapper input:hover {
-  opacity: 1;
-  border: 1px solid #ffffff;
-}
-
-.InputWrapper {
-
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.InputWrapper ::placeholder {
-  font-size: 10px;
+.ButtonWithInput {
+  cursor: pointer;
+  border-radius: 0 3px 3px 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 9px;
+  height: 30px;
   color: #ffffff;
-  opacity: 0.4;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-.NewTags {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
+.ButtonWithInput:hover {
+  color: #90C557;
+  transition-property: color;
+  transition-duration: 0.5s;
 }
 
 .OldTags {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 50%;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*scrollbar*/
+.OldTags::-webkit-scrollbar {
+  width: 3px;
+}
+.OldTags::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+/*scrollbar*/
+
+.TagName {
+  font-size: 14px;
+  font-weight: 300;
+  margin: 5px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.TagName:hover {
+  color: #90C557;
+  transition-property: color;
+  transition-duration: 0.5s;
 }

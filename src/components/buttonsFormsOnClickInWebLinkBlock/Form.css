@@ -1,6 +1,138 @@
 .Form {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  cursor: default;
+  position: absolute;
+  left: 0;
+  top: 0;
   display: flex;
+  animation-duration: 3s;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+  height: 100%;
+  width: 100%;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  /* animation background */
+  background: linear-gradient(to right top, #d0021b, #de1171, #c254ba, #8481e6, #29a0ef);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 20s ease infinite, fadein 1s;
+  -moz-animation: Gradient 20s ease infinite, fadein 1s;
+  animation: Gradient 20s ease infinite, fadein 1s;
+  /* animation background */
+
+  border-radius: 5px;
+  z-index: 800;
+}
+
+.WrapperForHeightAndWidth {
+  height: 85%;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* animation background */
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0 50%
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0 50%
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0 50%
+  }
+}
+
+/* animation background */
+
+.TextWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.MainText {
+  text-align: center;
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+
+.Caption {
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.Button {
+  margin-top: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: inherit;
+  border-radius: 3px;
+  padding: 8px 16px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+.Button:hover {
+  transition-property: color;
+  transition-duration: 0.5s;
+  color: #90C557;
+}
+
+/* animation block */
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }

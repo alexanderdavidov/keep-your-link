@@ -1,0 +1,57 @@
+.ListsWrapper {
+  width: 100%;
+}
+
+.ListType {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+  margin: 5px 0 3px 0;
+  letter-spacing: 1px;
+  color: #535353;
+}
+
+.Lists {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 60px;
+  overflow-y: scroll;
+}
+
+/*scrollbar*/
+.Lists::-webkit-scrollbar {
+  width: 3px;
+}
+.Lists::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+/*scrollbar*/
+
+.PrivateLists, .PublicLists {
+  display: flex;
+  flex-direction: column;
+}
+
+.PrivateList, .PublicList {
+  margin: 3px 0 3px 0;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.PrivateList:hover, .PublicList:hover {
+  color: #90C557;
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+
+.Caption {
+  font-size: 14px;
+  text-align: left;
+  font-weight: 100;
+  width: 100%;
+}

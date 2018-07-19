@@ -4,7 +4,7 @@ import classes from '../../containers/MainArea/WebLinkList/SuperWebLinkList/WebL
 
 const buttonEdit = (props) => {
   return (
-    <div className={classes.Button} onMouseEnter={props.mouseEnter} onMouseLeave={props.mouseLeave}>
+    <div className={classes.Button} onMouseEnter={props.mouseEnter} onMouseLeave={props.mouseLeave} onClick={props.mouseClick}>
       <svg viewBox='0 0 14 14' xmlns='http://www.w3.org/2000/svg'>
         <g id='WorkPlace' fill={props.fill} fillRule='evenodd'>
           <g id='Work-Place-Condition-1-|-Start-Page' transform='translate(-516 -508)'>

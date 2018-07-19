@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 import classes from '../WebLinkBlock/WebLinkBlock.css';
 
-import {Animated} from "react-animated-css";
+import { Animated } from 'react-animated-css';
 
 // images
 import BackButton from '../../../../../components/componentsButtons/buttonBack'

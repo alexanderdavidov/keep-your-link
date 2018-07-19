@@ -6,20 +6,40 @@ const tags = () => {
   return (
     <div className={formClasses.Form}>
 
-      <div className={classes.NewTags}>
-        <div className={classes.InputWrapper}>
-          <label htmlFor="tagName">Create new tag</label>
-          <input type="text" name="tagName" id="tagName" placeholder="Enter new tag" />
-          <div className={classes.ButtonWrapperTag}>
-            <div className={classes.ButtonCreateTag}>Create Tag</div>
-          </div>
-        </div>
-      </div>
+      <div className={formClasses.WrapperForHeightAndWidth}>
 
-      <div className={classes.OldTags}>
-        <div className={classes.TextWrapper}>
-          <div>Or choosing from existing</div>
+        <div className={formClasses.TextWrapper}>
+          <div className={formClasses.MainText}>Using new tag?</div>
         </div>
+
+        <div className={classes.InputWrapper}>
+          <input autoFocus className={classes.InputElement} type="text" />
+          <div className={classes.ButtonWithInput}>CREATE</div>
+        </div>
+
+        <div className={formClasses.TextWrapper}>
+          <div className={formClasses.MainText}>Using old tags?</div>
+        </div>
+
+        <div className={classes.OldTags}>
+          <div className={classes.TagName}>&#35;family</div>
+          <div className={classes.TagName}>&#35;trip</div>
+          <div className={classes.TagName}>&#35;school</div>
+          <div className={classes.TagName}>&#35;running</div>
+          <div className={classes.TagName}>&#35;tennis</div>
+
+          <div className={classes.TagName}>&#35;family</div>
+          <div className={classes.TagName}>&#35;trip</div>
+          <div className={classes.TagName}>&#35;school</div>
+          <div className={classes.TagName}>&#35;running</div>
+          <div className={classes.TagName}>&#35;tennis</div>
+          <div className={classes.TagName}>&#35;family</div>
+          <div className={classes.TagName}>&#35;trip</div>
+          <div className={classes.TagName}>&#35;school</div>
+          <div className={classes.TagName}>&#35;running</div>
+          <div className={classes.TagName}>&#35;tennis</div>
+        </div>
+
       </div>
 
     </div>

@@ -1,3 +1,11 @@
+.WebLinkList {
+  position: absolute;
+  top: 100px;
+  left: 23%;
+  width: 77%;
+  height: 20%;
+}
+
 .WebLinkList h1 {
   margin-right: 20px;
   display: inline-block;
@@ -11,21 +19,69 @@
 
 .HighButton {
   font-size: 14px;
-  color: #535353;
-  font-weight: 300;
-  text-transform: uppercase;
+  color: #D0021B;
+  font-weight: 500;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 3px;
   margin-right: 60px;
-  padding: 10px;
-  border: 1px solid #eee;
+  padding: 12px;
+  /*background: rgba(238, 238, 238, 0.7);*/
+  border: 1px solid #eeeeee;
 }
 
 .HighButton:hover {
-  border: 1px solid #535353;
-  transition-property: color, border;
-  transition-duration: 0.5s;
+  transition-property: border, color;
+  transition-duration: 1s;
+  color: #000000;
+  border: 1px solid #000000;
+  /* animation background */
+  /*background: linear-gradient(-45deg, #d0021b, #de1171, #c254ba, #8481e6, #29a0ef);*/
+  /*background-size: 400% 400%;*/
+  /*-webkit-animation: Gradient 5s ease infinite;*/
+  /*-moz-animation: Gradient 5s ease infinite;*/
+  /*animation: Gradient 5s ease infinite;*/
+  /* animation background */
 }
+
+/* animation background */
+
+/*@-webkit-keyframes Gradient {*/
+  /*0% {*/
+    /*background-position: 0 50%*/
+  /*}*/
+  /*50% {*/
+    /*background-position: 100% 50%*/
+  /*}*/
+  /*100% {*/
+    /*background-position: 0 50%*/
+  /*}*/
+/*}*/
+
+/*@-moz-keyframes Gradient {*/
+  /*0% {*/
+    /*background-position: 0 50%*/
+  /*}*/
+  /*50% {*/
+    /*background-position: 100% 50%*/
+  /*}*/
+  /*100% {*/
+    /*background-position: 0 50%*/
+  /*}*/
+/*}*/
+
+/*@keyframes Gradient {*/
+  /*0% {*/
+    /*background-position: 0 50%*/
+  /*}*/
+  /*50% {*/
+    /*background-position: 100% 50%*/
+  /*}*/
+  /*100% {*/
+    /*background-position: 0 50%*/
+  /*}*/
+/*}*/
+
+/* animation background */
 
 .WrapperHeader {
   display: flex;

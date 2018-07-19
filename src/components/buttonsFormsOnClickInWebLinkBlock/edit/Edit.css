@@ -1,0 +1,20 @@
+.TextAreaWrapper {
+  margin: 10px 0;
+  width: 100%;
+}
+
+.TextAreaListTitle {
+  resize: none;
+  outline: none;
+  height: auto;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 15px;
+  line-height: 20px;
+  color: #ffffff;
+  font-family: inherit;
+  font-weight: 100;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 100%;
+}

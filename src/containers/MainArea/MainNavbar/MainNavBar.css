@@ -13,15 +13,15 @@
 }
 
 .MainNavBarButtons {
+  position: absolute;
+  right: 40px;
   width: 30%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  /*отступ справа всего MainNavBar*/
-  margin-right: 40px;
 }
 
-.Plus img, .Search img, .Notifications img, .Person img  {
+.Search img {
   display: block;
   width: 20px;
   padding: 3px;
@@ -51,20 +51,27 @@
   margin-left: 12px;
 }
 
-.LogoKeepYourLink {
+.LogoKeepYourLinkWrapper {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
+}
+
+.LogoKeepYourLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
 }
 
 .SearchInput {
+  position: absolute;
+  left: 20px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  width: 25%;
-  margin-left: 20px;
+  width: 20%;
 }
 
 .SearchInput input {
@@ -89,4 +96,22 @@
   background-color: #eee;
   border-radius: 5px 0 0 5px;
   box-sizing: content-box;
+}
+
+
+.BurgerButton {
+  position: absolute;
+  left: 10px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1100;
+}
+
+.BurgerButton img {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
 }

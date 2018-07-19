@@ -29,8 +29,8 @@ const SortableItem = SortableElement((item) => {
       description={item.value.description}
       image={item.value.image}
       favicon={item.value.favicon}
-      buttonSelected={item.buttonSelected}
-      buttonUnselected={item.buttonUnselected}
+      enableDraggable={item.enableDraggable}
+      disableDraggable={item.disableDraggable}
       isDragging={item.isDragging}
       // isDragged={item.isDragged}
     />;
@@ -49,7 +49,7 @@ const SortableItem = SortableElement((item) => {
   }
 });
 
-const SortableList = SortableContainer(({items, buttonSelected, buttonUnselected, isDraggable, isDragging}) => {
+const SortableList = SortableContainer(({items, disableDraggable, enableDraggable, isDraggable, isDragging}) => {
   return (
     <div className={classes.SuperWebLinkList}>
       {items.map((value, index) => (
@@ -58,8 +58,8 @@ const SortableList = SortableContainer(({items, buttonSelected, buttonUnselected
           key={`item-${index}`}
           index={index}
           value={value}
-          buttonSelected={buttonSelected}
-          buttonUnselected={buttonUnselected}
+          enableDraggable={enableDraggable}
+          disableDraggable={disableDraggable}
           isDragging={isDragging}
           // isDragged={draggedElementIndex === index}
         />
@@ -105,11 +105,13 @@ class SuperWebLinkList extends Component {
     };
   }
 
-  buttonSelected = () => {
-    this.setState({isDraggable: false,})
+  disableDraggable = () => {
+    if (this.state.isDraggable) {
+      this.setState({isDraggable: false,})
+    }
   }
 
-  buttonUnselected = () => {
+  enableDraggable = () => {
     if (!this.state.isDraggable) {
       this.setState({isDraggable: true,})
     }
@@ -133,8 +135,8 @@ class SuperWebLinkList extends Component {
       <SortableList
         isDraggable={this.state.isDraggable}
         isDragging={this.state.isDragging}
-        buttonSelected={this.buttonSelected}
-        buttonUnselected={this.buttonUnselected}
+        enableDraggable={this.enableDraggable}
+        disableDraggable={this.disableDraggable}
         useWindowAsScrollContainer={true}
         transitionDuration={500}
         pressDelay={150}

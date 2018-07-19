@@ -17,17 +17,20 @@ import Trash from '../../../../../components/buttonsFormsOnClickInWebLinkBlock/t
 import Archive from '../../../../../components/buttonsFormsOnClickInWebLinkBlock/archive/Archive';
 import Favorites from '../../../../../components/buttonsFormsOnClickInWebLinkBlock/favorites/Favorites';
 import Tags from '../../../../../components/buttonsFormsOnClickInWebLinkBlock/tags/Tags';
-
+import MoveFromOneListToAnother from '../../../../../components/buttonsFormsOnClickInWebLinkBlock/moveFromOneListToAnother/MoveFromOneListToAnother';
+import Edit from '../../../../../components/buttonsFormsOnClickInWebLinkBlock/edit/Edit';
+import Share from '../../../../../components/buttonsFormsOnClickInWebLinkBlock/share/Share';
 
 class WebLinkBlock extends Component {
   state = {
     archiveButtonFill: 'transparent',
     editButtonFill: 'none',
-    favoriteButtonFill: 'none',
+    favoriteButtonFill: '#FFCC33',
     shareButtonFill: 'none',
     tagButtonFill: 'none',
     trashButtonFill: 'none',
     upButtonFill: 'none',
+    inFavorites: true
   }
 
   //region  buttons hover handlers
@@ -42,7 +45,7 @@ class WebLinkBlock extends Component {
   };
 
   archiveButtonClick = () => {
-    this.setState({archiveButtonFill: '#ffffff', menu: <Archive/>});
+    this.setState({archiveButtonFill: '#ffffff', menu: <Archive />});
   }
 
   // editButton
@@ -54,17 +57,27 @@ class WebLinkBlock extends Component {
     this.setState({editButtonFill: 'none', description: `${this.props.description}`});
   }
 
+  editButtonClick = () => {
+    this.setState({editButtonFill: '#ffffff', menu: <Edit />});
+  }
+
   // favoriteButton
   favoriteButtonEnter = () => {
-    this.setState({favoriteButtonFill: '#ffffff', description: 'Favorite'});
+    this.setState({favoriteButtonFill: 'none', description: 'Favorite'});
   }
 
   favoriteButtonLeave = () => {
-    this.setState({favoriteButtonFill: 'none', description: `${this.props.description}`});
+    let favoriteButtonFill;
+    if (this.state.inFavorites) {
+      favoriteButtonFill = '#FFCC33';
+    } else {
+      favoriteButtonFill = '#FFFFFF';
+    }
+    this.setState({favoriteButtonFill: favoriteButtonFill, description: `${this.props.description}`});
   }
 
   favoriteButtonClick = () => {
-    this.setState({favoriteButtonFill: '#ffffff', menu: <Favorites/>});
+    this.setState({favoriteButtonFill: 'none', menu: <Favorites inFavorites={this.state.inFavorites} />});
   }
 
   // shareButton
@@ -74,6 +87,10 @@ class WebLinkBlock extends Component {
 
   shareButtonLeave = () => {
     this.setState({shareButtonFill: 'none', description: `${this.props.description}`});
+  }
+
+  shareButtonClick = () => {
+    this.setState({shareButtonFill: '#ffffff', menu: <Share /> });
   }
 
   // tagButton
@@ -86,7 +103,7 @@ class WebLinkBlock extends Component {
   }
 
   tagButtonClick = () => {
-    this.setState({tagButtonFill: '#ffffff', menu: <Tags/>});
+    this.setState({tagButtonFill: '#ffffff', menu: <Tags />});
   }
 
   // trashButton
@@ -99,7 +116,7 @@ class WebLinkBlock extends Component {
   }
 
   trashButtonClick = () => {
-    this.setState({trashButtonFill: '#ffffff', menu: <Trash/>});
+    this.setState({trashButtonFill: '#ffffff', menu: <Trash />});
   }
 
   // upButton
@@ -111,32 +128,50 @@ class WebLinkBlock extends Component {
     this.setState({upButtonFill: 'none', description: `${this.props.description}`});
   }
 
+  upButtonClick = () => {
+    this.setState({upButtonFill: '#ffffff', menu: <MoveFromOneListToAnother />});
+  }
+
+
+  // blockLeave
+
   blockLeave = () => {
     this.setState({menu: null});
+    this.props.enableDraggable();
   }
 
   //endregion
 
   render() {
+    let strokeFavorites;
+    if (this.state.inFavorites) {
+      strokeFavorites = '#FFCC33';
+    } else {
+      strokeFavorites = '#FFFFFF';
+    }
     const buttons = [
       <ButtonShare
         fill={this.state.shareButtonFill}
         mouseEnter={this.shareButtonEnter}
-        mouseLeave={this.shareButtonLeave}/>,
+        mouseLeave={this.shareButtonLeave}
+        mouseClick={this.shareButtonClick}/>,
       <ButtonEdit
         fill={this.state.editButtonFill}
         mouseEnter={this.editButtonEnter}
-        mouseLeave={this.editButtonLeave}/>,
+        mouseLeave={this.editButtonLeave}
+        mouseClick={this.editButtonClick}/>,
       <ButtonUp
         fill={this.state.upButtonFill}
         mouseEnter={this.upButtonEnter}
-        mouseLeave={this.upButtonLeave}/>,
+        mouseLeave={this.upButtonLeave}
+        mouseClick={this.upButtonClick}/>,
       <ButtonTag
         fill={this.state.tagButtonFill}
         mouseEnter={this.tagButtonEnter}
         mouseLeave={this.tagButtonLeave}
         mouseClick={this.tagButtonClick}/>,
       <ButtonFavorites
+        stroke={strokeFavorites}
         fill={this.state.favoriteButtonFill}
         mouseEnter={this.favoriteButtonEnter}
         mouseLeave={this.favoriteButtonLeave}
@@ -154,6 +189,7 @@ class WebLinkBlock extends Component {
     ];
 
     const webLinkBlockClasses = [classes.WebLinkBlock];
+    const buttomLineClasses = [classes.BottomLine];
     const webLinkBlockWrapperClasses = [classes.WebLinkBlockWrapper];
     if (this.props.isDragging) {
       webLinkBlockWrapperClasses.push(classes.faded);
@@ -167,7 +203,11 @@ class WebLinkBlock extends Component {
     if (this.state.menu) {
       menuComponent = this.state.menu;
       webLinkBlockClasses.push(classes.hidden);
+      buttomLineClasses.push(classes.hidden);
+      this.props.disableDraggable();
     }
+
+    console.log(buttomLineClasses.join(' '));
 
     return (
       <div className={webLinkBlockWrapperClasses.join(' ')} onMouseLeave={this.blockLeave}>
@@ -181,13 +221,13 @@ class WebLinkBlock extends Component {
           <div className={classes.TitleWrapper}>
             <h1>{this.props.title}</h1>
           </div>
-          <div className={classes.BottomLine}>
+          <div className={buttomLineClasses.join(' ')}>
             <div className={classes.Buttons}>
               {buttons.map((button, index) => (
                 <div
                   key={index}
-                  onMouseDownCapture={this.props.buttonSelected}
-                  onMouseLeave={this.props.buttonUnselected}
+                  onMouseDownCapture={this.props.disableDraggable}
+                  onMouseLeave={this.props.enableDraggable}
                 >
                   {button}
                 </div>

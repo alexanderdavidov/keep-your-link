@@ -9,19 +9,21 @@
   position: relative;
   transition-property: width, padding-top, margin;
   transition-duration: 0.4s;
-
+  overflow: hidden;
 }
 
 .WebLinkBlock {
   cursor: pointer;
+  /*зачем это?*/
   transition-property: width, padding-top, margin;
   transition-duration: 0.2s;
 }
 
 .WebLinkBlock.hidden {
+  z-index: 200;
   opacity: 0;
   visibility: hidden;
-  transition: visibility 0s linear 0.3s, opacity 0.3s;
+  transition: visibility 0s linear 0.5s, opacity 0.5s;
 }
 
 .WebLinkBlockWrapper.faded {
@@ -30,7 +32,7 @@
   /*увеличить margin на 5 при разнице в 10px*/
   margin: 28px 33px;
   transition-property: transform, width, padding-top, margin;
-  transition-duration: 0.4s;
+  transition-duration: 0.3s;
 }
 
 .WebLinkBlock .WebLinkPicture {
@@ -52,6 +54,7 @@
   transition-property: blur, grayscale, brightness;
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
+  margin: 0;
 }
 
 .WebLinkBlock.hasHover:hover .Domain {
@@ -72,15 +75,17 @@
 }
 
 .WebLinkBlock h1 {
-  font-family: "Playfair Display", sans-serif;
-  font-weight: 500;
+  /*font-family: "Playfair Display", sans-serif;*/
+  font-family: 'Oswald', sans-serif;
+  /*font-weight: 500;*/
+  font-weight: 300;
   color: #535353;
-  font-size: 20px;
+  font-size: 22px;
   padding: 0;
   margin: 0 0 0 5%;
   width: 90%;
   user-select: text;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
 
 .BottomLine {
@@ -96,6 +101,10 @@
   opacity: 0;
   transform: translateY(120%);
   user-select: none;
+}
+
+.BottomLine.hidden{
+  display: none;
 }
 
 .WebLinkBlock.hasHover:hover .BottomLine {

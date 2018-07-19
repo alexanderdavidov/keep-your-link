@@ -26,3 +26,12 @@
   outline: 1px solid slategrey;
   border-radius: 4px;
 }
+
+.ListsPlusButton {
+  display: inline-block;
+}
+
+.ListsPlusButton img {
+  height: 14px;
+  cursor: pointer;
+}

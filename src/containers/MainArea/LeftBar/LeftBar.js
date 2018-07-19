@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
 // classes
 import classes from './LeftBar.css';
@@ -9,6 +9,7 @@ import PrivateLists from './PrivateLists/PrivateLists';
 import PublicLists from './PublicLists/PublicLists';
 
 class LeftBar extends Component {
+
   render() {
     return (
       <div className={classes.LeftBar}>

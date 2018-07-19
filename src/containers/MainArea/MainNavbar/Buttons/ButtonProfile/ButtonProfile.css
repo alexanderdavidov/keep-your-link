@@ -1,0 +1,9 @@
+.ButtonProfile {
+  width: 36px;
+  height: 36px;
+  margin: 5px;
+  padding: 0;
+  cursor: pointer;
+  box-sizing: content-box;
+  z-index: 1200;
+}

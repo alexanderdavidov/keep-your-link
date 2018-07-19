@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {UserAgentProvider, UserAgent} from '@quentin-sommer/react-useragent';
+import {UserAgentProvider, UserAgent} from '@quentin-sommer/react-useragent'
 import Popup from "reactjs-popup";
 
 // MenuButtons
@@ -10,25 +10,26 @@ import ProfileMenu from './ProfileMenu/ProfileMenu';
 import classes from './MainNavBar.css';
 
 // images
-import Plus from '../../../assets/images/Plus.svg';
 import Search from '../../../assets/images/Search.svg';
-import Notifications from '../../../assets/images/Notifications.svg';
-import Person from '../../../assets/images/Person.svg';
 import LogoKeepYourLink from '../../../assets/logo/LogoKeepYourLink.svg';
 import ListBurger from '../../../assets/images/mainAreaImages/ListBurger.svg';
+
+// buttons
+import ButtonPlus from './Buttons/ButtonPlus/ButtonPlus';
+import ButtonNotifications from './Buttons/ButtonNotifications/ButtonNotifications';
+import ButtonProfile from './Buttons/ButtonProfile/ButtonProfile';
 
 class MainNavBar extends Component {
   render() {
     return (
       <UserAgentProvider ua={window.navigator.userAgent}>
         <div className={classes.MainNavBar}>
-
           {/* Desktop !*/}
           <UserAgent computer>
             <div className={classes.SearchInput}>
-              <div className={classes.Search}>
+              {/*<div className={classes.Search}>*/}
                 <img src={Search} alt="Search"/>
-              </div>
+              {/*</div>*/}
               <input type="text"/>
             </div>
             <div className={classes.LogoKeepYourLinkWrapper}>
@@ -38,9 +39,8 @@ class MainNavBar extends Component {
               </div>
             </div>
             <div className={classes.MainNavBarButtons}>
-
               <Popup
-                trigger={<div className={classes.Plus}><img src={Plus} alt="Plus"/></div>}
+                trigger={<div><ButtonPlus /></div>}
                 position="bottom right"
                 on="click"
                 closeOnDocumentClick
@@ -62,7 +62,7 @@ class MainNavBar extends Component {
               </Popup>
 
               <Popup
-                trigger={<div className={classes.Notifications}><img src={Notifications} alt="Notifications"/></div>}
+                trigger={<div><ButtonNotifications /></div>}
                 position="bottom right"
                 on="click"
                 closeOnDocumentClick
@@ -84,7 +84,7 @@ class MainNavBar extends Component {
               </Popup>
 
               <Popup
-                trigger={<div className={classes.Person}><img src={Person} alt="Person"/></div>}
+                trigger={<div><ButtonProfile /></div>}
                 position="bottom right"
                 on="click"
                 closeOnDocumentClick
@@ -121,10 +121,10 @@ class MainNavBar extends Component {
             </div>
             <div style={{right: '15px'}} className={classes.MainNavBarButtons}>
               <div className={classes.Notifications}>
-                <img src={Notifications} alt="Notifications"/>
+                {/*<img src={Notifications} alt="Notifications"/>*/}
               </div>
               <div className={classes.Plus}>
-                <img src={Plus} alt="Plus"/>
+                {/*<img src={Plus} alt="Plus"/>*/}
               </div>
             </div>
           </UserAgent>

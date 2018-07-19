@@ -2,88 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9703ba05-d46b-4ad0-b4c2-cc95172db155" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/edit/Edit.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/edit/Edit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/moveFromOneListToAnother/MoveFromOneListToAnother.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/moveFromOneListToAnother/MoveFromOneListToAnother.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/share/Share.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/share/Share.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/PlusMenu/PlusMenu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/PlusMenu/PlusMenu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/ProfileMenu/ProfileMenu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/ProfileMenu/ProfileMenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/Buttons/ButtonNotifications/ButtonNotifications.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/Buttons/ButtonPlus/ButtonPlus.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/Buttons/ButtonPlus/ButtonPlus.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/Buttons/ButtonProfile/ButtonProfile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/Buttons/ButtonProfile/ButtonProfile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/Notifications.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Notifications.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/Person.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Person.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/Plus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Plus.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/Search.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Search.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/listsImages/Delete.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/listsImages/Delete.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/listsImages/DeleteRed.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/listsImages/DeleteRed.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/listsImages/Edit.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/listsImages/Edit.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/listsImages/Ok.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/listsImages/Ok.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/listsImages/PeopleGroup.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/listsImages/PeopleGroup.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/listsImages/Plus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/listsImages/Plus.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/buttons/ButtonEdit.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/buttons/ButtonEdit.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/buttons/ButtonFavorites.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/buttons/ButtonFavorites.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/buttons/ButtonShare.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/buttons/ButtonShare.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/buttons/ButtonTag.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/buttons/ButtonTag.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/buttons/ButtonTrash.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/buttons/ButtonTrash.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/buttons/ButtonUp.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/buttons/ButtonUp.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/trashButtons/ButtonBack.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/trashButtons/ButtonBack.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/trashButtons/ButtonDelete.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/trashButtons/ButtonDelete.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/Avatar.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Avatar.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/logo/LogoKeepYourLink.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/logo/LogoKeepYourLink.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ListItem/DefaultListItem/DefaultListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ListItem/DefaultListItem/DefaultListItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ListItem/PublicListItem/PublicListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ListItem/PublicListItem/PublicListItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WelcomePage/Navbar/NavBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomePage/Navbar/NavBar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WelcomePage/Navbar/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomePage/Navbar/NavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WelcomePage/WelcomePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomePage/WelcomePage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WelcomePage/WelcomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomePage/WelcomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WelcomePage/WelcomePageContent/WelcomePageContent.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomePage/WelcomePageContent/WelcomePageContent.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WelcomePage/WelcomePageContent/WelcomePageContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomePage/WelcomePageContent/WelcomePageContent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/Form.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/Form.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/archive/Archive.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/archive/Archive.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/archive/Archive.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/favorites/Favorites.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/favorites/Favorites.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/favorites/Favorites.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/tags/Tags.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/tags/Tags.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/tags/Tags.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/tags/Tags.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/trash/Trash.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/trash/Trash.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/trash/Trash.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/componentsButtons/buttonArchive.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/componentsButtons/buttonArchive.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/componentsButtons/buttonBack.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/componentsButtons/buttonBack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/componentsButtons/buttonDelete.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/componentsButtons/buttonDelete.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/componentsButtons/buttonEdit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/componentsButtons/buttonEdit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/componentsButtons/buttonFavorites.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/componentsButtons/buttonFavorites.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/componentsButtons/buttonShare.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/componentsButtons/buttonShare.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/componentsButtons/buttonTag.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/componentsButtons/buttonTag.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/componentsButtons/buttonTrash.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/componentsButtons/buttonTrash.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/componentsButtons/buttonUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/componentsButtons/buttonUp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Authorization/Authorization.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Authorization/Authorization.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Authorization/LogIn/LogIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Authorization/LogIn/LogIn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Authorization/ResetPassword/ResetPassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Authorization/ResetPassword/ResetPassword.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Authorization/SignUp/SignUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Authorization/SignUp/SignUp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/LeftBar/DefaultLists/DefaultLists.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/LeftBar/DefaultLists/DefaultLists.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ListItem/DefaultListItem/DefaultListItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ListItem/ListItem.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ListItem/ListItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ListItem/PrivateListItem/PrivateListItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ListItem/PublicListItem/PublicListItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/edit/Edit.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/edit/Edit.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/edit/Edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/edit/Edit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/moveFromOneListToAnother/MoveFromOneListToAnother.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/moveFromOneListToAnother/MoveFromOneListToAnother.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/moveFromOneListToAnother/MoveFromOneListToAnother.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/moveFromOneListToAnother/MoveFromOneListToAnother.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/share/Share.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/share/Share.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/share/Share.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/share/Share.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/LeftBar/DefaultLists/DefaultLists.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/LeftBar/DefaultLists/DefaultLists.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/MainArea/LeftBar/LeftBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/LeftBar/LeftBar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/MainArea/LeftBar/LeftBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/LeftBar/LeftBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/LeftBar/PublicLists/PublicLists.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/LeftBar/PublicLists/PublicLists.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/MainArea.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/MainArea.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/MainArea.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/LeftBar/PrivateLists/PrivateLists.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/LeftBar/PrivateLists/PrivateLists.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/LeftBar/PublicLists/PublicLists.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/LeftBar/PublicLists/PublicLists.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/MainNavBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/MainNavBar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/MainNavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/MainNavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/SuperWebLinkList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/SuperWebLinkList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/WebLinkBlock/WebLinkBlock.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/WebLinkBlock/WebLinkBlock.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/WebLinkBlock/WebLinkBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/WebLinkBlock/WebLinkBlock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/WebLinkBlockTrash/WebLinkBlockTrash.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/WebLinkBlockTrash/WebLinkBlockTrash.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/WebLinkList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/WebLinkList.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/WebLinkList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/WebLinkList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/PlusMenu/PlusMenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/PlusMenu/PlusMenu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/PlusMenu/PlusMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/PlusMenu/PlusMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/ProfileMenu/ProfileMenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/ProfileMenu/ProfileMenu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/ProfileMenu/ProfileMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/ProfileMenu/ProfileMenu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/registerServiceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/registerServiceWorker.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -100,53 +52,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ProfileMenu.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/containers/MainArea/MainNavbar/ProfileMenu/ProfileMenu.js">
+      <file leaf-file-name="MainNavBar.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/containers/MainArea/MainNavbar/MainNavBar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+            <state relative-caret-position="198">
+              <caret line="31" column="26" lean-forward="true" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
+                <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#168#211#0" expanded="true" />
+                <element signature="e#328#383#0" expanded="true" />
+                <element signature="e#396#453#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProfileMenu.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/containers/MainArea/MainNavbar/ProfileMenu/ProfileMenu.css">
+      <file leaf-file-name="MainNavBar.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/containers/MainArea/MainNavbar/MainNavBar.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="125" column="42" selection-start-line="125" selection-start-column="42" selection-end-line="125" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Share.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/share/Share.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="19" lean-forward="true" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Favorites.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/favorites/Favorites.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Form.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/Form.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="109" selection-start-line="109" selection-end-line="113" selection-end-column="1" />
+            <state relative-caret-position="1605">
+              <caret line="107" column="1" selection-start-line="107" selection-start-column="1" selection-end-line="107" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -163,9 +88,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>HighButton</find>
-      <find>border</find>
-      <find>gray</find>
       <find>opac</find>
       <find>opacity: 0.8</find>
       <find>pict</find>
@@ -193,6 +115,9 @@
       <find>Plus</find>
       <find>10</find>
       <find>rx</find>
+      <find>none</find>
+      <find>pr</find>
+      <find>5</find>
     </findStrings>
     <replaceStrings>
       <replace>ListItem</replace>
@@ -204,16 +129,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/Forms.css" />
-        <option value="$PROJECT_DIR$/src/components/componentsButtons/buttonTag.js" />
-        <option value="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/favorites/Favorites.css" />
-        <option value="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/buttons/ButtonArchive.svg" />
-        <option value="$PROJECT_DIR$/src/assets/images/Person.svg" />
-        <option value="$PROJECT_DIR$/src/assets/images/Plus.svg" />
-        <option value="$PROJECT_DIR$/src/containers/MainArea/LeftBar/LeftBar.css" />
-        <option value="$PROJECT_DIR$/src/components/ListItem/ListItem.css" />
-        <option value="$PROJECT_DIR$/src/containers/MainArea/LeftBar/DefaultLists/DefaultLists.js" />
-        <option value="$PROJECT_DIR$/src/components/ListItem/ListItem.js" />
         <option value="$PROJECT_DIR$/src/containers/MainArea/LeftBar/PrivateLists/PrivateLists.js" />
         <option value="$PROJECT_DIR$/src/containers/MainArea/LeftBar/LeftBar.js" />
         <option value="$PROJECT_DIR$/src/containers/MainArea/LeftBar/PublicLists/PublicLists.js" />
@@ -231,7 +146,6 @@
         <option value="$PROJECT_DIR$/src/containers/MainArea/MainArea.js" />
         <option value="$PROJECT_DIR$/src/components/componentsButtons/buttonShare.js" />
         <option value="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/edit/Edit.js" />
-        <option value="$PROJECT_DIR$/src/assets/images/Notifications.svg" />
         <option value="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/edit/Edit.css" />
         <option value="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/WebLinkBlockTrash/WebLinkBlockTrash.js" />
         <option value="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/moveFromOneListToAnother/MoveFromOneListToAnother.js" />
@@ -242,7 +156,6 @@
         <option value="$PROJECT_DIR$/src/components/componentsButtons/buttonFavorites.js" />
         <option value="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/WebLinkBlock/WebLinkBlock.js" />
         <option value="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/WebLinkBlock/WebLinkBlock.css" />
-        <option value="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/MainNavBar.css" />
         <option value="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/tags/Tags.js" />
         <option value="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/PlusMenu/PlusMenu.js" />
         <option value="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/WebLinkList.js" />
@@ -252,9 +165,21 @@
         <option value="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/WebLinkList.css" />
         <option value="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/Form.css" />
         <option value="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/PlusMenu/PlusMenu.css" />
-        <option value="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/MainNavBar.js" />
         <option value="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/ProfileMenu/ProfileMenu.js" />
         <option value="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/ProfileMenu/ProfileMenu.css" />
+        <option value="$PROJECT_DIR$/src/assets/images/Notifications.svg" />
+        <option value="$PROJECT_DIR$/src/components/componentsButtons/buttonNotification.js" />
+        <option value="$PROJECT_DIR$/src/components/componentsButtons/ButtonNotification.css" />
+        <option value="$PROJECT_DIR$/src/components/componentsButtons/ButtonNotification.js" />
+        <option value="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/Buttons/ButtonNotification/ButtonNotification.js" />
+        <option value="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/Buttons/ButtonPlus/ButtonPlus.js" />
+        <option value="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/Buttons/ButtonNotification/ButtonNotification.css" />
+        <option value="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/Buttons/ButtonNotifications/ButtonNotifications.css" />
+        <option value="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/Buttons/ButtonPlus/ButtonPlus.css" />
+        <option value="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/Buttons/ButtonProfile/ButtonProfile.js" />
+        <option value="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/Buttons/ButtonProfile/ButtonProfile.css" />
+        <option value="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/MainNavBar.js" />
+        <option value="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/MainNavBar.css" />
       </list>
     </option>
   </component>
@@ -295,11 +220,6 @@
             <path>
               <item name="keep-your-link" type="b2602c69:ProjectViewProjectNode" />
               <item name="keep-your-link" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="keep-your-link" type="b2602c69:ProjectViewProjectNode" />
-              <item name="keep-your-link" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -312,6 +232,13 @@
               <item name="keep-your-link" type="b2602c69:ProjectViewProjectNode" />
               <item name="keep-your-link" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="keep-your-link" type="b2602c69:ProjectViewProjectNode" />
+              <item name="keep-your-link" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -319,15 +246,7 @@
               <item name="keep-your-link" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="buttonsFormsOnClickInWebLinkBlock" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="keep-your-link" type="b2602c69:ProjectViewProjectNode" />
-              <item name="keep-your-link" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="buttonsFormsOnClickInWebLinkBlock" type="462c0819:PsiDirectoryNode" />
-              <item name="favorites" type="462c0819:PsiDirectoryNode" />
+              <item name="componentsButtons" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="keep-your-link" type="b2602c69:ProjectViewProjectNode" />
@@ -356,7 +275,38 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="containers" type="462c0819:PsiDirectoryNode" />
               <item name="MainArea" type="462c0819:PsiDirectoryNode" />
-              <item name="WebLinkList" type="462c0819:PsiDirectoryNode" />
+              <item name="MainNavbar" type="462c0819:PsiDirectoryNode" />
+              <item name="Buttons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="keep-your-link" type="b2602c69:ProjectViewProjectNode" />
+              <item name="keep-your-link" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="MainArea" type="462c0819:PsiDirectoryNode" />
+              <item name="MainNavbar" type="462c0819:PsiDirectoryNode" />
+              <item name="Buttons" type="462c0819:PsiDirectoryNode" />
+              <item name="ButtonNotifications" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="keep-your-link" type="b2602c69:ProjectViewProjectNode" />
+              <item name="keep-your-link" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="MainArea" type="462c0819:PsiDirectoryNode" />
+              <item name="MainNavbar" type="462c0819:PsiDirectoryNode" />
+              <item name="Buttons" type="462c0819:PsiDirectoryNode" />
+              <item name="ButtonPlus" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="keep-your-link" type="b2602c69:ProjectViewProjectNode" />
+              <item name="keep-your-link" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="MainArea" type="462c0819:PsiDirectoryNode" />
+              <item name="MainNavbar" type="462c0819:PsiDirectoryNode" />
+              <item name="Buttons" type="462c0819:PsiDirectoryNode" />
+              <item name="ButtonProfile" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -374,16 +324,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/componentsButtons" />
-      <recent name="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/componentsButtons" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/Buttons/ButtonNotification" />
       <recent name="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/WebLinkBlockTrash" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/components/ListItem" />
       <recent name="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/WebLinkBlock" />
-      <recent name="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/buttons" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/componentsButtons" />
+      <recent name="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/componentsButtons" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -435,12 +385,12 @@
       <workItem from="1531472061879" duration="6076000" />
       <workItem from="1531514706519" duration="47000" />
       <workItem from="1531655089008" duration="51385000" />
-      <workItem from="1531896309050" duration="25909000" />
+      <workItem from="1531896309050" duration="35252000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="257060000" />
+    <option name="totallyTimeSpent" value="266403000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -453,7 +403,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49924585" visible="true" weight="0.23749119" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32880098" />
@@ -511,58 +460,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/WelcomePage/WelcomePage.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/WelcomePage/WelcomePageContent/WelcomePageContent.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-888">
-          <caret line="39" column="2" selection-start-line="39" selection-start-column="2" selection-end-line="39" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/archive/Archive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/trash/Trash.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="9" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/componentsButtons/buttonTag.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="100" lean-forward="true" selection-start-line="5" selection-start-column="100" selection-end-line="5" selection-end-column="126" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/MainArea/LeftBar/PublicLists/PublicLists.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/MainArea/LeftBar/LeftBar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/componentsButtons/buttonEdit.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -674,16 +575,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/componentsButtons/buttonFavorites.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="59" lean-forward="true" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/WelcomePage/Navbar/NavBar.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -705,13 +596,6 @@
             <element signature="e#106#192#0" expanded="true" />
             <element signature="e#697#789#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/MainArea/MainNavbar/MainNavBar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -756,12 +640,6 @@
     <entry file="file://$PROJECT_DIR$/src/assets/images/imageTestTwo.jpeg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/Notifications.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/images/Plus.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/images/Search.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -792,28 +670,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/WebLinkBlock/WebLinkBlock.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1367">
-          <caret line="6" column="48" lean-forward="true" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/MainArea/MainNavbar/PlusMenu/PlusMenu.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/MainArea/MainNavbar/MainNavBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="100" column="28" selection-start-line="100" selection-start-column="28" selection-end-line="100" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#169#212#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -837,7 +697,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/favorites/Favorites.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -847,7 +707,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/share/Share.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
-          <caret line="27" column="19" lean-forward="true" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -858,20 +718,117 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/MainArea/MainNavbar/ProfileMenu/ProfileMenu.js">
+    <entry file="file://$PROJECT_DIR$/src/containers/MainArea/MainNavbar/ProfileMenu/ProfileMenu.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="127" column="40" selection-start-line="127" selection-start-column="40" selection-end-line="127" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/images/Notifications.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/componentsButtons/buttonFavorites.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/WebLinkBlock/WebLinkBlock.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="160" selection-start-line="160" selection-end-line="162" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/images/Plus.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/MainArea/MainNavbar/Buttons/ButtonPlus/ButtonPlus.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/MainArea/MainNavbar/Buttons/ButtonPlus/ButtonPlus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="23" column="24" lean-forward="true" selection-end-line="50" selection-end-column="26" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/MainArea/MainNavbar/ProfileMenu/ProfileMenu.css">
+    <entry file="file://$PROJECT_DIR$/src/containers/MainArea/MainNavbar/Buttons/ButtonNotifications/ButtonNotifications.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="125" column="42" selection-start-line="125" selection-start-column="42" selection-end-line="125" selection-end-column="42" />
+        <state relative-caret-position="120">
+          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/MainArea/MainNavbar/Buttons/ButtonNotifications/ButtonNotifications.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="1" lean-forward="true" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/images/Person.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/MainArea/MainNavbar/Buttons/ButtonProfile/ButtonProfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/MainArea/MainNavbar/Buttons/ButtonProfile/ButtonProfile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/MainArea/MainNavbar/ProfileMenu/ProfileMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/MainArea/MainNavbar/MainNavBar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1605">
+          <caret line="107" column="1" selection-start-line="107" selection-start-column="1" selection-end-line="107" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/MainArea/MainNavbar/MainNavBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="31" column="26" lean-forward="true" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#168#211#0" expanded="true" />
+            <element signature="e#328#383#0" expanded="true" />
+            <element signature="e#396#453#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import {UserAgentProvider, UserAgent} from '@quentin-sommer/react-useragent'
 import Popup from "reactjs-popup";
+import Formsy from 'formsy-react';
+import {Input} from 'formsy-react-components';
+import onClickOutside from "react-onclickoutside";
 
 // MenuButtons
 import PlusMenu from './PlusMenu/PlusMenu';
@@ -20,17 +23,80 @@ import ButtonNotifications from './Buttons/ButtonNotifications/ButtonNotificatio
 import ButtonProfile from './Buttons/ButtonProfile/ButtonProfile';
 
 class MainNavBar extends Component {
+  state = {
+    searchInputActive: false,
+    plusMenuOpened: false,
+    notificationsMenuOpened: false,
+    profileMenuOpened: false
+  }
+  onSearchInputClick = () => {
+    this.setState({searchInputActive: true});
+  }
+  onSearchInputLeave = () => {
+    this.setState({searchInputActive: false});
+  }
+
+  plusMenuOpen = () => {
+    this.setState({plusMenuOpened: true});
+  }
+
+  plusMenuClose = () => {
+    this.setState({plusMenuOpened: false});
+  }
+
+  notificationsMenuOpen = () => {
+    this.setState({notificationsMenuOpened: true});
+  }
+
+  notificationsMenuClose = () => {
+    this.setState({notificationsMenuOpened: false});
+  }
+
+  profileMenuOpen = () => {
+    this.setState({profileMenuOpened: true});
+  }
+
+  profileMenuClose = () => {
+    this.setState({profileMenuOpened: false});
+  }
+
+  handleClickOutside = (evt) => {
+    this.setState({
+      selected: false
+    });
+    this.props.onClickOutside();
+  }
+
   render() {
+    let inputOpacityStyle;
+    if (this.state.searchInputActive) {
+      inputOpacityStyle = {opacity: '1'};
+    }
     return (
       <UserAgentProvider ua={window.navigator.userAgent}>
         <div className={classes.MainNavBar}>
           {/* Desktop !*/}
           <UserAgent computer>
-            <div className={classes.SearchInput}>
-              {/*<div className={classes.Search}>*/}
-                <img src={Search} alt="Search"/>
-              {/*</div>*/}
-              <input type="text"/>
+            <div className={classes.SearchInput} onClick={this.onSearchInputClick} style={inputOpacityStyle}
+                 onMouseLeave={this.onSearchInputLeave}>
+              <img src={Search} alt="Search" onClick={() => {
+                this.searchInputComponent.element.focus()
+              }}/>
+              <Formsy
+                className={classes.ListNameInput}
+                // onInvalid={this.onInvalid}
+                // onValid={this.onValid}
+              >
+                <Input
+                  name="searchInput"
+                  validations="maxLength:9"
+                  maxLength={10}
+                  type="text"
+                  componentRef={(node) => {
+                    this.searchInputComponent = node;
+                  }}
+                />
+              </Formsy>
             </div>
             <div className={classes.LogoKeepYourLinkWrapper}>
               <div className={classes.LogoKeepYourLink}>
@@ -40,10 +106,11 @@ class MainNavBar extends Component {
             </div>
             <div className={classes.MainNavBarButtons}>
               <Popup
-                trigger={<div><ButtonPlus /></div>}
+                trigger={<ButtonPlus onClick={this.plusMenuOpen} onClickOutside={this.plusMenuClose}/>}
                 position="bottom right"
-                on="click"
-                closeOnDocumentClick
+                open={this.state.plusMenuOpened}
+                // on="click"
+                // closeOnDocumentClick
                 mouseLeaveDelay={300}
                 mouseEnterDelay={0}
                 contentStyle={{
@@ -56,16 +123,18 @@ class MainNavBar extends Component {
                   width: '500px',
                   height: '60px',
                   boxShadow: '1px 1px 3px rgba(83, 83, 83, 0.5)',
-                  borderRadius: '5px'}}
+                  borderRadius: '5px'
+                }}
                 arrow={false}>
-                <PlusMenu />
+                <PlusMenu/>
               </Popup>
 
               <Popup
-                trigger={<div><ButtonNotifications /></div>}
+                trigger={<ButtonNotifications onClick={this.notificationsMenuOpen} onClickOutside={this.notificationsMenuClose}/>}
                 position="bottom right"
-                on="click"
-                closeOnDocumentClick
+                open={this.state.notificationsMenuOpened}
+                // on="click"
+                // closeOnDocumentClick
                 mouseLeaveDelay={300}
                 mouseEnterDelay={0}
                 contentStyle={{
@@ -78,16 +147,18 @@ class MainNavBar extends Component {
                   width: '500px',
                   height: '60px',
                   boxShadow: '1px 1px 3px rgba(83, 83, 83, 0.5)',
-                  borderRadius: '5px'}}
+                  borderRadius: '5px'
+                }}
                 arrow={false}>
-                <PlusMenu />
+                <PlusMenu/>
               </Popup>
 
               <Popup
-                trigger={<div><ButtonProfile /></div>}
+                trigger={<ButtonProfile onClick={this.profileMenuOpen} onClickOutside={this.plusMenuClose} />}
                 position="bottom right"
-                on="click"
-                closeOnDocumentClick
+                open={this.state.profileMenuOpened}
+                // on="click"
+                // closeOnDocumentClick
                 mouseLeaveDelay={300}
                 mouseEnterDelay={0}
                 contentStyle={{
@@ -100,9 +171,10 @@ class MainNavBar extends Component {
                   width: '300px',
                   height: '400px',
                   boxShadow: '1px 1px 3px rgba(83, 83, 83, 0.5)',
-                  borderRadius: '5px'}}
+                  borderRadius: '5px'
+                }}
                 arrow={false}>
-                <ProfileMenu />
+                <ProfileMenu/>
               </Popup>
 
             </div>
@@ -137,4 +209,4 @@ class MainNavBar extends Component {
   }
 }
 
-export default MainNavBar;
+export default onClickOutside(MainNavBar);

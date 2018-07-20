@@ -15,19 +15,6 @@
   font-weight: 200;
 }
 
-.ListItem img {
-  height: 12px;
-  display: inline-block;
-  visibility: hidden;
-  opacity: 0;
-}
-
-.ListItem:hover img {
-  visibility: visible;
-  opacity: 1;
-  transition: visibility 0s, opacity 0.1s linear;
-  transition-delay: 0.1s;
-}
 
 .ListButton {
   cursor: pointer;
@@ -70,9 +57,10 @@
 
 .ListNameInput {
   display: inline-block;
+
 }
 
-.ListItem input{
+.ListItem input {
   display: inline-block;
   color: inherit;
   font: inherit;
@@ -81,7 +69,7 @@
   margin: 0;
 }
 
-.ListItem button{
+.ListItem button {
   height: 12px;
   margin: 0 7px;
   padding: 0;
@@ -90,4 +78,13 @@
   display: inline-block;
   cursor: pointer;
   outline: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.ListItem:hover button {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.1s linear;
+  transition-delay: 0.1s;
 }

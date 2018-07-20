@@ -3,7 +3,7 @@ import onClickOutside from "react-onclickoutside";
 import Formsy from 'formsy-react';
 
 import ListItem from '../ListItem/ListItem';
-import Input from '../../../containers/Input/Input';
+import {Input} from 'formsy-react-components';
 
 // classes
 import classes from '../ListItem/ListItem.css';

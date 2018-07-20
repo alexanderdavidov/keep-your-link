@@ -12,52 +12,35 @@
   height: 50px;
 }
 
-.Search img {
-  display: block;
-  width: 20px;
-  padding: 3px;
-  margin: 8px;
-  cursor: pointer;
-  box-sizing: content-box;
-}
-
-.LogoImage {
-  width: 30px;
-}
-
-.LogoText {
-  font-weight: 400;
-  font-size: 18px;
-  color: #535353;
-  margin-left: 12px;
-}
-
-.LogoKeepYourLinkWrapper {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.LogoKeepYourLink {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 20%;
-}
-
 .SearchInput {
   position: absolute;
-  left: 20px;
+  left: 40px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   width: 20%;
+  opacity: 0.8;
+}
+
+.SearchInput input:focus .SearchInput {
+  opacity: 1;
+}
+
+.SearchInput img {
+  display: block;
+  width: 16px;
+  height: 16px;
+  padding: 5px 5px 5px 12px;
+  margin: 0;
+  background-color: #EEEEEE;
+  border-radius: 5px 0 0 5px;
+  box-sizing: content-box;
+  cursor: pointer;
 }
 
 .SearchInput input {
   padding: 5px;
-  height: 20px;
+  height: 16px;
   width: 100%;
   background-color: #eee;
   border-radius: 0 5px 5px 0;
@@ -66,19 +49,43 @@
   outline: none;
   font-family: 'Montserrat', sans-serif;
   color: #535353;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 300;
 }
 
-.SearchInput img {
-  padding: 5px 5px 5px 12px;
-  height: 20px;
-  margin: 0 0 0 20px;
-  background-color: #eee;
-  border-radius: 5px 0 0 5px;
-  box-sizing: content-box;
+.LogoImage {
+  width: 26px;
 }
 
+.LogoText {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+  color: #535353;
+  margin-left: 10px;
+}
+
+.LogoKeepYourLinkWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+
+.LogoKeepYourLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.LogoKeepYourLink:hover {
+  opacity: 1;
+}
 
 .BurgerButton {
   position: absolute;
@@ -101,7 +108,7 @@
 .MainNavBarButtons {
   position: absolute;
   right: 40px;
-  width: 30%;
+  width: 20%;
   display: flex;
   justify-content: flex-end;
   align-items: center;

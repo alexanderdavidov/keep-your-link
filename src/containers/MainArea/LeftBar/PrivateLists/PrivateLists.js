@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 
-// import { updateObject } from '../../../../shared/utility'
-
 // classes
 import classes from './PrivateLists.css';
 import leftBarClasses from '../LeftBar.css';
@@ -89,7 +87,6 @@ class PrivateLists extends Component {
           <img src={Plus} alt="Plus"/>
         </div>
         {lists}
-
       </div>
     );
   }

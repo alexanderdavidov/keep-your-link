@@ -41,6 +41,7 @@ class PublicLists extends Component {
   onConfirmRename = (listId, listName) => {
     this.setState((prevState, props) => {
       const updatedList = {[listId]: updateObject(prevState.lists[listId], {isEditing: false, listName: listName})};
+      // const updatedList = {[listId]: { ...prevState.lists[listId], isEditing: false, listName: listName}};
       return {lists: updateObject(prevState.lists, updatedList)};
     });
   }

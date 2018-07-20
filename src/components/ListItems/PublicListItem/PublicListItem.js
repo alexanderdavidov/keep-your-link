@@ -3,7 +3,7 @@ import onClickOutside from "react-onclickoutside";
 import Formsy from 'formsy-react';
 
 import ListItem from '../ListItem/ListItem';
-import Input from '../../../containers/Input/Input';
+import {Input} from 'formsy-react-components';
 
 // classes
 import classes from '../ListItem/ListItem.css';
@@ -20,13 +20,8 @@ class PublicListItem extends Component {
     listNameInputText: this.props.children,
   }
 
-  onDeleteClick = () => {
-  }
 
   onEditClick = () => {
-    this.setState({
-      listNameInputText: this.props.children,
-    });
     this.props.onRenameStart(this.props.listId);
   }
 
@@ -34,7 +29,7 @@ class PublicListItem extends Component {
     this.props.onConfirmRename(this.props.listId, evt.listName)
   }
 
-  onReset = (evt) => {
+  onReset = () => {
     this.cancelEditing();
   }
 
@@ -47,7 +42,7 @@ class PublicListItem extends Component {
   }
 
   onInvalid = () => {
-    console.log('invalid');
+    console.log('is max length');
   }
 
   onValid = () => {
@@ -86,7 +81,7 @@ class PublicListItem extends Component {
           <button key='peopleGroup'>
             <img src={PeopleGroup} alt="PeopleGroup"/>
           </button>,
-          <button key='delete' onClick={this.onDeleteClick}>
+          <button key='delete'>
             <img src={Delete} alt="Delete"/>
           </button>,
         ];
@@ -103,8 +98,8 @@ class PublicListItem extends Component {
         onValid={this.onValid}>
         <Input
           name="listName"
-          validations="maxLength:10"
-          maxLength={11}
+          validations="maxLength:9"
+          maxLength={10}
           value={this.props.children}
         />
         <button type="submit">
@@ -113,6 +108,7 @@ class PublicListItem extends Component {
         <button type="reset">
           <img src={DeleteRed} alt="Cancel"/>
         </button>
+
       </Formsy>
       );
     }

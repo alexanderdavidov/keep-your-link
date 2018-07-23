@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import classes from '../Button.css';
-import onClickOutside from "react-onclickoutside";
 
 class ButtonNotifications extends Component {
   state = {
-    hover: false,
-    selected: false
+    hover: false
   }
 
   onMouseEnter = () => {
@@ -20,30 +18,16 @@ class ButtonNotifications extends Component {
     });
   }
 
-  onClick = () => {
-    this.setState({
-      selected: true
-    });
-    this.props.onClick();
-  }
-
-  handleClickOutside = (evt) => {
-    this.setState({
-      selected: false
-    });
-    this.props.onClickOutside();
-
-  }
 
   render() {
     let style;
-    if (this.state.hover || this.state.selected) {
+    if (this.state.hover || this.props.isActive) {
       style = '#535353';
     } else {
       style = '#999999';
     }
     return (
-      <div className={classes.Button} onClick={this.onClick} onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave}>
+      <div className={classes.Button} onClick={this.props.onClickHandler} onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave}>
         <svg viewBox='0 0 45 45' xmlns='http://www.w3.org/2000/svg'>
           <g id='WorkPlace' fill='transparent' fillRule='evenodd'>
             <g id='Work-Place-Condition-1-|-Start-Page' transform='translate(-1244 -50)'>
@@ -73,4 +57,4 @@ class ButtonNotifications extends Component {
   }
 }
 
-export default onClickOutside(ButtonNotifications);
+export default ButtonNotifications;

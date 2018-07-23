@@ -1,11 +1,9 @@
 import React, {Component} from 'react';
 import {UserAgentProvider, UserAgent} from '@quentin-sommer/react-useragent'
 import Popup from "reactjs-popup";
-import Formsy from 'formsy-react';
-import {Input} from 'formsy-react-components';
 import onClickOutside from "react-onclickoutside";
 
-// MenuButtons
+// Menu
 import PlusMenu from './PlusMenu/PlusMenu';
 import ProfileMenu from './ProfileMenu/ProfileMenu';
 
@@ -25,10 +23,15 @@ import ButtonProfile from './Buttons/ButtonProfile/ButtonProfile';
 class MainNavBar extends Component {
   state = {
     searchInputActive: false,
-    plusMenuOpened: false,
-    notificationsMenuOpened: false,
-    profileMenuOpened: false
+    isPlusMenuOpen: false,
+    isNotificationsMenuOpen: false,
+    isProfileMenuOpen: false,
+    isActivePlusMenu: false,
+    isActiveNotificationsMenu: false,
+    isActiveProfileMenu: false,
+    value: ''
   }
+
   onSearchInputClick = () => {
     this.setState({searchInputActive: true});
   }
@@ -36,38 +39,60 @@ class MainNavBar extends Component {
     this.setState({searchInputActive: false});
   }
 
-  plusMenuOpen = () => {
-    this.setState({plusMenuOpened: true});
-  }
-
-  plusMenuClose = () => {
-    this.setState({plusMenuOpened: false});
-  }
-
-  notificationsMenuOpen = () => {
-    this.setState({notificationsMenuOpened: true});
-  }
-
-  notificationsMenuClose = () => {
-    this.setState({notificationsMenuOpened: false});
-  }
-
-  profileMenuOpen = () => {
-    this.setState({profileMenuOpened: true});
-  }
-
-  profileMenuClose = () => {
-    this.setState({profileMenuOpened: false});
-  }
-
   handleClickOutside = (evt) => {
     this.setState({
-      selected: false
+      isActivePlusMenu: false,
+      isActiveNotificationsMenu: false,
+      isActiveProfileMenu: false,
+      isPlusMenuOpen: false,
+      isNotificationsMenuOpen: false,
+      isProfileMenuOpen: false,
     });
-    this.props.onClickOutside();
+  }
+
+  onClickPlusMenuHandler = () => {
+    this.setState({
+      isPlusMenuOpen: !this.state.isPlusMenuOpen,
+      isNotificationsMenuOpen: false,
+      isProfileMenuOpen: false,
+      isActivePlusMenu: !this.state.isActivePlusMenu,
+      isActiveNotificationsMenu: false,
+      isActiveProfileMenu: false
+    });
+  }
+
+  onClickNotificationsMenuHandler = () => {
+    this.setState({
+      isNotificationsMenuOpen: !this.state.isNotificationsMenuOpen,
+      isPlusMenuOpen: false,
+      isProfileMenuOpen: false,
+      isActiveNotificationsMenu: !this.state.isActiveNotificationsMenu,
+      isActivePlusMenu: false,
+      isActiveProfileMenu: false
+    });
+  }
+
+  onClickProfileMenuHandler = () => {
+    this.setState({
+      isProfileMenuOpen: !this.state.isProfileMenuOpen,
+      isPlusMenuOpen: false,
+      isNotificationsMenuOpen: false,
+      isActiveProfileMenu: !this.state.isActiveProfileMenu,
+      isActivePlusMenu: false,
+      isActiveNotificationsMenu: false,
+    });
+  }
+
+  onChangeValueHandler = (e) => {
+    this.setState({value: e.target.value});
+  }
+
+  onClickSearchImageHandler = () => {
+    document.getElementById("searchInput").focus();
   }
 
   render() {
+    console.log(this.state.value);
     let inputOpacityStyle;
     if (this.state.searchInputActive) {
       inputOpacityStyle = {opacity: '1'};
@@ -79,24 +104,10 @@ class MainNavBar extends Component {
           <UserAgent computer>
             <div className={classes.SearchInput} onClick={this.onSearchInputClick} style={inputOpacityStyle}
                  onMouseLeave={this.onSearchInputLeave}>
-              <img src={Search} alt="Search" onClick={() => {
-                this.searchInputComponent.element.focus()
-              }}/>
-              <Formsy
-                className={classes.ListNameInput}
-                // onInvalid={this.onInvalid}
-                // onValid={this.onValid}
-              >
-                <Input
-                  name="searchInput"
-                  validations="maxLength:9"
-                  maxLength={10}
-                  type="text"
-                  componentRef={(node) => {
-                    this.searchInputComponent = node;
-                  }}
-                />
-              </Formsy>
+              <img onClick={this.onClickSearchImageHandler} src={Search} alt="Search" />
+              <form action="" autoComplete="off">
+                <input id="searchInput" type="text" onChange={this.onChangeValueHandler} value={this.state.value} />
+              </form>
             </div>
             <div className={classes.LogoKeepYourLinkWrapper}>
               <div className={classes.LogoKeepYourLink}>
@@ -106,11 +117,10 @@ class MainNavBar extends Component {
             </div>
             <div className={classes.MainNavBarButtons}>
               <Popup
-                trigger={<ButtonPlus onClick={this.plusMenuOpen} onClickOutside={this.plusMenuClose}/>}
+                className={classes.classList}
+                trigger={<ButtonPlus onClickHandler={this.onClickPlusMenuHandler} isActive={this.state.isActivePlusMenu} />}
                 position="bottom right"
-                open={this.state.plusMenuOpened}
-                // on="click"
-                // closeOnDocumentClick
+                open={this.state.isPlusMenuOpen}
                 mouseLeaveDelay={300}
                 mouseEnterDelay={0}
                 contentStyle={{
@@ -125,16 +135,15 @@ class MainNavBar extends Component {
                   boxShadow: '1px 1px 3px rgba(83, 83, 83, 0.5)',
                   borderRadius: '5px'
                 }}
+                offsetY={10}
                 arrow={false}>
                 <PlusMenu/>
               </Popup>
 
               <Popup
-                trigger={<ButtonNotifications onClick={this.notificationsMenuOpen} onClickOutside={this.notificationsMenuClose}/>}
+                trigger={<ButtonNotifications onClickHandler={this.onClickNotificationsMenuHandler} isActive={this.state.isActiveNotificationsMenu} />}
                 position="bottom right"
-                open={this.state.notificationsMenuOpened}
-                // on="click"
-                // closeOnDocumentClick
+                open={this.state.isNotificationsMenuOpen}
                 mouseLeaveDelay={300}
                 mouseEnterDelay={0}
                 contentStyle={{
@@ -149,16 +158,15 @@ class MainNavBar extends Component {
                   boxShadow: '1px 1px 3px rgba(83, 83, 83, 0.5)',
                   borderRadius: '5px'
                 }}
+                offsetY={10}
                 arrow={false}>
                 <PlusMenu/>
               </Popup>
 
               <Popup
-                trigger={<ButtonProfile onClick={this.profileMenuOpen} onClickOutside={this.plusMenuClose} />}
+                trigger={<ButtonProfile onClickHandler={this.onClickProfileMenuHandler} isActive={this.state.isActiveProfileMenu} />}
                 position="bottom right"
-                open={this.state.profileMenuOpened}
-                // on="click"
-                // closeOnDocumentClick
+                open={this.state.isProfileMenuOpen}
                 mouseLeaveDelay={300}
                 mouseEnterDelay={0}
                 contentStyle={{
@@ -173,6 +181,7 @@ class MainNavBar extends Component {
                   boxShadow: '1px 1px 3px rgba(83, 83, 83, 0.5)',
                   borderRadius: '5px'
                 }}
+                offsetY={10}
                 arrow={false}>
                 <ProfileMenu/>
               </Popup>

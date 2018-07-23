@@ -54,6 +54,10 @@
   font-weight: 300;
 }
 
+.SearchInput form {
+  width: 100%;
+}
+
 .LogoImage {
   width: 26px;
 }

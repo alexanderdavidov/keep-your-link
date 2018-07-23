@@ -95,11 +95,12 @@ class PublicListItem extends Component {
         onSubmit={this.onSubmit}
         onReset={this.onReset}
         onInvalid={this.onInvalid}
-        onValid={this.onValid}>
+        onValid={this.onValid}
+      >
         <Input
           name="listName"
-          validations="maxLength:9"
-          maxLength={10}
+          validations="maxLength:19"
+          maxLength={20}
           value={this.props.children}
         />
         <button type="submit">

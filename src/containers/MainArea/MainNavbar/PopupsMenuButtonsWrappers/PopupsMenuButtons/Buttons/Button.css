@@ -1,9 +1,12 @@
 .Button {
+  position: relative;
   width: 26px;
+  top: 0;
+  left: 0;
   height: 26px;
   margin: 5px;
   padding: 0;
   cursor: pointer;
   box-sizing: content-box;
-  z-index: 1200;
+  z-index: 1;
 }

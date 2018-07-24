@@ -6,13 +6,13 @@ class ButtonProfile extends Component {
     hover: false
   }
 
-  onMouseEnter = () => {
+  onMouseEnterHandler = () => {
     this.setState({
       hover: true
     });
   }
 
-  onMouseLeave = () => {
+  onMouseLeaveHandler = () => {
     this.setState({
       hover: false
     });
@@ -24,10 +24,10 @@ class ButtonProfile extends Component {
     if (this.state.hover || this.props.isActive) {
       style = '#535353';
     } else {
-      style = '#999999';
+      style = '#7f7f7f';
     }
     return (
-      <div className={classes.Button} onClick={this.props.onClickHandler} onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave}>
+      <div className={classes.Button} onMouseEnter={this.onMouseEnterHandler} onMouseLeave={this.onMouseLeaveHandler}>
         <svg viewBox='0 0 45 45' xmlns='http://www.w3.org/2000/svg'
              xmlnsXlink='http://www.w3.org/1999/xlink'>
           <defs>

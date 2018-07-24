@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classes from './ProfileMenu.css';
-import Avatar from '../../../../assets/images/Avatar.svg';
+import Avatar from '../../../../../../assets/images/Avatar.svg';
 
 class ProfileMenu extends Component {
   render() {

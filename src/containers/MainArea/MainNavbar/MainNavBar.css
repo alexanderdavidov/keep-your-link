@@ -19,7 +19,7 @@
   justify-content: flex-start;
   width: 20%;
   height: 100%;
-  opacity: 0.8;
+  opacity: 0.85;
 }
 
 .SearchInput input {
@@ -43,13 +43,14 @@
 
 .LogoImage {
   width: 26px;
+  opacity: 0.85;
 }
 
 .LogoText {
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
-  color: #535353;
+  color: #484848;
   margin-left: 10px;
 }
 
@@ -67,11 +68,6 @@
   justify-content: center;
   width: auto;
   cursor: pointer;
-  opacity: 0.7;
-}
-
-.LogoKeepYourLink:hover {
-  opacity: 1;
 }
 
 .MainNavBarButtons {

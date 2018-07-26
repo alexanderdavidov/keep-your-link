@@ -26,7 +26,6 @@ class PopPlusMenuButtonWrapper extends Component {
     return (
       <div onClick={this.onClickHandler}>
         <PopPlusMenuButton
-          isHover={this.state.isHover}
           isActive={this.state.isActive}
           isOpen={this.state.isOpen} />
       </div>

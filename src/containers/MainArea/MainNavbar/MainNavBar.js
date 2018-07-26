@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import {UserAgentProvider, UserAgent} from '@quentin-sommer/react-useragent';
 import Hoc from '../../hoc/hoc';
+
+// SearchButton
 import SearchButton from './SearchButton/SearchButton';
 
 // PopupsMenuButtonsWrappers
@@ -20,7 +22,8 @@ class MainNavBar extends Component {
 
   state = {
     value: '',
-    searchInputActive: false
+    searchInputActive: false,
+    logoActive: false,
   }
 
   onMainNavBarLeave = () => {
@@ -40,11 +43,24 @@ class MainNavBar extends Component {
     document.getElementById("searchInput").focus();
   }
 
+  onLogoEnterHandler = () => {
+    this.setState({logoActive: true});
+  }
+
+  onLogoLeaveHandler = () => {
+    this.setState({logoActive: false});
+  }
+
   render() {
     let inputOpacityStyle;
-    if (this.state.searchInputActive || this.state.value) {
-      inputOpacityStyle = {opacity: '1'};
-    }
+    (this.state.searchInputActive || this.state.value) && (inputOpacityStyle = {opacity: '1'});
+
+    let logoTextStyle;
+    let logoImageOpacityStyle;
+    (this.state.logoActive) && (logoTextStyle = {color: '#000000'});
+    (this.state.logoActive) && (logoImageOpacityStyle = {opacity: '1'});
+
+
     return (
       <UserAgentProvider ua={window.navigator.userAgent}>
         <Hoc>
@@ -60,9 +76,11 @@ class MainNavBar extends Component {
               </div>
 
               <div className={classes.LogoKeepYourLinkWrapper}>
-                <div className={classes.LogoKeepYourLink}>
-                  <img className={classes.LogoImage} src={LogoKeepYourLink} alt="LogoKeepYourLink"/>
-                  <div className={classes.LogoText}>Keep Your Link</div>
+                <div className={classes.LogoKeepYourLink}
+                     onMouseEnter={this.onLogoEnterHandler}
+                     onMouseLeave={this.onLogoLeaveHandler}>
+                  <img className={classes.LogoImage} style={logoImageOpacityStyle} src={LogoKeepYourLink} alt="LogoKeepYourLink"/>
+                  <div className={classes.LogoText} style={logoTextStyle}>Keep Your Link</div>
                 </div>
               </div>
 

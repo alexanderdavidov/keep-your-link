@@ -22,9 +22,9 @@ class ButtonNotifications extends Component {
   render() {
     let style;
     if (this.state.hover || this.props.isActive) {
-      style = '#535353';
+      style = '#000000';
     } else {
-      style = '#7f7f7f';
+      style = '#484848';
     }
     return (
       <div className={classes.Button} onMouseEnter={this.onMouseEnterHandler} onMouseLeave={this.onMouseLeaveHandler}>

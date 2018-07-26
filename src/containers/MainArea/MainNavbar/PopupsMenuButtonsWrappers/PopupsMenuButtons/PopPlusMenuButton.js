@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Popup from "reactjs-popup";
 import ButtonPlus from './Buttons/ButtonPlus/ButtonPlus';
-import PlusMenu from './PlusMenu/PlusMenu';
+import PlusMenu from './Menus/PlusMenu/PlusMenu';
 
 class PopPlusMenuButton extends Component {
   render() {

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import classes from './PlusMenu.css';
 
 
-class Plus extends Component {
+class PlusMenu extends Component {
   render() {
     return (
       <div className={classes.PlusMenu}>
@@ -15,4 +15,4 @@ class Plus extends Component {
   }
 }
 
-export default Plus;
+export default PlusMenu;

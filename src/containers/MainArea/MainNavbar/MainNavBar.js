@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import {UserAgentProvider, UserAgent} from '@quentin-sommer/react-useragent';
+import Hoc from '../../hoc/hoc';
+import SearchButton from './SearchButton/SearchButton';
 
 // PopupsMenuButtonsWrappers
 import PopPlusMenuButtonWrapper from './PopupsMenuButtonsWrappers/PopPlusMenuButtonWrapper';
@@ -11,7 +13,6 @@ import PopNotificationsButtonWrapper from './PopupsMenuButtonsWrappers/PopNotifi
 import classes from './MainNavBar.css';
 
 // images
-import Search from '../../../assets/images/Search.svg';
 import LogoKeepYourLink from '../../../assets/logo/LogoKeepYourLink.svg';
 import ListBurger from '../../../assets/images/mainAreaImages/ListBurger.svg';
 
@@ -23,8 +24,8 @@ class MainNavBar extends Component {
   }
 
   onMainNavBarLeave = () => {
-    document.getElementById("searchInput").blur();
     this.setState({searchInputActive: false});
+    document.getElementById("searchInput").blur();
   }
 
   onSearchInputClick = () => {
@@ -46,50 +47,57 @@ class MainNavBar extends Component {
     }
     return (
       <UserAgentProvider ua={window.navigator.userAgent}>
-        <div className={classes.MainNavBar} onMouseLeave={this.onMainNavBarLeave}>
-          {/* Desktop !*/}
+        <Hoc>
+        {/* Desktop !*/}
           <UserAgent computer>
-            <div className={classes.SearchInput} onClick={this.onSearchInputClick} style={inputOpacityStyle}>
-              <img onClick={this.onClickSearchImageHandler} src={Search} alt="Search" />
-              <form action="" autoComplete="off">
-                <input id="searchInput" type="text" onChange={this.onChangeValueHandler} value={this.state.value} />
-              </form>
-            </div>
-            <div className={classes.LogoKeepYourLinkWrapper}>
-              <div className={classes.LogoKeepYourLink}>
-                <img className={classes.LogoImage} src={LogoKeepYourLink} alt="LogoKeepYourLink"/>
-                <div className={classes.LogoText}>Keep Your Link</div>
+            <div className={classes.MainNavBar} onMouseLeave={this.onMainNavBarLeave}>
+
+              <div className={classes.SearchInput} onClick={this.onSearchInputClick} style={inputOpacityStyle}>
+                <SearchButton click={this.onClickSearchImageHandler} />
+                <form action="" autoComplete="off">
+                  <input id="searchInput" type="text" onChange={this.onChangeValueHandler} value={this.state.value} />
+                </form>
               </div>
+
+              <div className={classes.LogoKeepYourLinkWrapper}>
+                <div className={classes.LogoKeepYourLink}>
+                  <img className={classes.LogoImage} src={LogoKeepYourLink} alt="LogoKeepYourLink"/>
+                  <div className={classes.LogoText}>Keep Your Link</div>
+                </div>
+              </div>
+
+              <div className={classes.MainNavBarButtons}>
+                <PopPlusMenuButtonWrapper />
+                <PopNotificationsButtonWrapper />
+                <PopProfileMenuButtonWrapper />
+              </div>
+
             </div>
-            <div className={classes.MainNavBarButtons}>
-              <PopPlusMenuButtonWrapper />
-              <PopNotificationsButtonWrapper />
-              <PopProfileMenuButtonWrapper />
-            </div>
+
           </UserAgent>
           {/* Mobile !*/}
           <UserAgent mobile>
-            <div onClick={this.props.onBurgerButtonClick} className={classes.BurgerButton}>
-              <img src={ListBurger}
-                   alt="ListBurger"/>
-            </div>
-            <div className={classes.LogoKeepYourLinkWrapper}>
-              <div className={classes.LogoKeepYourLink}>
-                <img className={classes.LogoImage} src={LogoKeepYourLink} alt="LogoKeepYourLink"/>
+            <div className={classes.MainNavBar}>
+              <div onClick={this.props.onBurgerButtonClick} className={classes.BurgerButton}>
+                <img src={ListBurger}
+                     alt="ListBurger"/>
               </div>
-            </div>
-            <div style={{right: '15px'}} className={classes.MainNavBarButtons}>
-              <div className={classes.Notifications}>
-                {/*<img src={Notifications} alt="Notifications"/>*/}
+              <div className={classes.LogoKeepYourLinkWrapper}>
+                <div className={classes.LogoKeepYourLink}>
+                  <img className={classes.LogoImage} src={LogoKeepYourLink} alt="LogoKeepYourLink"/>
+                </div>
               </div>
-              <div className={classes.Plus}>
-                {/*<img src={Plus} alt="Plus"/>*/}
+              <div style={{right: '15px'}} className={classes.MainNavBarButtons}>
+                <div className={classes.Notifications}>
+                  {/*<img src={Notifications} alt="Notifications"/>*/}
+                </div>
+                <div className={classes.Plus}>
+                  {/*<img src={Plus} alt="Plus"/>*/}
+                </div>
               </div>
             </div>
           </UserAgent>
-
-        </div>
-
+        </Hoc>
       </UserAgentProvider>
 
     );

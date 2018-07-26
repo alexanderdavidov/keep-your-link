@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import disableScroll from 'disable-scroll';
 
 // classes
 import classes from './WebLinkList.css';
@@ -7,35 +8,13 @@ import classes from './WebLinkList.css';
 import SuperWebLinkList from './SuperWebLinkList/SuperWebLinkList';
 
 class WebLinkList extends Component {
-  state = {
-    isTrash: false
-  }
-
   render() {
-    let style;
-    if (this.props.isScrolable) {
-      style = {
-        overflowY: 'visible'
-      }
-    }
-    else {
-      style = {
-        overflowY: 'hidden'
-      }
-    }
-
-    let highButton = null;
-    if (this.state.isTrash) {
-      highButton = <div className={classes.HighButton}>emptyTrash</div>;
-    } else {
-      highButton = <div className={classes.HighButton}>#tagFilter</div>;
-    }
+    this.props.isNotScrolable ?
+      disableScroll.on(document.getElementById('WebLinkList'))
+      :
+      disableScroll.off(document.getElementById('WebLinkList'));
     return (
-      <div style={style}  className={classes.WebLinkList}>
-        <div className={classes.WrapperHeader}>
-          <h1>Incoming weblinks</h1>
-          {highButton}
-        </div>
+      <div id="WebLinkList" className={classes.WebLinkList}>
         <SuperWebLinkList />
       </div>
     );

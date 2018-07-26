@@ -35,7 +35,7 @@ class MainArea extends Component {
           </div>
         </UserAgentProvider>
 
-        <WebLinkList isScrolable={!this.state.showSideDrawer} />
+        <WebLinkList isNotScrolable={this.state.showSideDrawer} />
       </div>
     );
   }

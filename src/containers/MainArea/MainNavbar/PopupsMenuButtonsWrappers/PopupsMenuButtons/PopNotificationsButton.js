@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Popup from "reactjs-popup";
 import ButtonNotifications from './Buttons/ButtonNotifications/ButtonNotifications';
-import PlusMenu from './PlusMenu/PlusMenu';
+import NotificationsMenu from './Menus/NotificationsMenu/NotificationsMenu';
 
 class PopNotificationsButton extends Component {
   render() {
@@ -19,14 +19,14 @@ class PopNotificationsButton extends Component {
           backgroundColor: '#ffffff',
           padding: "0px",
           border: "none",
-          width: '500px',
-          height: '60px',
+          width: '300px',
+          height: '400px',
           boxShadow: '1px 1px 3px rgba(83, 83, 83, 0.5)',
           borderRadius: '5px'
         }}
         offsetY={10}
         arrow={false}>
-        <PlusMenu />
+        <NotificationsMenu />
       </Popup>
     );
   }

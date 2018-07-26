@@ -31,21 +31,16 @@ const SortableItem = SortableElement((item) => {
       favicon={item.value.favicon}
       enableDraggable={item.enableDraggable}
       disableDraggable={item.disableDraggable}
-      isDragging={item.isDragging}
-      // isDragged={item.isDragged}
-    />;
+      isDragging={item.isDragging} />;
   }
   else if (item.value.type === 'trash') {
       return <WebLinkBlockTrash
       title={item.value.title}
       domain={item.value.domain}
       image={item.value.image}
-      // favicon={item.value.favicon}
       listName={item.value.listName}
       listType='private'
-      daysQuantity={item.value.daysQuantity}
-
-    />;
+      daysQuantity={item.value.daysQuantity} />;
   }
 });
 
@@ -60,9 +55,7 @@ const SortableList = SortableContainer(({items, disableDraggable, enableDraggabl
           value={value}
           enableDraggable={enableDraggable}
           disableDraggable={disableDraggable}
-          isDragging={isDragging}
-          // isDragged={draggedElementIndex === index}
-        />
+          isDragging={isDragging} />
       ))}
     </div>
   );
@@ -78,15 +71,12 @@ class SuperWebLinkList extends Component {
       listName: 'Films',
       daysQuantity: '5 days',
       domain: 'medium.com',
-      description: "lools", // в trash description не нужен
       image: images[0],
       favicon: favicons[0],
     });
-
     for (let i = 0; i < 20; i++) {
       let image = images[Math.floor(Math.random() * 3)];
       let favicon = favicons[Math.floor(Math.random() * 3)];
-
       webLinkBlocks.push({
         type: 'simple',
         title: `Link number: ${i}`,
@@ -113,7 +103,7 @@ class SuperWebLinkList extends Component {
 
   enableDraggable = () => {
     if (!this.state.isDraggable) {
-      this.setState({isDraggable: true,})
+      this.setState({isDraggable: true})
     }
   }
 
@@ -143,8 +133,7 @@ class SuperWebLinkList extends Component {
         axis='xy'
         items={this.state.webLinkBlocks}
         onSortStart={this.onSortStart}
-        onSortEnd={this.onSortEnd}
-      />
+        onSortEnd={this.onSortEnd} />
     );
   }
 }

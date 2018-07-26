@@ -25,15 +25,22 @@ class WebLinkBlock extends Component {
   state = {
     archiveButtonFill: 'transparent',
     editButtonFill: 'none',
-    favoriteButtonFill: '#FFCC33',
+    favoriteButtonFill: 'none',
     shareButtonFill: 'none',
     tagButtonFill: 'none',
     trashButtonFill: 'none',
     upButtonFill: 'none',
-    inFavorites: true
+    inFavorites: true,
+    description: this.props.description
   }
 
-  //region  buttons hover handlers
+  componentWillMount() {
+    if (this.state.inFavorites) {
+      this.setState({favoriteButtonFill: '#FFCC33'});
+    }
+  }
+
+  //region buttons hover handlers
 
   // archiveButton
   archiveButtonEnter = () => {
@@ -63,7 +70,13 @@ class WebLinkBlock extends Component {
 
   // favoriteButton
   favoriteButtonEnter = () => {
-    this.setState({favoriteButtonFill: 'none', description: 'Favorite'});
+    let favoriteButtonFill;
+    if (this.state.inFavorites) {
+      favoriteButtonFill = 'none';
+    } else {
+      favoriteButtonFill = '#FFCC33';
+    }
+    this.setState({favoriteButtonFill: favoriteButtonFill, description: 'Favorite'});
   }
 
   favoriteButtonLeave = () => {
@@ -71,7 +84,7 @@ class WebLinkBlock extends Component {
     if (this.state.inFavorites) {
       favoriteButtonFill = '#FFCC33';
     } else {
-      favoriteButtonFill = '#FFFFFF';
+      favoriteButtonFill = 'none';
     }
     this.setState({favoriteButtonFill: favoriteButtonFill, description: `${this.props.description}`});
   }
@@ -134,7 +147,6 @@ class WebLinkBlock extends Component {
 
 
   // blockLeave
-
   blockLeave = () => {
     this.setState({menu: null});
     this.props.enableDraggable();
@@ -143,12 +155,6 @@ class WebLinkBlock extends Component {
   //endregion
 
   render() {
-    let strokeFavorites;
-    if (this.state.inFavorites) {
-      strokeFavorites = '#FFCC33';
-    } else {
-      strokeFavorites = '#FFFFFF';
-    }
     const buttons = [
       <ButtonShare
         fill={this.state.shareButtonFill}
@@ -171,7 +177,6 @@ class WebLinkBlock extends Component {
         mouseLeave={this.tagButtonLeave}
         mouseClick={this.tagButtonClick}/>,
       <ButtonFavorites
-        stroke={strokeFavorites}
         fill={this.state.favoriteButtonFill}
         mouseEnter={this.favoriteButtonEnter}
         mouseLeave={this.favoriteButtonLeave}
@@ -207,14 +212,12 @@ class WebLinkBlock extends Component {
       this.props.disableDraggable();
     }
 
-    console.log(buttomLineClasses.join(' '));
 
     return (
       <div className={webLinkBlockWrapperClasses.join(' ')} onMouseLeave={this.blockLeave}>
         {menuComponent}
         <div className={webLinkBlockClasses.join(' ')}>
           <img className={classes.WebLinkPicture} src={this.props.image} alt="TestImage"/>
-          <img className={classes.Favicon} src={this.props.favicon} alt="Favicon"/>
           <div className={classes.Description}>
             <h3>{this.state.description}</h3>
           </div>
@@ -227,14 +230,14 @@ class WebLinkBlock extends Component {
                 <div
                   key={index}
                   onMouseDownCapture={this.props.disableDraggable}
-                  onMouseLeave={this.props.enableDraggable}
-                >
+                  onMouseLeave={this.props.enableDraggable} >
                   {button}
                 </div>
               ))}
             </div>
           </div>
           <div className={classes.Domain}>{this.props.domain}</div>
+          <img className={classes.Favicon} src={this.props.favicon} alt="Favicon"/>
         </div>
       </div>
     );

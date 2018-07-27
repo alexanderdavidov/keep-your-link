@@ -160,51 +160,45 @@ class WebLinkBlock extends Component {
         fill={this.state.shareButtonFill}
         mouseEnter={this.shareButtonEnter}
         mouseLeave={this.shareButtonLeave}
-        mouseClick={this.shareButtonClick}/>,
+        mouseClick={this.shareButtonClick} />,
       <ButtonEdit
         fill={this.state.editButtonFill}
         mouseEnter={this.editButtonEnter}
         mouseLeave={this.editButtonLeave}
-        mouseClick={this.editButtonClick}/>,
+        mouseClick={this.editButtonClick} />,
       <ButtonUp
         fill={this.state.upButtonFill}
         mouseEnter={this.upButtonEnter}
         mouseLeave={this.upButtonLeave}
-        mouseClick={this.upButtonClick}/>,
+        mouseClick={this.upButtonClick} />,
       <ButtonTag
         fill={this.state.tagButtonFill}
         mouseEnter={this.tagButtonEnter}
         mouseLeave={this.tagButtonLeave}
-        mouseClick={this.tagButtonClick}/>,
+        mouseClick={this.tagButtonClick} />,
       <ButtonFavorites
         fill={this.state.favoriteButtonFill}
         mouseEnter={this.favoriteButtonEnter}
         mouseLeave={this.favoriteButtonLeave}
-        mouseClick={this.favoriteButtonClick}/>,
+        mouseClick={this.favoriteButtonClick} />,
       <ButtonArchive
         fill={this.state.archiveButtonFill}
         mouseEnter={this.archiveButtonEnter}
         mouseLeave={this.archiveButtonLeave}
-        mouseClick={this.archiveButtonClick}/>,
+        mouseClick={this.archiveButtonClick} />,
       <ButtonTrash
         fill={this.state.trashButtonFill}
         mouseEnter={this.trashButtonEnter}
         mouseLeave={this.trashButtonLeave}
-        mouseClick={this.trashButtonClick}/>
+        mouseClick={this.trashButtonClick} />
     ];
 
     const webLinkBlockClasses = [classes.WebLinkBlock];
     const buttomLineClasses = [classes.BottomLine];
     const webLinkBlockWrapperClasses = [classes.WebLinkBlockWrapper];
-    if (this.props.isDragging) {
-      webLinkBlockWrapperClasses.push(classes.faded);
-    }
-    else {
-      webLinkBlockClasses.push(classes.hasHover);
-    }
-
-
     let menuComponent;
+    // (this.props.isDragging) ? webLinkBlockWrapperClasses.push(classes.faded) : webLinkBlockClasses.push(classes.hasHover);
+    (this.props.isDragging) ? webLinkBlockWrapperClasses.push(classes.faded) : webLinkBlockWrapperClasses.push(classes.hasHover);
     if (this.state.menu) {
       menuComponent = this.state.menu;
       webLinkBlockClasses.push(classes.hidden);

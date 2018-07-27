@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {UserAgentProvider, UserAgent} from '@quentin-sommer/react-useragent'
+import Hoc from '../hoc/hoc';
 
 // containers
 import MainNavBar from './MainNavbar/MainNavBar';
@@ -22,21 +23,20 @@ class MainArea extends Component {
 
   render() {
     return (
-      <div>
+      <Hoc>
         <MainNavBar onBurgerButtonClick={this.onBurgerButtonClick}/>
         <UserAgentProvider ua={window.navigator.userAgent}>
-          <div>
+          <Hoc>
             <UserAgent computer>
               <LeftBar/>
             </UserAgent>
             <UserAgent mobile>
               {this.state.showSideDrawer && <SideDrawer onBackDropClick={this.onBackDropClick} />}
             </UserAgent>
-          </div>
+          </Hoc>
         </UserAgentProvider>
-
         <WebLinkList isNotScrolable={this.state.showSideDrawer} />
-      </div>
+      </Hoc>
     );
   }
 }

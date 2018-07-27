@@ -1,8 +1,8 @@
 .SuperWebLinkList {
   display: flex;
   justify-content: flex-start;
-  width: 95%;
-  height: auto;
+  align-items: center;
+  width: 100%;
   flex-wrap: wrap;
 }
 

@@ -41,6 +41,7 @@ class MainNavBar extends Component {
 
   onClickSearchImageHandler = () => {
     document.getElementById("searchInput").focus();
+    this.setState({searchInputActive: true});
   }
 
   onLogoEnterHandler = () => {
@@ -68,10 +69,10 @@ class MainNavBar extends Component {
           <UserAgent computer>
             <div className={classes.MainNavBar} onMouseLeave={this.onMainNavBarLeave}>
 
-              <div className={classes.SearchInput} onClick={this.onSearchInputClick} style={inputOpacityStyle}>
-                <SearchButton click={this.onClickSearchImageHandler} />
+              <div className={classes.SearchInput}>
+                <SearchButton click={this.onClickSearchImageHandler} isActive={this.state.searchInputActive} />
                 <form action="" autoComplete="off">
-                  <input id="searchInput" type="text" onChange={this.onChangeValueHandler} value={this.state.value} />
+                  <input onClick={this.onSearchInputClick} style={inputOpacityStyle} id="searchInput" type="text" onChange={this.onChangeValueHandler} value={this.state.value} />
                 </form>
               </div>
 

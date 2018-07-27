@@ -34,7 +34,7 @@ const SortableItem = SortableElement((item) => {
       isDragging={item.isDragging} />;
   }
   else if (item.value.type === 'trash') {
-      return <WebLinkBlockTrash
+    return <WebLinkBlockTrash
       title={item.value.title}
       domain={item.value.domain}
       image={item.value.image}
@@ -47,12 +47,12 @@ const SortableItem = SortableElement((item) => {
 const SortableList = SortableContainer(({items, disableDraggable, enableDraggable, isDraggable, isDragging}) => {
   return (
     <div className={classes.SuperWebLinkList}>
-      {items.map((value, index) => (
+      {items.map((item, index) => (
         <SortableItem
           disabled={!isDraggable}
           key={`item-${index}`}
           index={index}
-          value={value}
+          value={item}
           enableDraggable={enableDraggable}
           disableDraggable={disableDraggable}
           isDragging={isDragging} />
@@ -79,9 +79,9 @@ class SuperWebLinkList extends Component {
       let favicon = favicons[Math.floor(Math.random() * 3)];
       webLinkBlocks.push({
         type: 'simple',
-        title: `Link number: ${i}`,
+        title: `Link number: ${i}. Some text. Some Text. Some text.`,
         domain: 'medium.com',
-        description: "lools",
+        description: "Some description",
         image: image,
         favicon: favicon,
       });

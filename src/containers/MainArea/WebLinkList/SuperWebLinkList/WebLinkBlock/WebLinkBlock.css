@@ -11,10 +11,6 @@
   cursor: pointer;
 }
 
-.WebLinkBlock {
-
-}
-
 .WebLinkBlock.hidden {
   opacity: 0;
   visibility: hidden;
@@ -30,7 +26,7 @@
   cursor: default;
 }
 
-.WebLinkBlock .WebLinkPicture {
+.WebLinkBlockWrapper .WebLinkPicture {
   object-fit: cover;
   border-radius: 5px 5px 0 0;
   top: 0;
@@ -44,13 +40,13 @@
   cursor: default;
 }
 
-.WebLinkBlock.hasHover:hover .WebLinkPicture {
+.WebLinkBlockWrapper.hasHover:hover .WebLinkPicture {
   filter: grayscale(80%) brightness(0.5);
   transition-property: grayscale, brightness;
   transition-duration: 0.2s;
 }
 
-.WebLinkBlock.hasHover:hover .Domain {
+.WebLinkBlockWrapper.hasHover:hover .Domain {
   color: #D0021B;
   transition-property: color;
   transition-duration: 0.1s;
@@ -66,7 +62,7 @@
   align-items: center;
 }
 
-.WebLinkBlock h1 {
+.WebLinkBlockWrapper h1 {
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
   color: rgba(0, 0, 0, 0.7);
@@ -96,7 +92,7 @@
   display: none;
 }
 
-.WebLinkBlock.hasHover:hover .BottomLine {
+.WebLinkBlockWrapper.hasHover:hover .BottomLine {
   transform: translateY(0);
   visibility: visible;
   opacity: 1;
@@ -131,7 +127,7 @@
 }
 
 
-.WebLinkBlock.hasHover:hover .Description {
+.WebLinkBlockWrapper.hasHover:hover .Description {
   transform: translateY(0);
   visibility: visible;
   opacity: 1;
@@ -196,7 +192,7 @@
   display:  block;
 }
 
-.WebLinkBlock:hover .TrashDescriptionWrapper {
+.WebLinkBlockWrapper:hover .TrashDescriptionWrapper {
   transform: translateY(-50%);
   transition-duration: 0.7s;
   transition-timing-function: ease-out;
@@ -241,7 +237,7 @@
   font-family: 'Oswald', sans-serif;
 }
 
-.WebLinkBlock .WebLinkPictureTrash {
+.WebLinkBlockWrapper .WebLinkPictureTrash {
   object-fit: cover;
   border-radius: 5px 5px 0 0;
   top: 0;
@@ -277,7 +273,7 @@
 }
 
 
-.WebLinkBlock:hover .TrashButtonWrapper {
+.WebLinkBlockWrapper:hover .TrashButtonWrapper {
   transform: translateY(0);
   visibility: visible;
   opacity: 1;

@@ -3,12 +3,16 @@ import classes from './SearchButton.css';
 
 class SearchButton extends Component {
  render() {
+   let fillColorStyle;
+   let opacityStyle;
+   this.props.isActive ? opacityStyle = '1' : opacityStyle = '0.8';
+   this.props.isActive ? fillColorStyle = '#000000' : fillColorStyle = '#484848';
    return (
-     <div onClick={this.props.click} className={classes.SearchButton}>
+     <div onClick={this.props.click} className={classes.SearchButton} style={{opacity: opacityStyle}}>
        <svg width='16' height='16' viewBox='0 0 31 28' xmlns='http://www.w3.org/2000/svg'>
          <g id='WorkPlace' fill='none' fillRule='evenodd'>
            <g id='Work-Place-Condition-1-|-Start-Page' transform='translate(-1193 -59)'
-              stroke='#535353' strokeWidth='3.42'>
+              stroke={fillColorStyle} strokeWidth='3.42'>
              <g id='Search' transform='translate(1184 50)'>
                <g id='Figure' transform='translate(10.946 10.895)'>
                  <ellipse id='Oval-4' cx='10.49' cy='10.4' rx='10.49' ry='10.4' />

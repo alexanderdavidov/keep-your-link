@@ -19,7 +19,6 @@
   justify-content: flex-start;
   width: 20%;
   height: 100%;
-  opacity: 0.85;
 }
 
 .SearchInput input {
@@ -35,6 +34,7 @@
   color: #535353;
   font-size: 14px;
   font-weight: 400;
+  opacity: 0.8;
 }
 
 .SearchInput form {

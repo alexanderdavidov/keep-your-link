@@ -43,10 +43,10 @@ class ButtonNotifications extends Component {
                     id='Path-4' strokeWidth='3' transform='matrix(-1 0 0 1 34.662 0)'/>
                   <path
                     d='M8.51351351,25.4210526 C8.51351351,27.4752791 9.45945946,28.5023923 11.3513514,28.5023923 C13.2432432,28.5023923 14.1891892,27.4752791 14.1891892,25.4210526'
-                    id='Path-10' strokeWidth='3'/>
+                    id='Path-10' fill={style} strokeWidth='3'/>
                   <path
                     d='M9.24324324,5.11722488 C9.5,2.1092504 10.2702703,0.605263158 11.5540541,0.605263158 C12.8378378,0.605263158 13.6081081,2.1092504 13.8648649,5.11722488'
-                    id='Path-11' strokeWidth='2.5'/>
+                    id='Path-11' fill={style} strokeWidth='3'/>
                 </g>
               </g>
             </g>

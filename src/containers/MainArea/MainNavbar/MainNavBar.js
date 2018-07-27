@@ -22,8 +22,7 @@ class MainNavBar extends Component {
 
   state = {
     value: '',
-    searchInputActive: false,
-    logoActive: false,
+    searchInputActive: false
   }
 
   onMainNavBarLeave = () => {
@@ -53,8 +52,8 @@ class MainNavBar extends Component {
   }
 
   render() {
-    let inputOpacityStyle;
-    (this.state.searchInputActive || this.state.value) && (inputOpacityStyle = {opacity: '1'});
+    let searchOpacityStyle;
+    (this.state.searchInputActive || this.state.value) && (searchOpacityStyle = {opacity: '1'});
 
     let logoTextStyle;
     let logoImageOpacityStyle;
@@ -69,10 +68,10 @@ class MainNavBar extends Component {
           <UserAgent computer>
             <div className={classes.MainNavBar} onMouseLeave={this.onMainNavBarLeave}>
 
-              <div className={classes.SearchInput}>
-                <SearchButton click={this.onClickSearchImageHandler} isActive={this.state.searchInputActive} />
+              <div className={classes.SearchInput} style={searchOpacityStyle}>
+                <SearchButton click={this.onClickSearchImageHandler} />
                 <form action="" autoComplete="off">
-                  <input onClick={this.onSearchInputClick} style={inputOpacityStyle} id="searchInput" type="text" onChange={this.onChangeValueHandler} value={this.state.value} />
+                  <input onClick={this.onSearchInputClick} id="searchInput" type="text" onChange={this.onChangeValueHandler} value={this.state.value} />
                 </form>
               </div>
 

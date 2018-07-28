@@ -1,30 +1,17 @@
 .WebLinkBlockWrapper {
-  width: 226px;
-  padding-top: 226px;
-  margin: 20px 14px;
   background-color:#ffffff;
   box-shadow: 1px 1px 8px rgba(83, 83, 83, 0.5);
   border-radius: 5px;
   position: relative;
-  transition-property: width, padding-top, margin, opacity;
-  transition-duration: 0.3s;
+  transition: width 0.5s, padding-top 0.5s, margin 0.5s, transform;
   cursor: pointer;
 }
 
-.WebLinkBlock.hidden {
-  opacity: 0;
-  visibility: hidden;
-  transition: visibility 0s linear 0.2s, opacity 0.2s;
-}
-
-.WebLinkBlockWrapper.faded {
-  width: 222px;
-  padding-top: 222px;
-  margin: 22px 16px;
-  transition-property: transform, width, padding-top, margin, opacity;
-  transition-duration: 0.3s;
-  cursor: default;
-}
+/*.WebLinkBlock.hidden {*/
+  /*opacity: 0;*/
+  /*visibility: hidden;*/
+  /*transition: visibility 0s linear 0.2s, opacity 0.2s;*/
+/*}*/
 
 .WebLinkBlockWrapper .WebLinkPicture {
   object-fit: cover;

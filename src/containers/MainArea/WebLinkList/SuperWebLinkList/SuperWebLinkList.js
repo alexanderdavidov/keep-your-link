@@ -24,6 +24,7 @@ const favicons = [Favicon1, Favicon2, Favicon3];
 const SortableItem = SortableElement((item) => {
   if (item.value.type === 'simple') {
     return <WebLinkBlock
+      widthSize={item.value.size}
       title={item.value.title}
       domain={item.value.domain}
       description={item.value.description}
@@ -65,15 +66,15 @@ class SuperWebLinkList extends Component {
   constructor(props) {
     super(props);
     let webLinkBlocks = [];
-    webLinkBlocks.push({
-      type: 'trash',
-      title: `Trash number`,
-      listName: 'Films',
-      daysQuantity: '5 days',
-      domain: 'medium.com',
-      image: images[0],
-      favicon: favicons[0],
-    });
+    // webLinkBlocks.push({
+    //   type: 'trash',
+    //   title: `Trash number`,
+    //   listName: 'Films',
+    //   daysQuantity: '5 days',
+    //   domain: 'medium.com',
+    //   image: images[0],
+    //   favicon: favicons[0],
+    // });
     for (let i = 0; i < 20; i++) {
       let image = images[Math.floor(Math.random() * 3)];
       let favicon = favicons[Math.floor(Math.random() * 3)];
@@ -84,6 +85,7 @@ class SuperWebLinkList extends Component {
         description: "Some description",
         image: image,
         favicon: favicon,
+        size: this.props.widthSize
       });
     }
 

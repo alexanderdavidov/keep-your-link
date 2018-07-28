@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import disableScroll from 'disable-scroll';
+import { SizeMe } from 'react-sizeme'
 
 // classes
 import classes from './WebLinkList.css';
@@ -15,7 +16,9 @@ class WebLinkList extends Component {
       disableScroll.off(document.getElementById('WebLinkList'));
     return (
       <div id="WebLinkList" className={classes.WebLinkList}>
-        <SuperWebLinkList />
+        <SizeMe>
+          {({ size }) => <SuperWebLinkList widthSize={size.width} />}
+        </SizeMe>
       </div>
     );
   }

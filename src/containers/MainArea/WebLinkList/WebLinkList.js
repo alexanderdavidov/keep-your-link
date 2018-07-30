@@ -10,10 +10,7 @@ import SuperWebLinkList from './SuperWebLinkList/SuperWebLinkList';
 
 class WebLinkList extends Component {
   render() {
-    this.props.isNotScrolable ?
-      disableScroll.on(document.getElementById('WebLinkList'))
-      :
-      disableScroll.off(document.getElementById('WebLinkList'));
+    this.props.isNotScrolable ? disableScroll.on() : disableScroll.off();
     return (
       <div id="WebLinkList" className={classes.WebLinkList}>
         <SizeMe>

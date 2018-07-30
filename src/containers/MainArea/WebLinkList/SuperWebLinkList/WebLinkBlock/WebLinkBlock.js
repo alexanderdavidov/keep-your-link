@@ -32,7 +32,6 @@ class WebLinkBlock extends Component {
     upButtonFill: 'none',
     inFavorites: true,
     description: this.props.description,
-    menu: null,
   }
 
   componentWillMount() {
@@ -218,7 +217,7 @@ class WebLinkBlock extends Component {
     if (this.state.menu) {
       menuComponent = this.state.menu;
       // webLinkBlockClasses.push(classes.hidden);
-      buttomLineClasses.push(classes.hidden);
+      // buttomLineClasses.push(classes.hidden);
       this.props.disableDraggable();
     }
 

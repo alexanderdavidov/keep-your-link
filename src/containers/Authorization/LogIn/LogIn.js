@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 
+import GoogleButton from './GoogleButton/GoogleButton';
+
 // styles
 import classes from '../Authorization.css';
 
 // pictures
 import LogoKeepYourLink from '../../../assets/logo/LogoKeepYourLink.svg';
-import LogoGoogle from '../../../assets/images/g-logo.png';
+// import LogoGoogle from '../../../assets/images/g-logo.png';
 import LogoFacebook from '../../../assets/images/facebook.png';
 
 class LogIn extends Component {
@@ -26,8 +28,9 @@ class LogIn extends Component {
             <input type="password" name="password" id="password" placeholder="Enter your password" />
             <button>Log In</button>
             <div className={classes.Google}>
-              <img style={{display: 'block', width: '25px', marginRight: '10px'}} src={LogoGoogle} alt="LogoGoogle" />
-              <div>Log In with Google</div>
+              <GoogleButton />
+              {/*<img style={{display: 'block', width: '25px', marginRight: '10px'}} src={LogoGoogle} alt="LogoGoogle" />*/}
+              {/*<div>Log In with Google</div>*/}
             </div>
             <div className={classes.Facebook}>
               <img style={{display: 'block', width: '25px', marginRight: '10px'}} src={LogoFacebook} alt="LogoFacebook" />

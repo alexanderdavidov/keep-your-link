@@ -31,7 +31,7 @@ class WebLinkBlock extends Component {
     trashButtonFill: 'none',
     upButtonFill: 'none',
     inFavorites: true,
-    description: this.props.description,
+    description: this.props.description
   }
 
   componentWillMount() {
@@ -146,13 +146,13 @@ class WebLinkBlock extends Component {
   }
 
 
-  //endregion
-
   // blockLeave
   blockLeave = () => {
-    this.props.enableDraggable();
     this.setState({menu: null});
+    this.props.enableDraggable();
   }
+
+  //endregion
 
   render() {
     const buttons = [
@@ -193,7 +193,6 @@ class WebLinkBlock extends Component {
         mouseClick={this.trashButtonClick} />
     ];
 
-
     let parentWidth = this.props.widthSize;
     let oneFourthOfParentWidth = parentWidth * 0.25;
     let weblinkBlockWidthAndPaddingTop = oneFourthOfParentWidth * 0.9;
@@ -201,32 +200,32 @@ class WebLinkBlock extends Component {
     let weblinkBlockWidthAndPaddingTopFaded = oneFourthOfParentWidth * 0.86;
     let weblinkBlockMarginFaded = oneFourthOfParentWidth * 0.07;
     let weblinkBlockStyle = {
-                            width: weblinkBlockWidthAndPaddingTop,
-                            paddingTop: weblinkBlockWidthAndPaddingTop,
-                            margin: weblinkBlockMargin};
+      width: weblinkBlockWidthAndPaddingTop,
+      paddingTop: weblinkBlockWidthAndPaddingTop,
+      margin: weblinkBlockMargin };
     let weblinkBlockStyleFaded = {
-                            width: weblinkBlockWidthAndPaddingTopFaded,
-                            paddingTop: weblinkBlockWidthAndPaddingTopFaded,
-                            margin: weblinkBlockMarginFaded};
+      width: weblinkBlockWidthAndPaddingTopFaded,
+      paddingTop: weblinkBlockWidthAndPaddingTopFaded,
+      margin: weblinkBlockMarginFaded,
+      opacity: '0.9' };
 
-    // const webLinkBlockClasses = [classes.WebLinkBlock];
+    const webLinkBlockClasses = [classes.WebLinkBlock];
     const buttomLineClasses = [classes.BottomLine];
     const webLinkBlockWrapperClasses = [classes.WebLinkBlockWrapper];
     let menuComponent;
     (this.props.isDragging) ? weblinkBlockStyle = weblinkBlockStyleFaded : webLinkBlockWrapperClasses.push(classes.hasHover);
     if (this.state.menu) {
       menuComponent = this.state.menu;
-      // webLinkBlockClasses.push(classes.hidden);
-      // buttomLineClasses.push(classes.hidden);
+      webLinkBlockClasses.push(classes.hidden);
+      buttomLineClasses.push(classes.hidden);
       this.props.disableDraggable();
     }
 
+
     return (
-      <div className={webLinkBlockWrapperClasses.join(' ')}
-           style={weblinkBlockStyle}
-           onMouseLeave={this.blockLeave}>
+      <div className={webLinkBlockWrapperClasses.join(' ')} onMouseLeave={this.blockLeave} style={weblinkBlockStyle}>
         {menuComponent}
-        {/*<div className={webLinkBlockClasses.join(' ')}>*/}
+        <div className={webLinkBlockClasses.join(' ')}>
           <img className={classes.WebLinkPicture} src={this.props.image} alt="TestImage"/>
           <div className={classes.Description}>
             <h3>{this.state.description}</h3>
@@ -248,7 +247,7 @@ class WebLinkBlock extends Component {
           </div>
           <div className={classes.Domain}>{this.props.domain}</div>
           <img className={classes.Favicon} src={this.props.favicon} alt="Favicon"/>
-        {/*</div>*/}
+        </div>
       </div>
     );
   }

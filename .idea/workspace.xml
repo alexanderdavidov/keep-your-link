@@ -3,8 +3,110 @@
   <component name="ChangeListManager">
     <list default="true" id="9703ba05-d46b-4ad0-b4c2-cc95172db155" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/Avatar.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Avatar.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/Notifications.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Notifications.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/Person.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Person.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/Plus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Plus.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/Search.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Search.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/facebook.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/facebook.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/g-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/g-logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/imageTestTwo.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/imageTestTwo.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/listsImages/Delete.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/listsImages/Delete.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/listsImages/DeleteRed.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/listsImages/DeleteRed.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/listsImages/Edit.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/listsImages/Edit.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/listsImages/Ok.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/listsImages/Ok.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/listsImages/PeopleGroup.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/listsImages/PeopleGroup.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/listsImages/Plus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/listsImages/Plus.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/mainAreaImages/ListBurger.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/mainAreaImages/ListBurger.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/buttons/ButtonArchive.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/buttons/ButtonArchive.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/buttons/ButtonEdit.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/buttons/ButtonEdit.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/buttons/ButtonFavorites.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/buttons/ButtonFavorites.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/buttons/ButtonShare.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/buttons/ButtonShare.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/buttons/ButtonTag.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/buttons/ButtonTag.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/buttons/ButtonTrash.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/buttons/ButtonTrash.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/buttons/ButtonUp.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/buttons/ButtonUp.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/trashButtons/ButtonBack.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/trashButtons/ButtonBack.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/trashButtons/ButtonDelete.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/weblinkBlockButtons/trashButtons/ButtonDelete.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/logo/LogoKeepYourLink.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/logo/LogoKeepYourLink.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/testImages/apple-touch-icon-180x180.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/testImages/apple-touch-icon-180x180.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/testImages/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/testImages/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/testImages/faviconMedium.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/testImages/faviconMedium.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/testImages/littleGirl.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/testImages/littleGirl.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/testImages/testImage.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/testImages/testImage.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/testImages/tj_image.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/testImages/tj_image.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ListItems/DefaultListItem/DefaultListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ListItems/DefaultListItem/DefaultListItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ListItems/ListItem/ListItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ListItems/ListItem/ListItem.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ListItems/ListItem/ListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ListItems/ListItem/ListItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ListItems/PrivateListItem/PrivateListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ListItems/PrivateListItem/PrivateListItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ListItems/PublicListItem/PublicListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ListItems/PublicListItem/PublicListItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WelcomePage/Navbar/NavBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomePage/Navbar/NavBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WelcomePage/Navbar/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomePage/Navbar/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WelcomePage/WelcomePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomePage/WelcomePage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WelcomePage/WelcomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomePage/WelcomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WelcomePage/WelcomePageContent/WelcomePageContent.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomePage/WelcomePageContent/WelcomePageContent.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WelcomePage/WelcomePageContent/WelcomePageContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WelcomePage/WelcomePageContent/WelcomePageContent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/Form.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/Form.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/archive/Archive.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/archive/Archive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/archive/Archive.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/archive/Archive.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/edit/Edit.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/edit/Edit.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/edit/Edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/edit/Edit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/favorites/Favorites.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/favorites/Favorites.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/favorites/Favorites.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/favorites/Favorites.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/moveFromOneListToAnother/MoveFromOneListToAnother.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/moveFromOneListToAnother/MoveFromOneListToAnother.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/moveFromOneListToAnother/MoveFromOneListToAnother.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/moveFromOneListToAnother/MoveFromOneListToAnother.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/share/Share.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/share/Share.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/share/Share.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/share/Share.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/tags/Tags.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/tags/Tags.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/tags/Tags.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/tags/Tags.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/trash/Trash.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/trash/Trash.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/trash/Trash.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/trash/Trash.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/componentsButtons/buttonArchive.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/componentsButtons/buttonArchive.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/componentsButtons/buttonBack.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/componentsButtons/buttonBack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/componentsButtons/buttonDelete.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/componentsButtons/buttonDelete.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/componentsButtons/buttonEdit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/componentsButtons/buttonEdit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/componentsButtons/buttonFavorites.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/componentsButtons/buttonFavorites.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/componentsButtons/buttonShare.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/componentsButtons/buttonShare.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/componentsButtons/buttonTag.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/componentsButtons/buttonTag.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/componentsButtons/buttonTrash.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/componentsButtons/buttonTrash.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/componentsButtons/buttonUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/componentsButtons/buttonUp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Authorization/Authorization.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Authorization/Authorization.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Authorization/LogIn/LogIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Authorization/LogIn/LogIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Authorization/ResetPassword/ResetPassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Authorization/ResetPassword/ResetPassword.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Authorization/SignUp/SignUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Authorization/SignUp/SignUp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/LeftBar/DefaultLists/DefaultLists.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/LeftBar/DefaultLists/DefaultLists.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/LeftBar/DefaultLists/DefaultLists.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/LeftBar/DefaultLists/DefaultLists.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/LeftBar/LeftBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/LeftBar/LeftBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/LeftBar/LeftBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/LeftBar/LeftBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/LeftBar/PrivateLists/PrivateLists.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/LeftBar/PrivateLists/PrivateLists.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/LeftBar/PrivateLists/PrivateLists.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/LeftBar/PrivateLists/PrivateLists.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/LeftBar/PublicLists/PublicLists.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/LeftBar/PublicLists/PublicLists.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/LeftBar/PublicLists/PublicLists.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/LeftBar/PublicLists/PublicLists.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/MainArea.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/MainArea.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/MainNavBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/MainNavBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/MainNavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/MainNavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/PopupsMenuButtonsWrappers/PopupsMenuButtons/Menus/ProfileMenu/ProfileMenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/PopupsMenuButtonsWrappers/PopupsMenuButtons/Menus/ProfileMenu/ProfileMenu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/PopupsMenuButtonsWrappers/PopupsMenuButtons/Menus/ProfileMenu/ProfileMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/PopupsMenuButtonsWrappers/PopupsMenuButtons/Menus/ProfileMenu/ProfileMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/PopupsMenuButtonsWrappers/PopupsMenuButtons/PopProfileMenuButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/PopupsMenuButtonsWrappers/PopupsMenuButtons/PopProfileMenuButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/SearchButton/SearchButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/SearchButton/SearchButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/SideDrawer/SideDrawer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/SideDrawer/SideDrawer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/SideDrawer/SideDrawer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/SideDrawer/SideDrawer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/SuperWebLinkList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/SuperWebLinkList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/SuperWebLinkList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/SuperWebLinkList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/WebLinkBlock/WebLinkBlock.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/WebLinkBlock/WebLinkBlock.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/WebLinkBlock/WebLinkBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/WebLinkBlock/WebLinkBlock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/WebLinkBlockTrash/WebLinkBlockTrash.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/WebLinkBlockTrash/WebLinkBlockTrash.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/WebLinkList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/WebLinkList.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/WebLinkList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/WebLinkList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/registerServiceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/registerServiceWorker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/utility.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/utility.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/actionTypes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/listItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/listItem.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,7 +126,7 @@
       <file leaf-file-name="MainNavBar.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/MainArea/MainNavbar/MainNavBar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="150">
               <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -38,8 +140,8 @@
       <file leaf-file-name="SearchButton.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/MainArea/MainNavbar/SearchButton/SearchButton.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+            <state relative-caret-position="360">
+              <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -51,7 +153,7 @@
         <entry file="file://$PROJECT_DIR$/src/containers/MainArea/MainNavbar/MainNavBar.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="356">
-              <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+              <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -171,7 +273,6 @@
         <option value="$PROJECT_DIR$/src/containers/MainArea/MainArea.js" />
         <option value="$PROJECT_DIR$/src/components/buttonsFormsOnClickInWebLinkBlock/Form.css" />
         <option value="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/SearchButton/SearchButton.js" />
-        <option value="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/MainNavBar.css" />
         <option value="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/SuperWebLinkList.css" />
         <option value="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/WebLinkList.css" />
         <option value="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/SuperWebLinkList.js" />
@@ -179,6 +280,7 @@
         <option value="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/WebLinkList.js" />
         <option value="$PROJECT_DIR$/src/containers/MainArea/WebLinkList/SuperWebLinkList/WebLinkBlock/WebLinkBlock.js" />
         <option value="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/MainNavBar.js" />
+        <option value="$PROJECT_DIR$/src/containers/MainArea/MainNavbar/MainNavBar.css" />
       </list>
     </option>
   </component>
@@ -326,11 +428,13 @@
       <workItem from="1532680755683" duration="8682000" />
       <workItem from="1532778792998" duration="11124000" />
       <workItem from="1532933991581" duration="3081000" />
+      <workItem from="1532937761769" duration="33000" />
+      <workItem from="1532937876842" duration="237000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="374825000" />
+    <option name="totallyTimeSpent" value="375095000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -343,7 +447,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49924585" visible="true" weight="0.16349542" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32880098" />
@@ -352,7 +455,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.32880098" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.33621755" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.43757725" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.43757725" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="3" sideWeight="0.5007542" side_tool="true" weight="0.18957347" />
       <window_info anchor="bottom" id="TypeScript" order="8" />
@@ -405,20 +508,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/containers/MainArea/LeftBar/PrivateLists/PrivateLists.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/MainArea/LeftBar/LeftBar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/Input/Input.js" />
     <entry file="file://$PROJECT_DIR$/src/components/ListItems/PrivateListItem/PrivateListItem.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -604,9 +693,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="31" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -642,9 +728,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -673,9 +756,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -697,11 +777,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-665">
           <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#195#250#0" expanded="true" />
-            <element signature="e#333#403#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -716,17 +791,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="485">
           <caret line="237" column="45" lean-forward="true" selection-start-line="237" selection-start-column="45" selection-end-line="237" selection-end-column="45" />
-          <folding>
-            <element signature="e#106#192#0" expanded="true" />
-            <element signature="e#697#789#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/MainArea/MainNavbar/SearchButton/SearchButton.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+        <state relative-caret-position="360">
+          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -735,7 +806,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/MainArea/MainNavbar/MainNavBar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="150">
           <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
@@ -745,10 +816,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7075" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/MainArea/MainNavbar/MainNavBar.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="356">
-          <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+          <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
         </state>
       </provider>
     </entry>

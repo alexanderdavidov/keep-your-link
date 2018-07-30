@@ -3,9 +3,6 @@ import React, {Component} from 'react';
 // classes
 import classes from './ListItem.css';
 
-// images
-
-
 class ListItem extends Component {
   render() {
 
@@ -13,6 +10,7 @@ class ListItem extends Component {
       <div className={classes.ListItem}>
         {this.props.circle}
         <div className={classes.ListItemControls}>
+
           {this.props.listNameBlock}
           {this.props.buttons}
         </div>

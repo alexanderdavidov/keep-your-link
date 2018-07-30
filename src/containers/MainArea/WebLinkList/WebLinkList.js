@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import disableScroll from 'disable-scroll';
-import { SizeMe } from 'react-sizeme'
+import noScroll from 'no-scroll';
+import { SizeMe } from 'react-sizeme';
 
 // classes
 import classes from './WebLinkList.css';
@@ -10,12 +10,12 @@ import SuperWebLinkList from './SuperWebLinkList/SuperWebLinkList';
 
 class WebLinkList extends Component {
   render() {
-    this.props.isNotScrolable ? disableScroll.on() : disableScroll.off();
     return (
       <div id="WebLinkList" className={classes.WebLinkList}>
         <SizeMe>
           {({ size }) => <SuperWebLinkList widthSize={size.width} />}
         </SizeMe>
+        {this.props.isNotScrolable ? noScroll.on() : noScroll.off()}
       </div>
     );
   }

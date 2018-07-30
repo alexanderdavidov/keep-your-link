@@ -1,5 +1,7 @@
 import React from 'react';
 
+import NavItem from './NavItem/NavItem';
+
 // styles
 import classes from './NavBar.css';
 
@@ -13,20 +15,10 @@ const navBar = () => {
         <img className={classes.LogoImage} src={LogoKeepYourLink} alt="LogoKeepYourLink" />
         <div className={classes.LogoText}>Keep Your Link</div>
       </div>
-      <div className={classes.NavLinkItems}>
-        {/*<div className={classes.NavLinkItem}>*/}
-          {/*Support*/}
-        {/*</div>*/}
-        {/*<div className={classes.NavLinkItem}>*/}
-          {/*About us*/}
-        {/*</div>*/}
-        <div className={classes.NavLinkLogIn}>
-          LOG IN
-        </div>
-        <div className={classes.NavLinkSignUp}>
-          SIGN UP
-        </div>
-      </div>
+      <ul className={classes.NavLinkItems}>
+        <NavItem link="/login" className={classes.NavLinkLogIn}>LOG IN</NavItem>
+        <NavItem link="/login" className={classes.NavLinkSignUp}>SIGN UP</NavItem>
+      </ul>
     </div>
   );
 };

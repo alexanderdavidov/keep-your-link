@@ -1,9 +1,9 @@
 .ProfileMenu {
   display: flex;
+  width: 100%;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
   border-radius: 5px;
   background: linear-gradient(-45deg, #d0021b, #de1171, #c254ba, #8481e6, #29a0ef);
   background-size: 400% 400%;
@@ -79,23 +79,7 @@
   width: 100%;
 }
 
-.AvatarWrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.Avatar {
-  width: 40%;
-  cursor: pointer;
-}
-
-.ItemWrapper {
-  margin: 7px 0;
-}
-
-.InputItem {
+.MainInformation input {
   font-weight: 300;
   font-size: 12px;
   border: none;
@@ -104,6 +88,40 @@
   outline: none;
   font-family: 'Montserrat', sans-serif;
   width: 100%;
+}
+
+.AvatarWrapper {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Avatar {
+  /*display: flex;*/
+  position: relative;
+  width: 40%;
+  cursor: pointer;
+}
+
+.AvatarPhoto {
+  width: 100%;
+  position: absolute;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.AvatarPhoto img {
+  width: 40%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.ItemWrapper {
+  margin: 0px 0;
 }
 
 .ItemWrapper ::placeholder {
@@ -115,6 +133,11 @@
 
 .ButtonsWrapper {
   width: 100%;
+}
+
+.ButtonsWrapper button {
+  outline: none;
+  border: none;
 }
 
 .SaveButton, .SignOutButton {

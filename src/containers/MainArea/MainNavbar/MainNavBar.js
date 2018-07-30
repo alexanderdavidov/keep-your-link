@@ -22,7 +22,8 @@ class MainNavBar extends Component {
 
   state = {
     value: '',
-    searchInputActive: false
+    searchInputActive: false,
+    logoActive: false
   }
 
   onMainNavBarLeave = () => {

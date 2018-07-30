@@ -4,29 +4,6 @@ import ButtonProfile from './Buttons/ButtonProfile/ButtonProfile';
 import ProfileMenu from './Menus/ProfileMenu/ProfileMenu';
 
 class PopProfileMenuButton extends Component {
-
-  state = {
-    isSignOutButtonPressed: false,
-    widthForm: '300px',
-    heightForm: '400px',
-  }
-
-  onClickSignOutButtonHandler = () => {
-    this.setState({
-      isSignOutButtonPressed: true,
-      widthForm: '300px',
-      heightForm: '150px',
-    });
-  }
-
-  onClickYesHandler = () => {
-    this.setState({
-      isSignOutButtonPressed: false,
-      widthForm: '300px',
-      heightForm: '400px',
-    });
-  }
-
   render() {
     return (
       <Popup
@@ -42,8 +19,7 @@ class PopProfileMenuButton extends Component {
           backgroundColor: '#ffffff',
           padding: "0px",
           border: "none",
-          width: this.state.widthForm,
-          height: this.state.heightForm,
+          width: 300,
           boxShadow: '1px 1px 3px rgba(83, 83, 83, 0.5)',
           borderRadius: '5px',
           zIndex: '1000'
@@ -52,7 +28,6 @@ class PopProfileMenuButton extends Component {
         arrow={false}>
         <ProfileMenu
           onClickYes={this.onClickYesHandler}
-          isSignOutButtonPressed={this.state.isSignOutButtonPressed}
           onClickSignOutButton={this.onClickSignOutButtonHandler} />
       </Popup>
     );

@@ -7,11 +7,11 @@
   cursor: pointer;
 }
 
-/*.WebLinkBlock.hidden {*/
-  /*opacity: 0;*/
-  /*visibility: hidden;*/
-  /*transition: visibility 0s linear 0.2s, opacity 0.2s;*/
-/*}*/
+.WebLinkBlock.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s linear 0.2s, opacity 0.2s;
+}
 
 .WebLinkBlockWrapper .WebLinkPicture {
   object-fit: cover;

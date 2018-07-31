@@ -38,6 +38,66 @@ class WebLinkBlock extends Component {
     if (this.state.inFavorites) {
       this.setState({favoriteButtonFill: '#FFCC33'});
     }
+
+    this.buttons = [
+      <ButtonShare
+        fill={this.state.shareButtonFill}
+        mouseEnter={this.shareButtonEnter}
+        mouseLeave={this.shareButtonLeave}
+        mouseClick={this.shareButtonClick} />,
+      <ButtonEdit
+        fill={this.state.editButtonFill}
+        mouseEnter={this.editButtonEnter}
+        mouseLeave={this.editButtonLeave}
+        mouseClick={this.editButtonClick} />,
+      <ButtonUp
+        fill={this.state.upButtonFill}
+        mouseEnter={this.upButtonEnter}
+        mouseLeave={this.upButtonLeave}
+        mouseClick={this.upButtonClick} />,
+      <ButtonTag
+        fill={this.state.tagButtonFill}
+        mouseEnter={this.tagButtonEnter}
+        mouseLeave={this.tagButtonLeave}
+        mouseClick={this.tagButtonClick} />,
+      <ButtonFavorites
+        fill={this.state.favoriteButtonFill}
+        mouseEnter={this.favoriteButtonEnter}
+        mouseLeave={this.favoriteButtonLeave}
+        mouseClick={this.favoriteButtonClick} />,
+      <ButtonArchive
+        fill={this.state.archiveButtonFill}
+        mouseEnter={this.archiveButtonEnter}
+        mouseLeave={this.archiveButtonLeave}
+        mouseClick={this.archiveButtonClick} />,
+      <ButtonTrash
+        fill={this.state.trashButtonFill}
+        mouseEnter={this.trashButtonEnter}
+        mouseLeave={this.trashButtonLeave}
+        mouseClick={this.trashButtonClick} />
+    ];
+
+    const parentWidth = this.props.widthSize;
+    const oneFourthOfParentWidth = parentWidth * 0.25;
+    const weblinkBlockWidthAndPaddingTop = oneFourthOfParentWidth * 0.9;
+    const weblinkBlockMargin = oneFourthOfParentWidth * 0.05;
+    const weblinkBlockWidthAndPaddingTopFaded = oneFourthOfParentWidth * 0.86;
+    const weblinkBlockMarginFaded = oneFourthOfParentWidth * 0.07;
+    this.weblinkBlockStyleNormal = {
+      width: weblinkBlockWidthAndPaddingTop,
+      paddingTop: weblinkBlockWidthAndPaddingTop,
+      margin: weblinkBlockMargin };
+    this.weblinkBlockStyleFaded = {
+      width: weblinkBlockWidthAndPaddingTopFaded,
+      paddingTop: weblinkBlockWidthAndPaddingTopFaded,
+      margin: weblinkBlockMarginFaded,
+      opacity: '0.9' };
+  }
+
+  componentWillUpdate() {
+    if (this.state.menu) {
+      this.props.disableDraggable();
+    }
   }
 
   //region buttons hover handlers
@@ -144,7 +204,7 @@ class WebLinkBlock extends Component {
   upButtonClick = () => {
     this.setState({upButtonFill: '#ffffff', menu: <MoveFromOneListToAnother />});
   }
-
+  //endregion
 
   // blockLeave
   blockLeave = () => {
@@ -152,75 +212,25 @@ class WebLinkBlock extends Component {
     this.props.enableDraggable();
   }
 
-  //endregion
-
   render() {
-    const buttons = [
-      <ButtonShare
-        fill={this.state.shareButtonFill}
-        mouseEnter={this.shareButtonEnter}
-        mouseLeave={this.shareButtonLeave}
-        mouseClick={this.shareButtonClick} />,
-      <ButtonEdit
-        fill={this.state.editButtonFill}
-        mouseEnter={this.editButtonEnter}
-        mouseLeave={this.editButtonLeave}
-        mouseClick={this.editButtonClick} />,
-      <ButtonUp
-        fill={this.state.upButtonFill}
-        mouseEnter={this.upButtonEnter}
-        mouseLeave={this.upButtonLeave}
-        mouseClick={this.upButtonClick} />,
-      <ButtonTag
-        fill={this.state.tagButtonFill}
-        mouseEnter={this.tagButtonEnter}
-        mouseLeave={this.tagButtonLeave}
-        mouseClick={this.tagButtonClick} />,
-      <ButtonFavorites
-        fill={this.state.favoriteButtonFill}
-        mouseEnter={this.favoriteButtonEnter}
-        mouseLeave={this.favoriteButtonLeave}
-        mouseClick={this.favoriteButtonClick} />,
-      <ButtonArchive
-        fill={this.state.archiveButtonFill}
-        mouseEnter={this.archiveButtonEnter}
-        mouseLeave={this.archiveButtonLeave}
-        mouseClick={this.archiveButtonClick} />,
-      <ButtonTrash
-        fill={this.state.trashButtonFill}
-        mouseEnter={this.trashButtonEnter}
-        mouseLeave={this.trashButtonLeave}
-        mouseClick={this.trashButtonClick} />
-    ];
-
-    let parentWidth = this.props.widthSize;
-    let oneFourthOfParentWidth = parentWidth * 0.25;
-    let weblinkBlockWidthAndPaddingTop = oneFourthOfParentWidth * 0.9;
-    let weblinkBlockMargin = oneFourthOfParentWidth * 0.05;
-    let weblinkBlockWidthAndPaddingTopFaded = oneFourthOfParentWidth * 0.86;
-    let weblinkBlockMarginFaded = oneFourthOfParentWidth * 0.07;
-    let weblinkBlockStyle = {
-      width: weblinkBlockWidthAndPaddingTop,
-      paddingTop: weblinkBlockWidthAndPaddingTop,
-      margin: weblinkBlockMargin };
-    let weblinkBlockStyleFaded = {
-      width: weblinkBlockWidthAndPaddingTopFaded,
-      paddingTop: weblinkBlockWidthAndPaddingTopFaded,
-      margin: weblinkBlockMarginFaded,
-      opacity: '0.9' };
-
-    const webLinkBlockClasses = [classes.WebLinkBlock];
-    const buttomLineClasses = [classes.BottomLine];
     const webLinkBlockWrapperClasses = [classes.WebLinkBlockWrapper];
-    let menuComponent;
-    (this.props.isDragging) ? weblinkBlockStyle = weblinkBlockStyleFaded : webLinkBlockWrapperClasses.push(classes.hasHover);
-    if (this.state.menu) {
-      menuComponent = this.state.menu;
-      webLinkBlockClasses.push(classes.hidden);
-      buttomLineClasses.push(classes.hidden);
-      this.props.disableDraggable();
+    const webLinkBlockClasses = [classes.WebLinkBlock];
+    const bottomLineClasses = [classes.BottomLine];
+    let weblinkBlockStyle;
+
+    if (this.props.isDragging) {
+      weblinkBlockStyle = this.weblinkBlockStyleFaded;
+    }
+    else{
+      weblinkBlockStyle = this.weblinkBlockStyleNormal;
+      webLinkBlockWrapperClasses.push(classes.hasHover);
     }
 
+    let menuComponent = this.state.menu;
+    if (menuComponent) {
+      webLinkBlockClasses.push(classes.hidden);
+      bottomLineClasses.push(classes.hidden);
+    }
 
     return (
       <div className={webLinkBlockWrapperClasses.join(' ')} onMouseLeave={this.blockLeave} style={weblinkBlockStyle}>
@@ -233,9 +243,9 @@ class WebLinkBlock extends Component {
           <div className={classes.TitleWrapper}>
             <h1>{this.props.title}</h1>
           </div>
-          <div className={buttomLineClasses.join(' ')}>
+          <div className={bottomLineClasses.join(' ')}>
             <div className={classes.Buttons}>
-              {buttons.map((button, index) => (
+              {this.buttons.map((button, index) => (
                 <div
                   key={index}
                   onMouseDownCapture={this.props.disableDraggable}

@@ -5,6 +5,7 @@ import * as actions from "../../../../../../../store/actions";
 import connect from "react-redux/es/connect/connect";
 import Formsy from 'formsy-react';
 import { Input } from 'formsy-react-components';
+import { SizeMe } from 'react-sizeme';
 
 class ProfileMenu extends Component {
   state = {
@@ -25,6 +26,10 @@ class ProfileMenu extends Component {
     console.log(evt);
   }
 
+  onClickAvatarChangeHandler = () => {
+    console.log('YO THIS IS CLICK');
+  }
+
   render() {
 
     const defaultCodeSnippet = (
@@ -32,63 +37,48 @@ class ProfileMenu extends Component {
 
         <div className={classes.AvatarWrapper}>
           <div className={classes.AvatarPhoto}>
-            <img  src={this.props.photo_url}  alt='avatar'/>
+            <img src={this.props.photo_url}  alt='avatar'/>
           </div>
           <div className={classes.Avatar}>
-            <PhotoButton />
+            <SizeMe>
+              {({ size }) => <PhotoButton avatar={this.props.photo_url} widthSize={size.width} />}
+            </SizeMe>
           </div>
         </div>
-
-        <Formsy
-          className={classes.MainInformation}
-          onSubmit={this.onChangeProfileSubmit}
-          // onInvalid={this.onInvalid}
-          // onValid={this.onValid}
-        >
-
-          <div className={classes.ItemWrapper}>
-            <Input
-              name="email"
-              type="email"
-              validations="isEmail"
-              // maxLength={20}
-              placeholder="Enter email"
-              value={this.props.email}
-            />
-          </div>
-
-          <div className={classes.ItemWrapper}>
-            <Input
-              name="userName"
-              type="text"
-              validations="maxLength:19"
-              maxLength={20}
-              placeholder="Enter username"
-              value={this.props.username}
-            />
-          </div>
-
-          <div className={classes.ItemWrapper}>
-            <Input
-              name="firstname"
-              type="text"
-              validations="maxLength:19"
-              maxLength={20}
-              placeholder="Enter firstname"
-              value={this.props.firstname}
-            />
-          </div>
-
-          <div className={classes.ItemWrapper}>
-            <Input
-              name="lastname"
-              type="text"
-              validations="maxLength:19"
-              maxLength={20}
-              placeholder="Enter lastname"
-              value={this.props.lastname}
-            />
-          </div>
+        <Formsy onSubmit={this.onChangeProfileSubmit} className={classes.MainInformation}>
+          <Input
+            autoComplete="off"
+            name="email"
+            type="email"
+            validations="isEmail"
+            validateOnSubmit={true}
+            placeholder="Enter email"
+            value={this.props.email}
+          />
+          <Input
+            name="userName"
+            type="text"
+            validations="maxLength:19"
+            maxLength={20}
+            placeholder="Enter username"
+            value={this.props.username}
+          />
+          <Input
+            name="firstname"
+            type="text"
+            validations="maxLength:19"
+            maxLength={20}
+            placeholder="Enter firstname"
+            value={this.props.firstname}
+          />
+          <Input
+            name="lastname"
+            type="text"
+            validations="maxLength:19"
+            maxLength={20}
+            placeholder="Enter lastname"
+            value={this.props.lastname}
+          />
 
           <div className={classes.ButtonsWrapper}>
             <button type='submit' className={classes.SaveButton}>SAVE</button>
@@ -104,7 +94,7 @@ class ProfileMenu extends Component {
       <div className={classes.SignOutWrapper}>
         <div className={classes.Title}>Do you want to sign out?</div>
         <div className={classes.ButtonsWrapper}>
-          <div className={classes.SignOutButton} onClick={this.onSubmitSignOutHandler}>YES</div>
+          <button className={classes.SignOutButton} onClick={this.onSubmitSignOutHandler}>YES</button>
         </div>
       </div>
     );

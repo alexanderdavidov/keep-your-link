@@ -1,10 +1,9 @@
 .ProfileMenu {
   display: flex;
   width: 100%;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 2px;
   background: linear-gradient(-45deg, #d0021b, #de1171, #c254ba, #8481e6, #29a0ef);
   background-size: 400% 400%;
   -webkit-animation: Gradient 20s ease infinite, fadein 1s;
@@ -14,16 +13,6 @@
 
 .MainWrapper {
   width: 90%;
-  height: 90%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-}
-
-.SignOutWrapper {
-  width: 80%;
-  height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,7 +20,6 @@
 }
 
 /* animation background */
-
 @-webkit-keyframes Gradient {
   0% {
     background-position: 0 50%
@@ -43,7 +31,6 @@
     background-position: 0 50%
   }
 }
-
 @-moz-keyframes Gradient {
   0% {
     background-position: 0 50%
@@ -55,7 +42,6 @@
     background-position: 0 50%
   }
 }
-
 @keyframes Gradient {
   0% {
     background-position: 0 50%
@@ -67,11 +53,7 @@
     background-position: 0 50%
   }
 }
-
 /* animation background */
-
-
-/* MAIN CSS */
 
 .MainInformation {
   display: flex;
@@ -80,7 +62,7 @@
 }
 
 .MainInformation input {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 12px;
   border: none;
   background-color: transparent;
@@ -88,25 +70,44 @@
   outline: none;
   font-family: 'Montserrat', sans-serif;
   width: 100%;
+  margin: 10px 0;
+  caret-color: rgba(255, 255, 255, 1);
+}
+
+.MainInformation input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 300;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.MainInformation input:-webkit-autofill,
+.MainInformation input:-webkit-autofill:hover,
+.MainInformation input:-webkit-autofill:focus {
+  border: none;
+  caret-color: rgba(255, 255, 255, 1);
+  -webkit-text-fill-color: rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0 0 0 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 .AvatarWrapper {
-  margin-top: 20px;
-  width: 100%;
+  margin: 20px 0 14px 0;
+  width: 90px;
+  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .Avatar {
-  /*display: flex;*/
   position: relative;
-  width: 40%;
+  width: 100%;
   cursor: pointer;
 }
 
 .AvatarPhoto {
-  width: 100%;
+  width: 90px;
   position: absolute;
   cursor: pointer;
   justify-content: center;
@@ -115,24 +116,15 @@
 }
 
 .AvatarPhoto img {
-  width: 40%;
+  display: block;
+  width: 100%;
   height: 100%;
   border-radius: 50%;
 }
 
-.ItemWrapper {
-  margin: 0px 0;
-}
-
-.ItemWrapper ::placeholder {
-  color: rgba(255, 255, 255, 0.7);
-  font-weight: 300;
-  font-size: 12px;
-  font-family: 'Montserrat', sans-serif;
-}
-
 .ButtonsWrapper {
   width: 100%;
+  margin: 10px 0 20px 0;
 }
 
 .ButtonsWrapper button {
@@ -141,37 +133,47 @@
 }
 
 .SaveButton, .SignOutButton {
-  margin: 10px 0;
-  font-size: 12px;
+  letter-spacing: 1px;
+  margin: 5px 0;
+  font-size: 10px;
   cursor: pointer;
   color: #ffffff;
-  font-weight: 500;
-  border-radius: 3px;
+  font-weight: 400;
+  border-radius: 2px;
   padding: 10px;
   width: 100%;
-  text-align: center;
   background-color: rgba(255, 255, 255, 0.3);
-  transition-property: background-color;
-  transition-duration: 0.5s;
+  transition-property: background-color, color;
+  transition-duration: 0.3s;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .SaveButton:hover {
   background-color: rgba(144, 197, 87, 0.8);
   transition-property: background-color;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .SignOutButton:hover {
   background-color: rgba(255, 255, 255, 0.5);
-  color: #D0021B;
+  color: rgba(208, 2, 27, 0.8);
   transition-property: background-color, color;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
 }
+
+
+/* SIGNOUT Menu */
 
 .Title {
   font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-  color: #ffffff;
-  margin: 10px 0;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  margin: 20px 0 10px 0;
+  text-align: center;
 }
+
+.SignOutWrapper {
+  width: 90%;
+}
+

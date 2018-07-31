@@ -19,16 +19,14 @@ class PopProfileMenuButton extends Component {
           backgroundColor: '#ffffff',
           padding: "0px",
           border: "none",
-          width: 300,
+          width: '300px',
           boxShadow: '1px 1px 3px rgba(83, 83, 83, 0.5)',
-          borderRadius: '5px',
+          borderRadius: '2px',
           zIndex: '1000'
         }}
         offsetY={10}
         arrow={false}>
-        <ProfileMenu
-          onClickYes={this.onClickYesHandler}
-          onClickSignOutButton={this.onClickSignOutButtonHandler} />
+        <ProfileMenu />
       </Popup>
     );
   }

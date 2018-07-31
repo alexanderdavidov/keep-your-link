@@ -12,8 +12,8 @@ class DefaultLists extends Component {
       <div className={classes.DefaultLists}>
         <h1>DEFAULT LISTS</h1>
 
-        <DefaultListItem isActive>Incoming weblinks</DefaultListItem>
-        <DefaultListItem>Weblinks from users</DefaultListItem >
+        <DefaultListItem isActive>Uploaded by me</DefaultListItem>
+        <DefaultListItem>From users</DefaultListItem >
         <DefaultListItem>Favorites</DefaultListItem>
         <DefaultListItem>Archive</DefaultListItem>
         <DefaultListItem>Trash</DefaultListItem>

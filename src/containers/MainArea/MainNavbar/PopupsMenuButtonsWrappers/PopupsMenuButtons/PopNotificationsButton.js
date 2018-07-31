@@ -20,9 +20,8 @@ class PopNotificationsButton extends Component {
           padding: "0px",
           border: "none",
           width: '300px',
-          height: '400px',
           boxShadow: '1px 1px 3px rgba(83, 83, 83, 0.5)',
-          borderRadius: '5px'
+          borderRadius: '2px'
         }}
         offsetY={10}
         arrow={false}>

@@ -8,7 +8,7 @@ class PlusMenu extends Component {
       <div className={classes.PlusMenu}>
         <div className={classes.InputWrapper}>
           <input autoFocus className={classes.InputElement} type="text" />
-          <div className={classes.ButtonWithInput}><div>ADD</div></div>
+          <button className={classes.ButtonWithInput}>ADD</button>
         </div>
       </div>
     );

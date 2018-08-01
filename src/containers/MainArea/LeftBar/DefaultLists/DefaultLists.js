@@ -11,7 +11,6 @@ class DefaultLists extends Component {
     return (
       <div className={classes.DefaultLists}>
         <h1>DEFAULT LISTS</h1>
-
         <DefaultListItem isActive>Uploaded by me</DefaultListItem>
         <DefaultListItem>From users</DefaultListItem >
         <DefaultListItem>Favorites</DefaultListItem>

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {UserAgentProvider, UserAgent} from '@quentin-sommer/react-useragent'
+import {UserAgentProvider, UserAgent} from '@quentin-sommer/react-useragent';
 import Hoc from '../hoc/hoc';
 
 // containers
@@ -23,7 +23,7 @@ class MainArea extends Component {
 
   render() {
     return (
-      <Hoc>
+      <div style={{backgroundColor: 'red'}}>
         <MainNavBar onBurgerButtonClick={this.onBurgerButtonClick}/>
         <UserAgentProvider ua={window.navigator.userAgent}>
           <Hoc>
@@ -36,7 +36,7 @@ class MainArea extends Component {
           </Hoc>
         </UserAgentProvider>
         <WebLinkList isNotScrolable={this.state.showSideDrawer} />
-      </Hoc>
+      </div>
     );
   }
 }

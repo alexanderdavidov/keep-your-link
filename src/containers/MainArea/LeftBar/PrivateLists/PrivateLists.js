@@ -82,9 +82,9 @@ class PrivateLists extends Component {
 
     return (
       <div className={classes.PrivateLists}>
-        <h1>PRIVATE LISTS</h1>
-        <div onClick={this.addNewList} className={leftBarClasses.ListsPlusButton}>
-          <img src={Plus} alt="Plus"/>
+        <div className={leftBarClasses.TitleAndPlus}>
+          <h1>PRIVATE LISTS</h1>
+          <img className={leftBarClasses.Plus} src={Plus} alt="Plus" onClick={this.addNewList}/>
         </div>
         {lists}
       </div>

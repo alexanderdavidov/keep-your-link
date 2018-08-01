@@ -34,7 +34,6 @@ class ProfileMenu extends Component {
 
     const defaultCodeSnippet = (
       <div className={classes.MainWrapper}>
-
         <div className={classes.AvatarWrapper}>
           <div className={classes.AvatarPhoto}>
             <img src={this.props.photo_url}  alt='avatar'/>
@@ -79,14 +78,11 @@ class ProfileMenu extends Component {
             placeholder="Enter lastname"
             value={this.props.lastname}
           />
-
           <div className={classes.ButtonsWrapper}>
             <button type='submit' className={classes.SaveButton}>SAVE</button>
             <button className={classes.SignOutButton} onClick={this.onClickSignOutButtonHandler}>SIGN OUT</button>
           </div>
-
         </Formsy>
-
       </div>
     );
 

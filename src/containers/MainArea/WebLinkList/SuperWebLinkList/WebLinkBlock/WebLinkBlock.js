@@ -79,10 +79,10 @@ class WebLinkBlock extends Component {
 
     const parentWidth = this.props.widthSize;
     const oneFourthOfParentWidth = parentWidth * 0.25;
-    const weblinkBlockWidthAndPaddingTop = oneFourthOfParentWidth * 0.9;
-    const weblinkBlockMargin = oneFourthOfParentWidth * 0.05;
-    const weblinkBlockWidthAndPaddingTopFaded = oneFourthOfParentWidth * 0.86;
-    const weblinkBlockMarginFaded = oneFourthOfParentWidth * 0.07;
+    const weblinkBlockWidthAndPaddingTop = oneFourthOfParentWidth * 0.88;
+    const weblinkBlockMargin = oneFourthOfParentWidth * 0.06;
+    const weblinkBlockWidthAndPaddingTopFaded = oneFourthOfParentWidth * 0.8;
+    const weblinkBlockMarginFaded = oneFourthOfParentWidth * 0.1;
     this.weblinkBlockStyleNormal = {
       width: weblinkBlockWidthAndPaddingTop,
       paddingTop: weblinkBlockWidthAndPaddingTop,

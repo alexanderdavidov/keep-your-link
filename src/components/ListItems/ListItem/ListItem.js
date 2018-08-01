@@ -9,8 +9,7 @@ class ListItem extends Component {
     return (
       <div className={classes.ListItem}>
         {this.props.circle}
-        <div className={classes.ListItemControls}>
-
+        <div className={classes.ListItemNameAndControls}>
           {this.props.listNameBlock}
           {this.props.buttons}
         </div>

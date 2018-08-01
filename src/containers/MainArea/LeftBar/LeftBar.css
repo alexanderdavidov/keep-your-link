@@ -1,11 +1,11 @@
 .LeftBar {
   position: fixed;
-  top: 102px;
+  top: 70px;
   left: 20px;
   height: 85vh;
   overflow-y: hidden;
   overflow-x: hidden;
-  width: 20%;
+  width: calc(20% - 20px);
 }
 
 .LeftBar:hover {
@@ -27,11 +27,14 @@
   border-radius: 4px;
 }
 
-.ListsPlusButton {
-  display: inline-block;
+.TitleAndPlus {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.ListsPlusButton img {
-  height: 14px;
+.Plus {
+  display: block;
+  height: 8px;
   cursor: pointer;
 }

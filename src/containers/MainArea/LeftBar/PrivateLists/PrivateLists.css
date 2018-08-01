@@ -1,7 +1,13 @@
+.PrivateLists {
+  margin: 20px 0;
+}
+
 .PrivateLists h1 {
-  display: inline-block;
-  margin: 20px 30px 0 20px;
-  font-weight: 900;
+  font-weight: 700;
+  letter-spacing: 1px;
   color: #90C557;
-  font-size: 18px;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0 20px 0 20px;
+  font-family: 'Montserrat', sans-serif;
 }

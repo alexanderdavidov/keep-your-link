@@ -1,7 +1,7 @@
 .WebLinkBlockWrapper {
   background-color:#ffffff;
   box-shadow: 1px 1px 8px rgba(83, 83, 83, 0.5);
-  border-radius: 5px;
+  border-radius: 4px;
   position: relative;
   transition: width 0.5s, padding-top 0.5s, margin 0.5s, transform;
   cursor: pointer;
@@ -15,7 +15,7 @@
 
 .WebLinkBlockWrapper .WebLinkPicture {
   object-fit: cover;
-  border-radius: 5px 5px 0 0;
+  border-radius: 4px 4px 0 0;
   top: 0;
   left: 0;
   position: absolute;
@@ -142,7 +142,7 @@
   bottom : 10px;
   left: 10px;
   position: absolute;
-  border-radius: 5px;
+  border-radius: 2px;
   user-select: none;
 }
 
@@ -152,12 +152,11 @@
   position: absolute;
   bottom: 10px;
   right: 10px;
-  border-radius: 0 0 5px 5px;
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
   letter-spacing: 1px;
   color: #29a0ef;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 /* TRASH  */
@@ -226,7 +225,7 @@
 
 .WebLinkBlockWrapper .WebLinkPictureTrash {
   object-fit: cover;
-  border-radius: 5px 5px 0 0;
+  border-radius: 4px 4px 0 0;
   top: 0;
   left: 0;
   position: absolute;

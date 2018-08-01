@@ -1,9 +1,9 @@
 .ListItem {
   font-weight: 400;
-  font-size: 16px;
-  color: #535353;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 14px 0;
   display: grid;
   grid-template-columns: 10px auto;
   grid-template-rows: auto;
@@ -11,39 +11,39 @@
 }
 
 .ListItemNew {
-  color: #5c5c5c;
+  color: rgba(0, 0, 0, 0.6);
   font-weight: 200;
 }
 
 .ListItemDisplayInlineBlock {
   display: inline-block;
-  margin-right: 13px;
+  margin-right: 10px;
   cursor: pointer;
 }
 
 .CircleNew {
-  background-color: #d0021b;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  border: 1px solid #d0021b;
+  background-color: rgba(208, 2, 27, 1);
+  width: 4px;
+  height: 4px;
+  border-radius: 1px;
+  border: 1px solid rgba(208, 2, 27, 1);
   display: flex;
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
 }
 
 .CircleActive {
-  background-color: #9B9B9B;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  border: 1px solid #9B9B9B;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 4px;
+  height: 4px;
+  border-radius: 1px;
+  border: none;
   display: flex;
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
 }
 
-.ListItemControls {
+.ListItemNameAndControls {
   margin-left: 10px;
   grid-column: 2 / span 1;
   grid-row: 1 / span 1;
@@ -51,7 +51,6 @@
 
 .ListNameInput {
   display: flex;
-
 }
 
 .ListItem input {

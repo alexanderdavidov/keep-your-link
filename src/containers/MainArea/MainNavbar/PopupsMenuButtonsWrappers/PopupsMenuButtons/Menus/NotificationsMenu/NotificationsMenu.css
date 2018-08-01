@@ -19,30 +19,9 @@
   flex-direction: column;
 }
 
-.MainWrapperListsBlocks {
-  width: 100%;
-  margin: 20px 0 0 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.UploadedByMe {
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.1);
-  margin: 0 0 10px 0;
-  border-radius: 2px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 0;
-}
-
 .ClearButtonWrapper {
   width: 100%;
-  margin: 0 0 20px 0;
+  margin: 20px 0;
 }
 
 .ClearButton {
@@ -104,50 +83,76 @@
 }
 /* animation background */
 
-
-.ListTitle {
-  color: #ffffff;
-  font-size: 12px;
-  font-weight: 400;
-  text-align: center;
-  letter-spacing: 1px;
+.Title {
   font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  margin: 14px 0 5px 0;
+}
+
+.SegmentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-top: 20px;
+  padding-bottom: 10px;
+  border-radius: 2px;
 }
 
 .LineWebLinkBlock {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 230px;
-  margin: 10px 0 0 0;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  width: 90%;
+  margin: 5px 0;
+  cursor: pointer;
 }
 
-.ImageLineWebLinkBlockPicture {
-  width: 30px;
-  height: 30px;
+.LineWebLinkBlockPicture {
   object-fit: cover;
+  border-radius: 2px 2px 0 0;
   display: block;
-  opacity: .9;
-  z-index: 100;
-}
-
-.TitleLineWebLinkBlock {
-  width: 200px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0 1px 1px 0;
-}
-
-.TitleLineWebLinkBlock h3 {
-  padding: 5px 10px;
   width: 100%;
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 1);
+  height: 20px;
+}
+
+.LineWebLinkBlockTitleAndFavicon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 20px;
+  border-radius: 0 0 2px 2px;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+}
+
+.LineWebLinkBlock:hover .LineWebLinkBlockTitleAndFavicon{
+  background-color: rgba(255, 255, 255, 1);
+  transition-property: background-color;
+  transition-duration: 0.3s;
+}
+
+.LineWebLinkBlockTitle {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
   font-size: 12px;
-  text-align: center;
+  line-height: 14px;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.7);
+  position: relative;
+  left: 5px;
+}
+
+.LineWebLinkBlockFavicon {
+  display: block;
+  width: 12px;
+  height: 12px;
+  position: relative;
+  right: 5px;
+  border-radius: 1px;
 }

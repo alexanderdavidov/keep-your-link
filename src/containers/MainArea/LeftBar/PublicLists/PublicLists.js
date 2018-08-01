@@ -86,13 +86,15 @@ class PublicLists extends Component {
 
     return (
       <div className={classes.PublicLists}>
-        <h1 style={{marginLeft: '20px'}}>PUBLIC LISTS</h1>
-        <div onClick={this.addNewList} className={leftBarClasses.ListsPlusButton}>
-          <img src={Plus} alt="Plus"/>
+        <div className={leftBarClasses.TitleAndPlus}>
+          <h1>PUBLIC LISTS</h1>
+          <img className={leftBarClasses.Plus} onClick={this.addNewList} src={Plus} alt="Plus" />
         </div>
         {lists}
-
       </div>
+
+
+
     );
   }
 }

@@ -79,10 +79,10 @@ class WebLinkBlock extends Component {
 
     const parentWidth = this.props.widthSize;
     const oneFourthOfParentWidth = parentWidth * 0.25;
-    const weblinkBlockWidthAndPaddingTop = oneFourthOfParentWidth * 0.88;
-    const weblinkBlockMargin = oneFourthOfParentWidth * 0.06;
-    const weblinkBlockWidthAndPaddingTopFaded = oneFourthOfParentWidth * 0.8;
-    const weblinkBlockMarginFaded = oneFourthOfParentWidth * 0.1;
+    const weblinkBlockWidthAndPaddingTop = oneFourthOfParentWidth * 0.92;
+    const weblinkBlockMargin = oneFourthOfParentWidth * 0.04;
+    const weblinkBlockWidthAndPaddingTopFaded = oneFourthOfParentWidth * 0.86;
+    const weblinkBlockMarginFaded = oneFourthOfParentWidth * 0.07;
     this.weblinkBlockStyleNormal = {
       width: weblinkBlockWidthAndPaddingTop,
       paddingTop: weblinkBlockWidthAndPaddingTop,
@@ -91,7 +91,8 @@ class WebLinkBlock extends Component {
       width: weblinkBlockWidthAndPaddingTopFaded,
       paddingTop: weblinkBlockWidthAndPaddingTopFaded,
       margin: weblinkBlockMarginFaded,
-      opacity: '0.9' };
+      boxShadow: '1px 1px 3px rgba(83, 83, 83, 0.5)'
+    };
   }
 
   componentWillUpdate() {
@@ -262,5 +263,6 @@ class WebLinkBlock extends Component {
     );
   }
 }
+
 
 export default WebLinkBlock;

@@ -9,6 +9,8 @@ import SearchButton from './SearchButton/SearchButton';
 import PopPlusMenuButtonWrapper from './PopupsMenuButtonsWrappers/PopPlusMenuButtonWrapper';
 import PopProfileMenuButtonWrapper from './PopupsMenuButtonsWrappers/PopProfileMenuButtonWrapper';
 import PopNotificationsButtonWrapper from './PopupsMenuButtonsWrappers/PopNotificationsButtonWrapper';
+import PopTagMenuButtonWrapper from './PopupsMenuButtonsWrappers/PopTagMenuButtonWrapper';
+import PopTrashMenuButtonWrapper from './PopupsMenuButtonsWrappers/PopTrashButtonWrapper';
 
 
 // classes
@@ -87,6 +89,8 @@ class MainNavBar extends Component {
 
               <div className={classes.MainNavBarButtons}>
                 <PopPlusMenuButtonWrapper />
+                <PopTrashMenuButtonWrapper />
+                <PopTagMenuButtonWrapper />
                 <PopNotificationsButtonWrapper />
                 <PopProfileMenuButtonWrapper />
               </div>

@@ -3,14 +3,14 @@
   box-shadow: 1px 1px 8px rgba(83, 83, 83, 0.5);
   border-radius: 4px;
   position: relative;
-  transition: width 0.5s, padding-top 0.5s, margin 0.5s, transform;
+  transition: width 1s, padding-top 1s, margin 1s, transform;
   cursor: pointer;
 }
 
 .WebLinkBlock.hidden {
   opacity: 0;
   visibility: hidden;
-  transition: visibility 0s linear 0.2s, opacity 0.2s;
+  transition: visibility 0s linear 1s, opacity 1s;
 }
 
 .WebLinkBlockWrapper .WebLinkPicture {
@@ -30,13 +30,13 @@
 .WebLinkBlockWrapper.hasHover:hover .WebLinkPicture {
   filter: grayscale(80%) brightness(0.5);
   transition-property: grayscale, brightness;
-  transition-duration: 0.2s;
+  transition-duration: 0.5s;
 }
 
 .WebLinkBlockWrapper.hasHover:hover .Domain {
   color: #D0021B;
   transition-property: color;
-  transition-duration: 0.1s;
+  transition-duration: 0.5s;
 }
 
 .TitleWrapper {
